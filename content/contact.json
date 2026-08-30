@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Get in touch",
+  "title": "Contact",
+  "lede": "For academic collaborations, research inquiries, interviews, speaking opportunities, teaching and educational projects, or other professional matters, please feel free to get in touch.",
+  "email": "cagdasduman369@gmail.com",
+  "connect": [
+    { "label": "LinkedIn", "url": "#" },
+    { "label": "Bluesky", "url": "#" },
+    { "label": "Goodreads", "url": "#" },
+    { "label": "Quora", "url": "#" },
+    { "label": "SoundCloud", "url": "#" }
+  ]
+}

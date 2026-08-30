@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Research",
+  "title": "Academic Work",
+  "lede": "My academic work brings together research, publications, conference presentations, teaching materials, and other scholarly contributions. You can explore my academic work and research activities through the platforms below.",
+  "platforms": [
+    {
+      "name": "ResearchGate",
+      "description": "Explore my research publications, academic papers, research projects, and scholarly contributions.",
+      "cta": "Visit ResearchGate",
+      "url": "https://www.researchgate.net/profile/Cagdas-Duman"
+    },
+    {
+      "name": "Academia.edu",
+      "description": "Explore my papers, teaching materials, conference presentations, talks, and other academic work.",
+      "cta": "Visit Academia.edu",
+      "url": "https://ege.academia.edu/%C3%87a%C4%9Fda%C5%9FDuman"
+    }
+  ]
+}

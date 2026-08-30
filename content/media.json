@@ -1,0 +1,31 @@
+{
+  "eyebrow": "Media",
+  "title": "Conversations, Interviews & Political Analysis",
+  "lede": "Dr. Çağdaş Duman's media work brings together academic research, political analysis, and conversations with scholars and experts on international relations, Middle Eastern politics, and contemporary global affairs. Through interviews, book talks, and analytical discussions, he explores political developments and complex international issues from an academic perspective.",
+  "featuredHeading": "Featured",
+  "featuredLede": "A selection of featured interviews, discussions, and political analyses.",
+  "items": [
+    {
+      "tag": "Book Talk",
+      "title": "Transformative Impact of Political Shocks: Lebanese Hezbollah (2005–2020)",
+      "description": "A discussion of Dr. Çağdaş Duman's research on the transformative effects of political shocks on Lebanese Hezbollah between 2005 and 2020.",
+      "url": "https://www.youtube.com/watch?v=IFMacAXJWp8"
+    },
+    {
+      "tag": "Exclusive Interview",
+      "title": "Libya at a Crossroad: Exclusive Talk with Brookings Expert Stephanie Williams",
+      "description": "An exclusive conversation with Stephanie Williams on Libya's political transition, regional dynamics, and the challenges shaping the country's future.",
+      "url": "https://www.youtube.com/watch?v=7kYd1Gv968o"
+    },
+    {
+      "tag": "Political Analysis",
+      "title": "Maduro Has Fallen, Hezbollah's Global Network Shaken: The Secret Codes of the Maduro Operation",
+      "description": "An analysis of the geopolitical implications of the Maduro operation and its potential impact on Hezbollah's global network and broader international politics.",
+      "url": "https://www.youtube.com/watch?v=T_w0o4f82-w"
+    }
+  ],
+  "exploreHeading": "Explore More",
+  "exploreLede": "Explore more interviews, academic discussions, political analyses, and video content on Dr. Çağdaş Duman's YouTube channel.",
+  "exploreCta": "Visit YouTube Channel",
+  "exploreUrl": "https://www.youtube.com/@cagdasduman3916"
+}

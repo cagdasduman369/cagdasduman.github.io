@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Çağdaş Duman — Political Scientist | IR &amp; Middle East Studies</title>
+<meta name="description" content="Dr. Çağdaş Duman — researcher, author and educator specializing in International Relations, Middle East Politics, Violent Non-State Actors and Political Shock Doctrine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="skeleton">Loading…</div>
+    </section>
+  </main>
+
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    (async function () {
+      await buildChrome('index.html');
+      const data = await loadJSON('content/home.json');
+      const hero = document.getElementById('hero');
+
+      hero.innerHTML = `
+        <div class="hero-kicker">${escapeHtml(data.kicker)}</div>
+        <h1>${escapeHtml(data.name)}</h1>
+        <p style="font-family: var(--serif); font-size: clamp(20px, 3vw, 28px); font-weight: 500; margin: 0 0 4px; line-height: 1.35;">
+          ${escapeHtml(data.titleBeforeRedact)}<span class="redact" id="redactWord" tabindex="0" role="button" aria-pressed="false">${escapeHtml(data.redactedWord)}</span>${escapeHtml(data.titleAfterRedact)}
+        </p>
+        <div class="redact-hint">${escapeHtml(data.hint)}</div>
+        <p class="hero-sub">${escapeHtml(data.subtitle)}</p>
+        <div class="hero-links">
+          ${data.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${escapeHtml(l.label)} ↗</a>`).join('')}
+        </div>
+      `;
+
+      const redactEl = document.getElementById('redactWord');
+      function toggleReveal() {
+        const revealed = redactEl.classList.toggle('revealed');
+        redactEl.setAttribute('aria-pressed', revealed ? 'true' : 'false');
+      }
+      redactEl.addEventListener('click', toggleReveal);
+      redactEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleReveal(); }
+      });
+    })();
+  </script>
+</body>
+</html>

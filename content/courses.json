@@ -1,0 +1,132 @@
+{
+  "eyebrow": "Teaching",
+  "title": "Online Courses",
+  "lede": "Dr. Çağdaş Duman designs and teaches online courses in international relations, Middle Eastern politics, political science, and academic research. His courses are designed to make complex political and academic subjects accessible to students, researchers, and anyone interested in global affairs.",
+  "subheading": "Explore the Courses",
+  "sublede": "Explore Dr. Çağdaş Duman's online courses on Udemy, covering a range of topics in international relations, regional politics, political science, and academic research.",
+  "courses": [
+    {
+      "title": "International Relations Theories: Concepts and Applications",
+      "description": "This course provides an introduction to the major theoretical approaches in International Relations, combining conceptual foundations with comparative analysis and practical applications. It explores Realism, Liberalism, the English School, Critical Theory, Postcolonialism, Postmodernism, Marxism, Social Constructivism, and other influential perspectives.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/international-relations-theories/?referralCode=2BE628217BACDE094DC1" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/uluslararas-iliskiler-teorileri-egitimi/?referralCode=AA95666917ECF6D2F07F" }
+      ]
+    },
+    {
+      "title": "Mastering Political Shock Doctrine: Crises, Power & Strategy",
+      "description": "This course introduces the Political Shock Doctrine as a framework for analyzing political crises, rapid political change, and the responses of political actors. It explores the classification of political shocks, the Punctuated Equilibrium Model, the concept of the Window of Opportunity, and the emerging literature surrounding the Political Shock Doctrine. The course also examines the relationship between political shocks and contemporary political processes, providing learners with conceptual and analytical tools to interpret periods of instability and transformation.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/political-shock-doctrine-training/?referralCode=97C8F87D8DB715D2A62D" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/politik-sok-doktrini/?referralCode=4259E566C4C04249D2C5" }
+      ]
+    },
+    {
+      "title": "Violent Non-State Actors in Global Politics",
+      "description": "This course provides an introduction to violent non-state actors and their role in international and Middle Eastern politics. It examines their historical development, key characteristics, classification and typology, life-cycle stages, and their place in the existing academic literature. The course also introduces different types of violent non-state actors and provides analytical perspectives for understanding their emergence, development, transformation, and growing influence in contemporary global politics.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/violent-non-state-actors-training/?referralCode=5705607B9563A5C3FF32" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/siddet-iceren-devlet-ds-aktorler-egitimi/?referralCode=56AFEE726675CFF3FA14" }
+      ]
+    },
+    {
+      "title": "Inside the Middle East: Understanding Violent Nonstate Actors",
+      "description": "This course examines the emergence, development, ideological foundations, and organizational structures of violent non-state actors in the Middle East. Focusing on Hezbollah in Lebanon and Fatah and Hamas in Palestine, the course provides an analytical introduction to their roles in regional politics and contemporary Middle Eastern affairs. The course is designed for students, researchers, political scientists, and anyone interested in Middle East politics, security studies, and violent non-state actors.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/violent-non-state-actors-in-the-middle-east/?referralCode=2DE1CAB873BAFDD92852" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/ortadoguda-siddet-iceren-devlet-ds-aktorler/?referralCode=723A7D3FCEDB25C7DAF9" }
+      ]
+    },
+    {
+      "title": "The Kurds and the Middle East: History, Politics & Identity",
+      "description": "This course provides an in-depth introduction to the political history, organizations, and contemporary position of the Kurds in Iran, Iraq, and Syria. It examines major Kurdish political movements and organizations while exploring the changing role of Kurdish actors within the political and geopolitical dynamics of the Middle East. The course is designed for students, researchers, political scientists, and anyone seeking to develop a deeper understanding of Kurdish politics and the broader dynamics of the Middle East.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/kurds-and-the-middle-east/?referralCode=FA2F9A85599AAF7F7F5D" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/ortadogu-ve-kurtler/?referralCode=E1221D71AF9298DA5732" }
+      ]
+    },
+    {
+      "title": "Iranian Politics: The Power Behind the Persian Curtain",
+      "description": "This course provides a comprehensive introduction to Iranian political history, institutions, political actors, and the major developments that have shaped modern Iran. It examines the Pahlavi era, Operation Ajax, the White Revolution, the Islamic Revolution, Iran's post-revolutionary political system, and the country's major political actors. The course also explores Iran's political economy, the concept of the rentier state, and the role of key institutions and political figures in contemporary Iranian politics.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/introduction-to-iranian-politics/?referralCode=2D73EF6BB179AE08CB15" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/iran-siyasetini-anlama-klavuzu/?referralCode=227A0121C92FF9D37F07" }
+      ]
+    },
+    {
+      "title": "Israeli Politics: Government, Conflicts, and Power Struggles",
+      "description": "This course provides an introduction to Israeli political history, state formation, political institutions, ideological approaches, political parties, and major political actors. It also examines Arab-Israeli wars, attempts to resolve the Israeli-Palestinian conflict, Israel's political structure and electoral system, and the development of Israeli state identity. The course is designed for students, researchers, political scientists, and anyone interested in Israeli politics and the broader dynamics of Middle Eastern affairs.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/introduction-to-israel-politics/?referralCode=540285E92972E25ACDFB" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/israil-siyasetini-anlama-klavuzu/?referralCode=001361C6A8BA61040BC5" }
+      ]
+    },
+    {
+      "title": "Saudi Arabian Political System: Institutions, Power & Policy",
+      "description": "This course provides an introduction to Saudi Arabia's political history, institutions, and contemporary political dynamics. It examines the formation and political structure of the Saudi state, military and intelligence institutions, the concept of the rentier state, the role of oil in foreign policy, and the political significance of Wahhabism. The course also explores Saudi Arabia's Vision 2030 strategy, NEOM, and the growing role of sportwashing in the country's international image and foreign relations.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/introduction-to-saudi-arabian-politics/?referralCode=06656DD4CEC840901D9C" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/suudi-arabistan-siyasetini-anlama-klavuzu/?referralCode=EADD771385DA2F454F20" }
+      ]
+    },
+    {
+      "title": "Libya Geopolitics: History, Civil War & Global Power Competition",
+      "description": "This Turkish-language course examines Libya's historical transformation, strategic importance, and contemporary geopolitical dynamics. It explores the country from the Ottoman period to the Gaddafi era, the 2011 Arab Spring and NATO intervention, and the subsequent civil war and political fragmentation. The course also examines the roles and competing interests of key regional and international actors, including Turkey, Russia, Egypt, the United Arab Emirates, NATO, and Western powers, while exploring the impact of energy resources and Eastern Mediterranean geopolitics on Libya's political future.",
+      "badge": "Course language: Turkish",
+      "links": [
+        { "label": "View Course in Turkish", "url": "https://www.udemy.com/course/libya-jeopolitigi-tarih-ic-savas-ve-kuresel-guc-mucadelesi/?referralCode=E34A72167BC1AF214C08" }
+      ]
+    },
+    {
+      "title": "The Ba'ath Party and the Political Transformation of the Middle East",
+      "description": "This Turkish-language course examines the emergence, ideological foundations, institutional structure, and political strategies of the Ba'ath Party in the Middle East. It focuses particularly on the political experiences of Egypt, Syria, and Iraq, with attention to Nasserism, the Syrian Ba'ath regime, and the Iraqi Ba'ath regime. The course also explores major political developments and conflicts associated with these regimes, including the Iran-Iraq War, the Hama and Halabja massacres, and the Gulf Wars.",
+      "badge": "Course language: Turkish",
+      "links": [
+        { "label": "View Course in Turkish", "url": "https://www.udemy.com/course/ortadogu-siyasetinde-baas-partisi/?referralCode=795F59C0FB39FFE04217" }
+      ]
+    },
+    {
+      "title": "The United States and the Middle East Between the World Wars",
+      "description": "This Turkish-language course examines the emergence and development of U.S. policy toward the Middle East during the interwar period. It explores the strategic importance of the region, the political arrangements that followed the First World War, and the evolving role of the United States in the region. The course also examines the relationship between oil, geopolitics, and U.S. foreign policy, drawing on major geopolitical theories including Sea Power Theory, Heartland Theory, and Rimland Theory. It also considers the role of civil society organizations and educational institutions in U.S. engagement with the Middle East.",
+      "badge": "Course language: Turkish",
+      "links": [
+        { "label": "View Course in Turkish", "url": "https://www.udemy.com/course/iki-dunya-savas-aras-donemde-abd-ve-ortadogu/?referralCode=14BE97D8A8562EA00142" }
+      ]
+    },
+    {
+      "title": "Crafting a Winning Thesis Proposal: From Idea to Approval",
+      "description": "This course provides a structured and practical guide to developing a strong Master's or Doctoral thesis proposal. It covers the essential stages of academic research, including literature review, research problem and question formulation, research purpose, contribution to the literature, assumptions, and methodology. Drawing on Dr. Çağdaş Duman's doctoral research experience, the course combines theoretical foundations with practical guidance to help students develop, organize, and present their research more effectively.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/academic-thesis-proposal-training/?referralCode=71D110261E86E27A7392" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/akademik-tez-onerisi-yazm-egitimi/?referralCode=212B5B79605188EAA063" }
+      ]
+    },
+    {
+      "title": "Reference Management with Mendeley: A Complete Guide",
+      "description": "This course provides a practical introduction to Mendeley, a reference management tool designed to support academic research and writing. It covers registration and installation, managing references and creating a digital library, organizing sources, and generating citations and bibliographies. The course is designed for students and researchers who want to improve their academic writing process and manage scholarly references more efficiently.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/reference-management-with-mendeley/?referralCode=F50D716086EC3835C503" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/mendeley-ile-referans-yonetimi-egitimi/?referralCode=B0BB76DF36984D98F827" }
+      ]
+    },
+    {
+      "title": "Zotero for Researchers: Manage References and Bibliographies",
+      "description": "This Turkish-language course provides a practical introduction to Zotero, a reference management tool designed to support academic research and writing. It covers Zotero installation, reference management, library organization, adding academic sources, citation management, and bibliography creation. The course is designed for students and researchers who want to improve their academic writing workflow and manage scholarly references more effectively.",
+      "badge": "Also available in Turkish",
+      "links": [
+        { "label": "View in English", "url": "https://www.udemy.com/course/reference-management-with-zotero-f/?referralCode=C1CD9E60BAF30E97AEDD" },
+        { "label": "Türkçe İncele", "url": "https://www.udemy.com/course/zotero-ile-referans-yonetimi-egitimi/?referralCode=CD1855014BC591B95DDE" }
+      ]
+    }
+  ]
+}

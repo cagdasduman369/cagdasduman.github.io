@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Around the World — Çağdaş Duman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
+
+  <main>
+    <div id="content"><div class="skeleton">Loading…</div></div>
+  </main>
+
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    (async function () {
+      await buildChrome('world.html');
+      const data = await loadJSON('content/world.json');
+      const content = document.getElementById('content');
+
+      content.innerHTML = `
+        <div class="page-eyebrow">${escapeHtml(data.eyebrow)}</div>
+        <h1 class="page-title">${escapeHtml(data.subtitle)}</h1>
+        <p class="page-lede">${escapeHtml(data.lede)}</p>
+        <div class="region-grid">
+          ${data.regions.map(r => `
+            <div class="region">
+              <h4>${escapeHtml(r.country)}</h4>
+              <ul>${r.places.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    })();
+  </script>
+</body>
+</html>

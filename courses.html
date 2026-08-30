@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Courses — Çağdaş Duman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
+
+  <main>
+    <div id="content"><div class="skeleton">Loading…</div></div>
+  </main>
+
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    (async function () {
+      await buildChrome('courses.html');
+      const data = await loadJSON('content/courses.json');
+      const content = document.getElementById('content');
+
+      content.innerHTML = `
+        <div class="page-eyebrow">${escapeHtml(data.eyebrow)}</div>
+        <h1 class="page-title">${escapeHtml(data.title)}</h1>
+        <p class="page-lede">${escapeHtml(data.lede)}</p>
+        <hr class="rule">
+        <h2 style="font-family:var(--serif); font-size:22px; margin:0 0 6px;">${escapeHtml(data.subheading)}</h2>
+        <p style="color:var(--slate); margin:0 0 8px;">${escapeHtml(data.sublede)}</p>
+        ${data.courses.map(c => `
+          <div class="course">
+            <span class="course-badge">${escapeHtml(c.badge)}</span>
+            <h3>${escapeHtml(c.title)}</h3>
+            <p>${escapeHtml(c.description)}</p>
+            <div class="course-langs">
+              ${c.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${escapeHtml(l.label)} →</a>`).join('')}
+            </div>
+          </div>
+        `).join('')}
+      `;
+    })();
+  </script>
+</body>
+</html>

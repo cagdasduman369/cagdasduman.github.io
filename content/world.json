@@ -1,0 +1,22 @@
+{
+  "eyebrow": "Travel",
+  "title": "Around the World",
+  "subtitle": "Places, People & Moments",
+  "lede": "Travel has been an important part of Dr. Çağdaş Duman's personal and professional journey. Living and traveling across different countries has offered opportunities to encounter new cultures, communities, landscapes, and perspectives. This collection brings together photographs from some of the places and moments experienced along the way.",
+  "regions": [
+    { "country": "Albania", "places": ["Durres", "Himare", "Lezhe", "Sarande", "Tirana"] },
+    { "country": "Austria", "places": ["Bad Goisen", "Bad Ischl", "Ebensee", "Graz", "Salzburg", "Wien"] },
+    { "country": "Azerbaijan", "places": ["Bakü"] },
+    { "country": "Bosnia-Herzegovina", "places": ["Banja Luka", "Sarajevo"] },
+    { "country": "Hungary", "places": ["Budapest"] },
+    { "country": "Croatia", "places": ["Hvar", "Jelsa", "Split", "Stari Grad", "Zagreb"] },
+    { "country": "Georgia", "places": ["Batumi", "Ozurgeti", "Tbilisi"] },
+    { "country": "Montenegro", "places": ["Budva", "Kotor"] },
+    { "country": "North Macedonia", "places": ["Bitola", "Ohrid", "Skopje"] },
+    { "country": "Kosovo", "places": ["Prishtine"] },
+    { "country": "Lebanon", "places": ["Beirut", "Bekaa Valley", "South Lebanon"] },
+    { "country": "Serbia", "places": ["Belgrade", "Cacak", "Kragujevac", "Novi Sad"] },
+    { "country": "Slovenia", "places": ["Ljubliana", "Maribor", "Ptuj"] },
+    { "country": "The United States", "places": ["New York", "Philadelphia", "Washington DC"] }
+  ]
+}
