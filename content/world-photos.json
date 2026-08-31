@@ -1,0 +1,12 @@
+{
+  "_instructions": "Add photos by: 1) resizing/compressing them (max ~2000px wide, JPEG or WebP, ideally under 400KB each), 2) uploading the files into assets/images/world/<folder>/, 3) adding one entry below per photo with its filename and an optional caption. 'folder' must match the actual folder name under assets/images/world/. Delete this _instructions key or leave it — it is ignored by the code.",
+  "countries": [
+    {
+      "country": "Albania",
+      "folder": "albania",
+      "photos": [
+        { "file": "example.jpg", "caption": "Replace with a real photo, or delete this example entry" }
+      ]
+    }
+  ]
+}
