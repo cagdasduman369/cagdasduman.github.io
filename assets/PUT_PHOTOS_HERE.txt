@@ -1,0 +1,8 @@
+Upload your resized Albania photos into this folder (e.g. durres-1.jpg,
+tirana-sunset.jpg), then list them in content/world-photos.json under
+the "Albania" entry. Delete this file once you've added real photos —
+it only exists so this empty folder isn't skipped by Git.
+
+Repeat this pattern for every country: create
+assets/images/world/<countryname>/ and add a matching entry in
+content/world-photos.json.
