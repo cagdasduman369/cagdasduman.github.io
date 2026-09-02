@@ -60,7 +60,7 @@
           margin: 0 0 4px;
           line-height: 1.35;
         ">
-          ${escapeHtml(data.titleBeforeRedact)}${escapeHtml(data.redactedWord)}${escapeHtml(data.titleAfterRedact)}
+          ${escapeHtml(data.title)}
         </p>
 
         <p class="hero-sub">
@@ -70,7 +70,7 @@
         <div class="hero-links">
           ${data.links.map(link => `
             <a
-              href="${link.url}"
+              href="${escapeHtml(link.url)}"
               target="_blank"
               rel="noopener noreferrer"
             >
