@@ -1,10 +1,7 @@
 {
   "kicker": "Political Scientist",
   "name": "Dr. Çağdaş Duman",
-  "redactedWord": "Shock Doctrine",
-  "titleBeforeRedact": "Studying the politics of ",
-  "titleAfterRedact": ".",
-  "hint": "click to reveal",
+  "titleBeforeRedact": "Studying the politics of Shock Doctrine",
   "subtitle": "Researcher, author and educator specializing in International Relations, Middle East Politics, Violent Non-State Actors, and Political Shock Doctrine.",
   "links": [
     { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Cagdas-Duman" },
