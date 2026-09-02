@@ -1,14 +1,32 @@
 {
   "kicker": "Political Scientist",
   "name": "Dr. Çağdaş Duman",
-  "titleBeforeRedact": "Studying the politics of Shock Doctrine",
+  "title": "Studying the politics of Shock Doctrine.",
   "subtitle": "Researcher, author and educator specializing in International Relations, Middle East Politics, Violent Non-State Actors, and Political Shock Doctrine.",
   "links": [
-    { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Cagdas-Duman" },
-    { "label": "Academia.edu", "url": "https://ege.academia.edu/%C3%87a%C4%9Fda%C5%9FDuman" },
-    { "label": "Google Scholar", "url": "#" },
-    { "label": "ORCID", "url": "#" },
-    { "label": "LinkedIn", "url": "#" },
-    { "label": "YouTube", "url": "https://www.youtube.com/@cagdasduman3916" }
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Cagdas-Duman"
+    },
+    {
+      "label": "Academia.edu",
+      "url": "https://ege.academia.edu/%C3%87a%C4%9Fda%C5%9FDuman"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "#"
+    },
+    {
+      "label": "ORCID",
+      "url": "#"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "#"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@cagdasduman3916"
+    }
   ]
 }
