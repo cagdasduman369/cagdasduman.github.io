@@ -8,13 +8,23 @@ domain **cagdasduman.info** (bought on GoDaddy).
 
 ## 1. How the site is built
 
-- Every page (`index.html`, `journey.html`, `publications.html`, `courses.html`,
-  `media.html`, `world.html`, `contact.html`) is a thin HTML shell.
-- All the actual **text and links live in `content/*.json`** — one JSON file
-  per page, plus `content/site.json` for the navigation menu and footer.
-- `assets/js/common.js` reads the JSON at page-load and fills in the HTML.
-- `assets/css/style.css` holds all styling (white background, serif/mono
-  type, the red "redaction" accent).
+- Every page (`index.html`, `journey.html`, `publications.html`,
+  `courses.html`, `media.html`, `world.html`, `contact.html`) is a
+  thin HTML shell.
+- All the actual **text and links live in `content/*.json`** — one
+  JSON file per page, plus `content/site.json` for the navigation
+  menu and footer, and `content/world-photos.json` for the photo
+  gallery on the Around the World page.
+- `assets/js/common.js` reads the JSON at page-load and fills in the
+  HTML.
+- `assets/js/icons.js` provides small inline logo icons (ResearchGate,
+  Academia.edu, YouTube, LinkedIn, Bluesky, etc.) used on the
+  Publications and Contact pages.
+- `assets/js/gallery.js` powers the photo grid, the click-to-enlarge
+  lightbox, and the rotating photo strip on the Around the World page.
+- `assets/css/style.css` holds all styling — white background,
+  serif/mono type, the deep-red accent, plus the wider layout used on
+  My Journey and the gallery/lightbox styles.
 
 This means: **to update text on the site, you edit a JSON file — never HTML.**
 
@@ -26,24 +36,26 @@ You do **not** need Notion, a CMS, or to install anything. GitHub's own
 web editor is enough:
 
 1. Go to your repo on github.com and open the `content/` folder.
-2. Click the file you want to change (e.g. `content/media.json` to add a
-   new interview, `content/courses.json` to add a course).
+2. Click the file you want to change (e.g. `content/media.json` to add
+   a new interview, `content/courses.json` to add a course).
 3. Click the pencil icon ("Edit this file") in the top right.
-4. Edit the text between the quotes. **Only change the values (the text
-   after the colon, inside quotes) — never remove a comma, colon, or
-   curly brace.** Example — to add a new interview, copy an existing
-   block inside `"items": [ ... ]` and change its `tag`, `title`,
-   `description`, and `url`.
+4. Edit the text between the quotes. **Only change the values (the
+   text after the colon, inside quotes) — never remove a comma,
+   colon, or curly brace.** Example — to add a new interview, copy an
+   existing block inside `"items": [ ... ]` and change its `tag`,
+   `title`, `description`, and `url`.
 5. Scroll down, add a short commit message like "Add new interview,"
    and click **Commit changes directly to the `main` branch**.
 6. Wait about 30–60 seconds. GitHub Actions automatically rebuilds and
-   redeploys the site (see the **Actions** tab on GitHub to watch progress).
+   redeploys the site (see the **Actions** tab on GitHub to watch
+   progress).
 7. Refresh the live site — your change is live.
 
 That's the whole workflow. No local setup, no Notion sync, no build
-step to run. If a JSON file is edited incorrectly (e.g. a missing comma)
-the page will show "Loading…" and stay blank — if that happens, click
-"History" on the file in GitHub and revert to the previous version.
+step to run. If a JSON file is edited incorrectly (e.g. a missing
+comma) the page will show "Loading…" and stay blank — if that
+happens, click "History" on the file in GitHub and revert to the
+previous version.
 
 **Tip:** Use a free tool like https://jsonlint.com to paste and check
 your edited JSON before committing, if you're not fully sure about the
@@ -54,37 +66,72 @@ syntax.
 | File | Controls |
 |---|---|
 | `content/site.json` | Site name, top nav labels/order, footer text |
-| `content/home.json` | Homepage headline, redacted phrase, subtitle, profile links |
+| `content/home.json` | Homepage subtitle, profile links |
 | `content/journey.json` | "My Journey" paragraphs |
-| `content/publications.json` | ResearchGate / Academia.edu cards |
+| `content/publications.json` | ResearchGate / Academia.edu cards + logos |
 | `content/media.json` | Featured interviews + YouTube channel link |
 | `content/courses.json` | List of Udemy courses |
-| `content/world.json` | Countries & cities visited |
-| `content/contact.json` | Email + social links |
+| `content/world.json` | Countries & cities visited (clickable list) |
+| `content/world-photos.json` | Actual photos per country (gallery + rotating strip) |
+| `content/contact.json` | Email + social links + logos |
 
-To add/remove a page from the nav menu entirely, edit the `nav` array in
-`content/site.json`.
+To add/remove a page from the nav menu entirely, edit the `nav` array
+in `content/site.json`. The homepage title/subtitle line ("Political
+Scientist | International Relations & Middle East Studies") is
+written directly in `index.html`, since it sits next to the photo in
+a fixed layout — not in a JSON file.
 
 ---
 
-## 3. One-time GitHub setup
+## 3. Adding photos to Around the World
+
+1. **Resize/compress photos first** — aim for max ~2000px wide, JPEG
+   or WebP, ideally under 400KB each. Hundreds of unoptimized photos
+   will make the repo slow to clone and the page slow to load.
+2. Upload the files into the matching folder under
+   `assets/images/world/<country-folder>/` — folders already exist
+   for all 14 countries currently listed (e.g.
+   `assets/images/world/lebanon/`). Delete the placeholder
+   `PUT_PHOTOS_HERE.txt` in a folder once you've added real photos to it.
+3. Open `content/world-photos.json` and, under that country's
+   `"photos"` array, add one entry per photo:
+   ```json
+   { "file": "beirut-corniche.jpg", "caption": "Beirut Corniche, 2023" }
+   ```
+4. Commit. The rotating photo strip near the top of the page and the
+   full gallery below both read from this same file, so one upload
+   updates both automatically.
+
+To add a country that isn't listed yet, add a matching block to both
+`content/world.json` (for the clickable country/city list) and
+`content/world-photos.json` (for its photos), using the same
+`"folder"` value in both, and create a matching folder under
+`assets/images/world/`.
+
+Clicking any country or city name on the page scrolls smoothly down to
+that country's photos in the gallery.
+
+---
+
+## 4. One-time GitHub setup
 
 1. **Create the repo**
    - On github.com, click **New repository**.
-   - Name it anything, e.g. `cagdasduman-site` (the name doesn't have to
-     match the domain).
-   - Set it to **Public** (required for free GitHub Pages on a personal
-     account, unless you have GitHub Pro/Team).
-   - Don't initialize with a README (we already have one).
+   - Name it anything, e.g. `cagdasduman-site` (the name doesn't have
+     to match the domain) — or use your existing
+     `cagdasduman369.github.io` repo.
+   - Set it to **Public** (required for free GitHub Pages on a
+     personal account, unless you have GitHub Pro/Team).
 
 2. **Upload these files**
-   - Easiest: on the new repo's page, click **uploading an existing file**,
-     drag the entire contents of this folder in, and commit.
+   - Easiest: on the repo's page, click **Add file → Upload files**,
+     drag the entire contents of this folder in (keeping the folder
+     structure), and commit.
    - Or via git command line:
      ```
      git init
      git add .
-     git commit -m "Initial site"
+     git commit -m "Update site"
      git branch -M main
      git remote add origin https://github.com/<your-username>/<repo-name>.git
      git push -u origin main
@@ -94,30 +141,31 @@ To add/remove a page from the nav menu entirely, edit the `nav` array in
    - In the repo, go to **Settings → Pages**.
    - Under **Build and deployment → Source**, choose **GitHub Actions**.
      (The workflow file at `.github/workflows/deploy.yml` is already
-     included and will run automatically on every push to `main`.)
-   - Wait for the first run to finish under the **Actions** tab — you'll
-     get a green checkmark and a `github.io` URL that already works.
+     included and runs automatically on every push to `main`.)
+   - Wait for the first run to finish under the **Actions** tab —
+     you'll get a green checkmark and a `github.io` URL that already
+     works.
 
 ---
 
-## 4. Connecting the GoDaddy domain (cagdasduman.info)
+## 5. Connecting the GoDaddy domain (cagdasduman.info)
 
 You're pointing a domain you bought on GoDaddy at a site hosted on
 GitHub. Two things need to happen: **DNS records at GoDaddy**, and
 **telling GitHub the custom domain**.
 
 ### A. In this repo (already done for you)
-- The file `CNAME` at the root of the repo contains exactly:
-  ```
-  cagdasduman.info
-  ```
-  This tells GitHub Pages which domain to serve on. (GitHub also lets
-  you set this in Settings → Pages → Custom domain, which will
-  regenerate this file automatically if it's ever missing.)
+The file `CNAME` at the root of the repo contains exactly:
+```
+cagdasduman.info
+```
+This tells GitHub Pages which domain to serve on. (GitHub also lets
+you set this in Settings → Pages → Custom domain, which will
+regenerate this file automatically if it's ever missing.)
 
 ### B. In GoDaddy's DNS settings
-Log into GoDaddy → **My Products** → find `cagdasduman.info` → **DNS** /
-**Manage DNS**. Add/edit these records:
+Log into GoDaddy → **My Products** → find `cagdasduman.info` →
+**DNS** / **Manage DNS**. Add/edit these records:
 
 **For the root domain (`cagdasduman.info`) — four A records:**
 
@@ -144,9 +192,9 @@ default parking-page A record — remove it).
   (this writes the `CNAME` file if it isn't already there).
 - Wait for DNS to propagate — usually 10 minutes to a few hours,
   occasionally up to 24–48 hours.
-- Once GitHub shows a green "DNS check successful," check the box for
-  **Enforce HTTPS**. This gives you a free SSL certificate so the site
-  loads as `https://cagdasduman.info`.
+- Once GitHub shows a green **"DNS check successful,"** check the box
+  for **Enforce HTTPS**. This gives you a free SSL certificate so the
+  site loads as `https://cagdasduman.info`.
 
 ### D. Decide on `www` vs. bare domain
 Pick one as the "canonical" version (recommend the bare domain,
@@ -154,9 +202,18 @@ Pick one as the "canonical" version (recommend the bare domain,
 Pages will automatically redirect `www.cagdasduman.info` to it once
 both DNS records above are in place.
 
+### E. If the browser still shows "insecure"
+This means HTTPS isn't fully active yet, not a code bug:
+1. Confirm DNS records exactly match the table above — a stray
+   GoDaddy "parked domain" record is the most common culprit.
+2. Confirm Settings → Pages shows **"DNS check successful"** in green.
+3. Confirm **Enforce HTTPS** is checked (it's greyed out until the DNS
+   check passes).
+4. Reload in a fresh/incognito tab after a few minutes.
+
 ---
 
-## 5. Local preview (optional)
+## 6. Local preview (optional)
 
 No build tools are required — it's plain static files. To preview
 locally before pushing:
@@ -170,19 +227,20 @@ Then open `http://localhost:8000` in a browser.
 
 ---
 
-## 6. Folder structure
+## 7. Folder structure
 
 ```
 /
-├── index.html            Home
-├── journey.html          My Journey
-├── publications.html     Publications & Papers
-├── courses.html          Online Courses
-├── media.html            Media
-├── world.html            Around the World
-├── contact.html          Contact
-├── CNAME                 Custom domain for GitHub Pages
-├── content/               ← edit these JSON files to change site text
+├── index.html                      Home
+├── journey.html                    My Journey (wide layout)
+├── publications.html               Publications & Papers
+├── courses.html                    Online Courses
+├── media.html                      Media
+├── world.html                      Around the World (gallery)
+├── contact.html                    Contact
+├── photo.png                       Homepage portrait
+├── CNAME                           Custom domain for GitHub Pages
+├── content/                        ← edit these JSON files to change site text
 │   ├── site.json
 │   ├── home.json
 │   ├── journey.json
@@ -190,9 +248,13 @@ Then open `http://localhost:8000` in a browser.
 │   ├── media.json
 │   ├── courses.json
 │   ├── world.json
+│   ├── world-photos.json           ← photo gallery manifest
 │   └── contact.json
 ├── assets/
 │   ├── css/style.css
-│   └── js/common.js
-└── .github/workflows/deploy.yml   Auto-deploy on every push
+│   ├── js/common.js
+│   ├── js/icons.js                 ← platform logo icons
+│   ├── js/gallery.js               ← gallery + photo strip logic
+│   └── images/world/<country>/     ← drop photos here, one folder per country
+└── .github/workflows/deploy.yml    Auto-deploy on every push
 ```
