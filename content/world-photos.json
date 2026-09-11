@@ -1,12 +1,19 @@
 {
-  "_instructions": "Add photos by: 1) resizing/compressing them (max ~2000px wide, JPEG or WebP, ideally under 400KB each), 2) uploading the files into assets/images/world/<folder>/, 3) adding one entry below per photo with its filename and an optional caption. 'folder' must match the actual folder name under assets/images/world/. Delete this _instructions key or leave it — it is ignored by the code.",
+  "_instructions": "Add photos by: 1) resizing/compressing them (max ~2000px wide, JPEG or WebP, ideally under 400KB each), 2) uploading the files into assets/images/world/<folder>/ (folders already created for all 14 countries), 3) adding one entry per photo below, inside that country's 'photos' array, with its filename and an optional caption. The photo strip on the Around the World page and the full gallery both read from this same file, so one upload updates both. Delete this _instructions key or leave it — it's ignored by the code.",
   "countries": [
-    {
-      "country": "Albania",
-      "folder": "albania",
-      "photos": [
-        { "file": "example.jpg", "caption": "Replace with a real photo, or delete this example entry" }
-      ]
-    }
+    { "country": "Albania", "folder": "albania", "photos": [] },
+    { "country": "Austria", "folder": "austria", "photos": [] },
+    { "country": "Azerbaijan", "folder": "azerbaijan", "photos": [] },
+    { "country": "Bosnia-Herzegovina", "folder": "bosnia-herzegovina", "photos": [] },
+    { "country": "Hungary", "folder": "hungary", "photos": [] },
+    { "country": "Croatia", "folder": "croatia", "photos": [] },
+    { "country": "Georgia", "folder": "georgia", "photos": [] },
+    { "country": "Montenegro", "folder": "montenegro", "photos": [] },
+    { "country": "North Macedonia", "folder": "north-macedonia", "photos": [] },
+    { "country": "Kosovo", "folder": "kosovo", "photos": [] },
+    { "country": "Lebanon", "folder": "lebanon", "photos": [] },
+    { "country": "Serbia", "folder": "serbia", "photos": [] },
+    { "country": "Slovenia", "folder": "slovenia", "photos": [] },
+    { "country": "The United States", "folder": "united-states", "photos": [] }
   ]
 }
