@@ -20,6 +20,7 @@
   <footer class="site-foot" id="site-foot"></footer>
 
   <script src="assets/js/common.js"></script>
+  <script src="assets/js/icons.js"></script>
   <script>
     (async function () {
       await buildChrome('contact.html');
@@ -37,7 +38,7 @@
         <div class="contact-row">
           <div class="contact-label">Connect</div>
           <div class="chip-row">
-            ${data.connect.map(c => `<a class="chip" href="${c.url}" target="_blank" rel="noopener">${escapeHtml(c.label)}</a>`).join('')}
+            ${data.connect.map(c => `<a class="chip" href="${c.url}" target="_blank" rel="noopener">${getIcon(c.logo)}${escapeHtml(c.label)}</a>`).join('')}
           </div>
         </div>
       `;

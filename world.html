@@ -15,16 +15,29 @@
 
   <main>
     <div id="content"><div class="skeleton">Loading…</div></div>
+
+    <div id="photo-strip" class="photo-strip"></div>
+
+    <hr class="rule">
+    <div class="page-eyebrow">Photos</div>
+    <h2 class="page-title" style="font-size: 28px;">Photo Gallery</h2>
+    <p class="page-lede" style="margin-bottom:24px;">Click a country or city name above, or browse the full collection below.</p>
+    <div id="gallery"><div class="skeleton">Loading photos…</div></div>
   </main>
 
   <footer class="site-foot" id="site-foot"></footer>
 
   <script src="assets/js/common.js"></script>
+  <script src="assets/js/gallery.js"></script>
   <script>
     (async function () {
       await buildChrome('world.html');
       const data = await loadJSON('content/world.json');
       const content = document.getElementById('content');
+
+      function slug(str) {
+        return String(str).toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      }
 
       content.innerHTML = `
         <div class="page-eyebrow">${escapeHtml(data.eyebrow)}</div>
@@ -33,12 +46,21 @@
         <div class="region-grid">
           ${data.regions.map(r => `
             <div class="region">
-              <h4>${escapeHtml(r.country)}</h4>
-              <ul>${r.places.map(p => `<li>${escapeHtml(p)}</li>`).join('')}</ul>
+              <h4><a href="#gallery-${slug(r.country)}">${escapeHtml(r.country)}</a></h4>
+              <ul>${r.places.map(p => `<li><a href="#gallery-${slug(r.country)}">${escapeHtml(p)}</a></li>`).join('')}</ul>
             </div>
           `).join('')}
         </div>
       `;
+
+      // smooth-scroll to the matching gallery section when a country/city is clicked
+      content.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href^="#gallery-"]');
+        if (!link) return;
+        e.preventDefault();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     })();
   </script>
 </body>
