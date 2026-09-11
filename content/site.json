@@ -1,6 +1,6 @@
 {
   "siteName": "Çağdaş Duman",
-  "classification": "PERSONAL SITE // POLITICAL SCIENCE & IR",
+  "classification": "PERSONAL BLOG - POLITICAL SCIENCE & IR",
   "nav": [
     { "label": "Home", "href": "index.html" },
     { "label": "My Journey", "href": "journey.html" },
@@ -10,5 +10,5 @@
     { "label": "Around the World", "href": "world.html" },
     { "label": "Contact", "href": "contact.html" }
   ],
-  "footerNote": "© 2026 Çağdaş Duman. Built with research, coffee, and a few redactions."
+  "footerNote": "© 2026 Çağdaş Duman."
 }
