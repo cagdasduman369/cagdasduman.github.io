@@ -22,14 +22,12 @@ function el(tag, attrs = {}, html = '') {
 async function buildChrome(activeHref) {
   const site = await loadJSON('content/site.json');
 
-  // classification bar
   const classbar = document.getElementById('classbar');
   if (classbar) {
     classbar.innerHTML =
       `<span>${site.classification}</span><span><span class="dot">●</span> live</span>`;
   }
 
-  // header / nav
   const head = document.getElementById('site-head');
   if (head) {
     const navLinks = site.nav.map(item => {
@@ -53,7 +51,6 @@ async function buildChrome(activeHref) {
     });
   }
 
-  // footer
   const foot = document.getElementById('site-foot');
   if (foot) {
     foot.innerHTML = `<div>${site.footerNote}</div>`;
