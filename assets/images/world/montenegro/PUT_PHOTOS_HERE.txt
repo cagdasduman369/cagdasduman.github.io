@@ -1,0 +1,1 @@
+Drop resized photos for this country/region here (JPEG or WebP, ideally under 400KB each, max ~2000px wide). Then add matching entries to content/world-photos.json.
