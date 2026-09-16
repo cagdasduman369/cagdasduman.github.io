@@ -713,3 +713,8 @@ p, .hero-sub, article p {
   text-align: justify;
   text-justify: inter-word;
 }
+/* Metinleri iki yana yaslama (Kesin Uygulama) */
+p, .hero-sub, article p, section p, .content p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
