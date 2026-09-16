@@ -718,3 +718,8 @@ p, .hero-sub, article p, section p, .content p {
   text-align: justify !important;
   text-justify: inter-word !important;
 }
+/* Tum metin alanlarini iki yana yasla */
+main, section, div, p, span, .hero-sub, article {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
