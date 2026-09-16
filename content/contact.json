@@ -4,10 +4,10 @@
   "lede": "For academic collaborations, research inquiries, interviews, speaking opportunities, teaching and educational projects, or other professional matters, please feel free to get in touch.",
   "email": "cagdasduman369@gmail.com",
   "connect": [
-    { "label": "LinkedIn", "url": "#" },
-    { "label": "Bluesky", "url": "#" },
-    { "label": "Goodreads", "url": "#" },
-    { "label": "Quora", "url": "#" },
-    { "label": "SoundCloud", "url": "#" }
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/%C3%A7a%C4%9Fda%C5%9Fduman/?locale=en" },
+    { "label": "Bluesky", "url": "https://bsky.app/profile/cagdasduman.bsky.social" },
+    { "label": "Goodreads", "url": "https://www.goodreads.com/user/show/62773770-a-da-duman" },
+    { "label": "Quora", "url": "https://www.quora.com/profile/%C3%87a%C4%9Fda%C5%9F-Duman-1" },
+    { "label": "SoundCloud", "url": "https://soundcloud.com/user-339581551" }
   ]
 }
