@@ -65,7 +65,6 @@ async function renderGallery() {
   }).join('');
 
   if (flatPhotos.length === 0) {
-    container.innerHTML = '<p class="skeleton">Photos coming soon — check back shortly.</p>';
     return;
   }
 
