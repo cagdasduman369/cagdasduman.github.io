@@ -28,7 +28,7 @@ async function renderGallery() {
   if (!container) return;
 
   const manifest = await getGalleryManifest();
-  const countries = manifest.countries || [];
+  const countries = (manifest.countries || []).filter(c => (c.photos || []).length > 0);
 
   if (countries.length === 0) {
     container.innerHTML = '';
