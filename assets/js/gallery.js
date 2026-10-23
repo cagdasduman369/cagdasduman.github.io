@@ -31,13 +31,9 @@ async function renderGallery() {
   const countries = manifest.countries || [];
 
   if (countries.length === 0) {
-    if (countries.length === 0) {
     container.innerHTML = '';
     return;
-  }
-    return;
-  }
-
+}
   const flatPhotos = [];
 
   container.innerHTML = countries.map(c => {
