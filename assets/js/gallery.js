@@ -192,7 +192,6 @@ async function renderPhotoStrip(slotCount = 4, intervalMs = 3000) {
   });
 
   if (all.length === 0) {
-    strip.outerHTML = '<div class="photo-strip-empty" id="photo-strip">Photo gallery coming soon — check back shortly.</div>';
     return;
   }
 
