@@ -44,7 +44,7 @@
           ${data.regions.map(r => `
             <div class="region">
               <h4><a href="#gallery-${slug(r.country)}">${escapeHtml(r.country)}</a></h4>
-<ul>${r.places.map(p => `<li><a href="${p.toLowerCase() === 'durres' ? 'durres.html' : p.toLowerCase() === 'himare' ? 'himare.html' : p.toLowerCase() === 'lezhe' ? 'lezhe.html' : '#gallery-' + slug(r.country)}">${escapeHtml(p)}</a></li>`).join('')}</ul>
+<ul>${r.places.map(p => `<li><a href="${p.toLowerCase() === 'durres' ? 'durres.html' : p.toLowerCase() === 'himare' ? 'himare.html' : p.toLowerCase() === 'lezhe' ? 'lezhe.html' : p.toLowerCase() === 'sarande' ? 'sarande.html' : '#gallery-' + slug(r.country)}">${escapeHtml(p)}</a></li>`).join('')}</ul>
             </div>
           `).join('')}
         </div>
