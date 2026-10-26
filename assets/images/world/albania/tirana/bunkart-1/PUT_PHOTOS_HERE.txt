@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUNK'ART 1 — Çağdaş Duman</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .place-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .place-cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .place-description {
+      margin-top: 24px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .photos-link {
+      display: inline-block;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
+
+  <main class="place-page">
+    <div class="page-eyebrow">ALBANIA · TIRANA</div>
+    <h1 class="page-title">BUNK'ART 1</h1>
+
+    <img
+      class="place-cover"
+      src="assets/images/world/albania/tirana/bunkart-1/bunkart-1-cover.jpg"
+      alt="BUNK'ART 1 in Tirana, Albania"
+    >
+
+    <div class="place-description">
+      <p>
+        BUNK'ART 1 is a museum in Tirana housed in a former
+        Cold War-era nuclear bunker. Its exhibitions explore
+        Albania's history, communist period, and the lives of
+        people during that time. These photos preserve personal
+        memories of visiting this remarkable historical site.
+      </p>
+    </div>
+
+    <p>
+      <a
+        class="photos-link"
+        href="https://photos.app.goo.gl/unPtktL4s7EvzWui9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View All Photos ↗</a>
+    </p>
+  </main>
+
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    buildChrome('world.html');
+  </script>
+</body>
+</html>
