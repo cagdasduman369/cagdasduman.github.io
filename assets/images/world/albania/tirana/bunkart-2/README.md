@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUNK'ART 2, Tirana | Çağdaş Duman</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .cover {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      color: #777;
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
+      text-align: justify;
+    }
+
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
+
+  <main>
+    <img
+      class="cover"
+      src="assets/images/world/albania/tirana/bunkart-2/bunkart-2-cover.jpg"
+      alt="BUNK'ART 2, Tirana, Albania"
+    >
+
+    <h1>BUNK'ART 2, Tirana</h1>
+    <p class="location">Albania · Tirana</p>
+
+    <div class="description">
+      <p>
+        BUNK'ART 2 is a museum in central Tirana located in a
+        former underground bunker built during Albania's communist
+        period. Its exhibitions examine the history of the
+        country's Ministry of Internal Affairs, the security
+        services, political persecution, and the experiences of
+        people living under the communist regime. These photographs
+        preserve personal memories of visiting this historical site.
+      </p>
+    </div>
+
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from BUNK'ART 2.</p>
+
+      <a
+        href="https://photos.app.goo.gl/hD6992YQdtkvzRc29"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Photos ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+</body>
+</html>
+```
