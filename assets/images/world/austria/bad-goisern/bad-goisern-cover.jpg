@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bad Goisern, Austria — Dr. Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories from Bad Goisern, Austria.">
+  <style>
+    body {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .cover {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin: 24px auto;
+      border-radius: 8px;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .photos {
+      display: inline-block;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bad Goisern, Austria</h1>
+
+  <img
+    class="cover"
+    src="assets/images/world/austria/bad-goisern/bad-goisern-cover.jpg"
+    alt="Bad Goisern in Austria"
+  >
+
+  <p>
+    Bad Goisern is a picturesque town in Austria's Salzkammergut region,
+    surrounded by the Austrian Alps and known for its beautiful landscapes
+    and traditional architecture. This page presents personal travel memories
+    and photographs from Bad Goisern, capturing the scenery and atmosphere
+    of this charming Austrian destination.
+  </p>
+
+  <p>
+    <a
+      class="photos"
+      href="https://photos.app.goo.gl/DVkNezrtYoyWkFVh9"
+      target="_blank"
+      rel="noopener noreferrer"
+    >View photos on Google Photos</a>
+  </p>
+
+</body>
+</html>
