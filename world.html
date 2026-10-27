@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +52,8 @@
         const name = place.toLowerCase().trim();
 
         const pageLinks = {
+          'bad goisern': 'bad-goisern.html',
+          'bad goisen': 'bad-goisern.html',
           'durres': 'durres.html',
           'himare': 'himare.html',
           'lezhe': 'lezhe.html',
@@ -83,43 +85,4 @@
           ${data.regions.map(r => `
             <div class="region">
               <h4>
-                <a href="#gallery-${slug(r.country)}">
-                  ${escapeHtml(r.country)}
-                </a>
-              </h4>
-
-              <ul>
-                ${r.places.map(p => `
-                  <li>
-                    <a href="${getPlaceHref(p, r.country)}">
-                      ${escapeHtml(p)}
-                    </a>
-                  </li>
-                `).join('')}
-              </ul>
-            </div>
-          `).join('')}
-        </div>
-      `;
-
-      content.addEventListener('click', function (e) {
-        const link = e.target.closest('a[href^="#gallery-"]');
-
-        if (!link) return;
-
-        const target = document.getElementById(
-          link.getAttribute('href').slice(1)
-        );
-
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    })();
-  </script>
-</body>
-</html>
+                <a href="#gallery
