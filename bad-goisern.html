@@ -1,74 +1,142 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bad Goisern, Austria — Çağdaş Duman</title>
-
-  <meta name="description" content="Personal travel memories and photographs from Bad Goisern, Austria.">
+  <title>Bad Goisern, Austria | Çağdaş Duman</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
       display: block;
       width: 100%;
-      max-height: 600px;
+      height: 430px;
       object-fit: cover;
-      margin: 0 auto 25px;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      text-align: center;
-      margin: 20px 0;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
-    p {
+    .location {
+      color: #777;
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .photos {
-      margin-top: 30px;
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
+    }
+
+    .gallery a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-  <img
-    class="cover"
-    src="assets/images/world/austria/bad-goisern/bad-goisern-cover.jpg.jpg"
-    alt="Bad Goisern in Austria"
-  >
-
-  <h1>Bad Goisern, Austria</h1>
-
-  <p>
-    Bad Goisern is a picturesque town in Austria's Salzkammergut region,
-    surrounded by the Austrian Alps and known for its beautiful landscapes
-    and traditional architecture. This page presents personal travel memories
-    and photographs from Bad Goisern, capturing the scenery and atmosphere
-    of this charming Austrian destination.
-  </p>
-
-  <div class="photos">
-    <a
-      href="https://photos.app.goo.gl/DVkNezrtYoyWkFVh9"
-      target="_blank"
-      rel="noopener noreferrer"
+  <main>
+    <img
+      class="cover"
+      src="assets/images/world/austria/bad-goisern/bad-goisern-cover.jpg.jpg"
+      alt="Bad Goisern, Austria"
     >
-      View all photos on Google Photos
-    </a>
-  </div>
 
+    <h1>Bad Goisern, Austria</h1>
+    <p class="location">Austria · Salzkammergut</p>
+
+    <div class="description">
+      <p>
+        Bad Goisern is a picturesque town in Austria's Salzkammergut region,
+        surrounded by the Austrian Alps and known for its beautiful landscapes
+        and traditional architecture. This page presents personal travel memories
+        and photographs from Bad Goisern, capturing the scenery and atmosphere
+        of this charming Austrian destination.
+      </p>
+    </div>
+
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from Bad Goisern.</p>
+      <a
+        href="https://photos.app.goo.gl/DVkNezrtYoyWkFVh9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Photos ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 </body>
 </html>
-```
