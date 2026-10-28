@@ -1,15 +1,18 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Around the World — Çağdaş Duman</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Around the World — Çağdaş Duman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <div class="classbar" id="classbar"></div>
   <header class="site-head" id="site-head"></header>
@@ -54,21 +57,24 @@
         const pageLinks = {
           'durres': 'durres.html',
           'durrës': 'durres.html',
+
           'himare': 'himare.html',
           'himarë': 'himare.html',
+
           'lezhe': 'lezhe.html',
           'lezhë': 'lezhe.html',
+
           'sarande': 'sarande.html',
           'sarandë': 'sarande.html',
+
           'tirana': 'tirana.html',
 
-          'bad goisen': 'bad-goisern.html',
-          'bad goisern': 'bad-goisern.html',
-          'bad goisen am hallstättersee': 'bad-goisern.html',
-          'bad goisern am hallstättersee': 'bad-goisern.html',
-
           'bad ischl': 'bad-ischl.html',
-          'bad ischl, austria': 'bad-ischl.html'
+          'bad goisern': 'bad-goisern.html',
+          'bad goisen': 'bad-goisern.html',
+
+          'ebensee lake': 'ebensee-lake.html',
+          'salzburg': 'salzburg.html'
         };
 
         if (pageLinks[name]) {
@@ -125,6 +131,7 @@
 
         if (target) {
           e.preventDefault();
+
           target.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
@@ -135,4 +142,3 @@
   </script>
 </body>
 </html>
-```
