@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salzburg City Views, Austria — Çağdaş Duman</title>
-
-  <meta name="description" content="Personal travel memories and city views from Salzburg, Austria.">
+  <title>City Views, Salzburg — Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and city views from Salzburg, Austria.">
 
   <style>
     * {
@@ -21,12 +20,12 @@
       line-height: 1.7;
     }
 
-    header {
+    .topbar {
       padding: 22px 8%;
       border-bottom: 1px solid #eee;
     }
 
-    header a {
+    .topbar a {
       color: #333;
       text-decoration: none;
     }
@@ -40,24 +39,26 @@
     .cover {
       display: block;
       width: 100%;
+      height: auto;
       max-height: 550px;
       object-fit: cover;
       border-radius: 8px;
     }
 
     h1 {
+      margin: 24px 0 8px;
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
     }
 
     .location {
-      color: #777;
       margin-top: 0;
+      color: #777;
     }
 
     .description {
-      font-size: 17px;
       margin: 24px 0;
+      font-size: 17px;
       text-align: justify;
     }
 
@@ -80,38 +81,38 @@
     }
 
     footer {
-      text-align: center;
       padding: 25px;
       color: #777;
       font-size: 14px;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
-      .cover {
-        max-height: 300px;
-      }
-
       h1 {
         font-size: 30px;
+      }
+
+      .cover {
+        max-height: 350px;
       }
     }
   </style>
 </head>
 
 <body>
-  <header>
+  <div class="topbar">
     <a href="salzburg.html">← Back to Salzburg</a>
-  </header>
+  </div>
 
   <main>
     <img
       class="cover"
-      src="assets/images/world/austria/salzburg/salzburg-city-views-cover.jpg.jpg"
+      src="assets/images/world/austria/salzburg/salzburg-city-views/salzburg-city-views-cover.jpg.jpg"
       alt="City views of Salzburg, Austria"
     >
 
     <h1>City Views, Salzburg</h1>
-    <p class="location">Salzburg · Austria</p>
+    <p class="location">Salzburg, Austria</p>
 
     <div class="description">
       <p>
@@ -129,9 +130,7 @@
         href="https://photos.app.goo.gl/zQUWv2qP3ZrAyrED6"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        View All Photos ↗
-      </a>
+      >View All Photos ↗</a>
     </section>
   </main>
 
