@@ -1,74 +1,53 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vienna — Around the World</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px;
-      line-height: 1.7;
-      color: #333;
-      background: #fff;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      text-align: justify;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
-      text-decoration: none;
-    }
-
-    .places {
-      margin-top: 30px;
-    }
-
-    .places a {
-      display: block;
-      padding: 14px 16px;
-      margin-bottom: 12px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .places a:hover {
-      background: #f5f5f5;
-    }
-  </style>
+  <title>Vienna — Çağdaş Duman</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
 
-  <a class="back-link" href="world.html">← Back to Around the World</a>
+  <main>
+    <section class="page-section">
+      <div class="page-eyebrow">AUSTRIA</div>
+      <h1 class="page-title">Vienna</h1>
 
-  <h1>Vienna</h1>
+      <p class="page-lede">
+        Vienna, the capital of Austria, is known for its elegant architecture,
+        historic landmarks, beautiful parks, and rich cultural heritage.
+        This collection brings together personal travel memories from
+        different places around the city.
+      </p>
 
-  <p>
-    Vienna, the capital of Austria, is known for its imperial architecture,
-    elegant gardens, and rich cultural heritage. This collection brings together
-    my personal travel memories of the city, including its charming streets,
-    historic parks, and green spaces.
-  </p>
+      <div class="region-grid">
+        <div class="region">
+          <h4><a href="wien-city-views.html">City Views</a></h4>
+          <p>Discover Vienna's streets, architecture, and urban landscapes.</p>
+        </div>
 
-  <div class="places">
-    <a href="wien-city-views.html">Vienna City Views →</a>
-    <a href="burggarten.html">Burggarten →</a>
-    <a href="stadtpark.html">Stadtpark →</a>
-  </div>
+        <div class="region">
+          <h4><a href="burggarten.html">Burggarten</a></h4>
+          <p>Personal memories from a peaceful historic garden in Vienna.</p>
+        </div>
 
+        <div class="region">
+          <h4><a href="stadtpark.html">Stadtpark</a></h4>
+          <p>Explore the greenery, pathways, and scenery of Stadtpark.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    buildChrome('world.html');
+  </script>
 </body>
 </html>
+```
