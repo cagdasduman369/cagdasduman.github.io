@@ -1,0 +1,1 @@
+Ebensee Lake images
