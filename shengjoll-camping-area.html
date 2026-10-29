@@ -4,110 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shëngkoll Camping Area | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs of Shëngkoll Camping Area in Albania.">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f6f2;
-      color: #252525;
-      line-height: 1.7;
-    }
-
-    main {
+    .camping-page {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 22px;
+      padding: 32px 20px 60px;
     }
 
-    a {
-      color: #276749;
-    }
-
-    .back {
-      display: inline-block;
-      margin-bottom: 24px;
-    }
-
-    .cover {
+    .camping-cover {
       display: block;
       width: 100%;
+      height: auto;
       max-height: 560px;
       object-fit: cover;
-      border-radius: 12px;
-      margin: 0 0 28px;
+      border-radius: 8px;
+      margin: 24px 0 28px;
     }
 
-    h1 {
-      font-size: 2.3rem;
-      line-height: 1.2;
-      margin: 0 0 20px;
-    }
-
-    .description {
+    .camping-description {
+      margin: 24px 0;
+      line-height: 1.8;
       text-align: justify;
-      margin-bottom: 25px;
     }
 
-    .photos {
+    .gallery {
+      margin-top: 30px;
+      padding: 25px;
+      background: #f6f5f0;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      margin-top: 0;
+    }
+
+    .photos-link {
       display: inline-block;
-      padding: 12px 18px;
+      margin-top: 10px;
+      padding: 12px 20px;
       background: #276749;
       color: white;
       text-decoration: none;
       border-radius: 6px;
     }
 
-    .photos:hover {
+    .photos-link:hover {
       background: #1f5139;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 25px 16px;
-      }
-
-      h1 {
-        font-size: 1.9rem;
-      }
     }
   </style>
 </head>
 
 <body>
-  <main>
-    <a class="back" href="world.html">← Back to Around the World</a>
+  <main class="camping-page">
+    <p><a href="lezhe.html">← Back to Lezhë</a></p>
+
+    <div class="page-eyebrow">ALBANIA · LEZHË</div>
 
     <img
-      class="cover"
+      class="camping-cover"
       src="assets/images/world/albania/lezhe/Shengjoll-Camping-Area/IMG_20250315_141432.jpg"
       alt="Shëngkoll Camping Area in Albania"
     >
 
-    <h1>Shëngkoll Camping Area</h1>
+    <h1 class="page-title">Shëngkoll Camping Area</h1>
 
-    <p class="description">
-      Shëngkoll Camping Area is a peaceful place to enjoy Albania’s
-      natural beauty and outdoor life. Located in the Lezhë region,
-      it offers a relaxing atmosphere for travelers looking to spend
-      time in nature and experience a quieter side of Albania.
-      Surrounded by the region’s scenic landscapes, it is a lovely
-      stop for those exploring the country beyond its main tourist
-      destinations.
-    </p>
+    <div class="camping-description">
+      <p>
+        Shëngkoll Camping Area is a peaceful place to enjoy Albania’s
+        natural beauty and outdoor life. Located in the Lezhë region,
+        it offers a relaxing atmosphere for travelers looking to spend
+        time in nature and experience a quieter side of Albania.
+        Surrounded by the region’s scenic landscapes, it is a lovely
+        stop for those exploring the country beyond its main tourist
+        destinations.
+      </p>
+    </div>
 
-    <p>
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos of Shëngkoll Camping Area.</p>
+
       <a
-        class="photos"
+        class="photos-link"
         href="https://photos.app.goo.gl/ARzeXm6adNdgtCTs8"
         target="_blank"
         rel="noopener noreferrer"
       >View All Photos ↗</a>
-    </p>
+    </section>
   </main>
 </body>
 </html>
