@@ -1,96 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Views of Sarandë | Çağdaş Duman</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #333;
-      background: #fff;
+      background: #f7f6f2;
+      color: #252525;
       line-height: 1.7;
     }
+
     header {
       padding: 22px 8%;
       border-bottom: 1px solid #eee;
     }
-    header a { color: #333; text-decoration: none; }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
     main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 24px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 22px;
     }
-    h1 { font-size: 38px; margin-bottom: 8px; }
-    .location { color: #777; margin-top: 0; }
-    .cover-photo {
-      width: 100%;
-      max-height: 550px;
-      object-fit: cover;
+
+    .cover {
       display: block;
-      margin: 25px 0;
-      border-radius: 8px;
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 0 0 28px;
     }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+
+    .location {
+      color: #777;
+      margin-top: 0;
+    }
+
     .description {
-      font-size: 17px;
       margin: 24px 0;
       text-align: justify;
     }
+
     .gallery {
       margin-top: 30px;
+      padding: 25px;
+      background: #eeede7;
+      border-radius: 8px;
       text-align: center;
     }
-    .gallery a {
+
+    .gallery h2 {
+      margin-top: 0;
+    }
+
+    .photos {
       display: inline-block;
-      padding: 12px 24px;
-      background: #333;
+      padding: 12px 18px;
+      background: #276749;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
     }
+
+    .photos:hover {
+      background: #1f5139;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
       color: #777;
       font-size: 14px;
     }
+
     @media (max-width: 600px) {
-      h1 { font-size: 30px; }
+      main {
+        padding: 25px 16px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      .cover {
+        max-height: 350px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <a href="sarande.html">← Back to Sarandë</a>
   </header>
 
   <main>
-    <h1>City Views of Sarandë</h1>
-    <p class="location">Sarandë, Albania · Ionian Coast</p>
-
     <img
-      src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg.jpg"
+      class="cover"
+      src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg"
       alt="City views of Sarandë, Albania"
-      class="cover-photo"
     >
+
+    <h1>City Views of Sarandë</h1>
+
+    <p class="location">Sarandë, Albania · Ionian Coast</p>
 
     <div class="description">
       <p>
         Sarandë is a picturesque coastal city in southern Albania,
         overlooking the Ionian Sea. Its waterfront, hillside buildings,
         and sweeping sea views make it a wonderful place to explore
-        and photograph.
+        and photograph. The city offers beautiful views of the Ionian
+        coastline and a relaxing atmosphere for visitors interested
+        in discovering Albania's southern coast.
       </p>
     </div>
 
-    <div class="gallery">
-      <a href="https://photos.app.goo.gl/QfWyPfr3nbAnZYi58"
-         target="_blank"
-         rel="noopener noreferrer">View All Photos ↗</a>
-    </div>
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from Sarandë.</p>
+
+      <a
+        class="photos"
+        href="https://photos.app.goo.gl/QfWyPfr3nbAnZYi58"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View All Photos ↗</a>
+    </section>
   </main>
 
   <footer>
