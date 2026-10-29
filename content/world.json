@@ -11,11 +11,15 @@
     { "country": "Hungary", "folder": "hungary", "places": ["Budapest"] },
     { "country": "Croatia", "folder": "croatia", "places": ["Hvar", "Jelsa", "Split", "Stari Grad", "Zagreb"] },
     { "country": "Georgia", "folder": "georgia", "places": ["Batumi", "Ozurgeti", "Tbilisi"] },
-    { "country": "Montenegro", "folder": "montenegro", "places": ["Budva", "Kotor"] },
-    { "country": "North Macedonia", "folder": "north-macedonia", "places": ["Bitola", "Ohrid", "Skopje"] },
+    { "country": "Germany", "folder": "germany", "places": ["Bamberg", "Heidelberg"] },
     { "country": "Kosovo", "folder": "kosovo", "places": ["Prishtine"] },
     { "country": "Lebanon", "folder": "lebanon", "places": ["Beirut", "Bekaa Valley", "South Lebanon"] },
+    { "country": "Montenegro", "folder": "montenegro", "places": ["Budva", "Kotor"] },
+    { "country": "North Macedonia", "folder": "north-macedonia", "places": ["Bitola", "Ohrid", "Skopje"] },
+    { "country": "Poland", "folder": "poland", "places": ["Białystok"] },
+    { "country": "Romania", "folder": "romania", "places": ["Bucharest", "Craiova", "Cluj-Timisoara"] },
     { "country": "Serbia", "folder": "serbia", "places": ["Belgrade", "Cacak", "Kragujevac", "Novi Sad"] },
+    { "country": "Slovakia", "folder": "slovakia", "places": ["Bratislava"] },
     { "country": "Slovenia", "folder": "slovenia", "places": ["Ljubliana", "Maribor", "Ptuj"] },
     { "country": "The United States", "folder": "united-states", "places": ["New York", "Philadelphia", "Washington DC"] }
   ]
