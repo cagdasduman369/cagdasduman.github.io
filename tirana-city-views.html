@@ -3,108 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tirana City Views | Around the World</title>
+  <title>Tirana City Views | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs of Tirana, Albania.">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    .tirana-gallery-page {
+    .tirana-page {
       max-width: 900px;
       margin: 0 auto;
       padding: 32px 20px 60px;
     }
 
-    .tirana-gallery-page .description {
-      line-height: 1.8;
-      text-align: justify;
-    }
-
-    .tirana-gallery-page .cover {
+    .tirana-cover {
       display: block;
       width: 100%;
       max-width: 900px;
       height: auto;
-      margin: 24px auto;
+      margin: 0 auto 28px;
       border-radius: 8px;
+    }
+
+    .tirana-page h1 {
+      margin: 0 0 8px;
+    }
+
+    .tirana-subtitle {
+      color: #777;
+      margin: 0 0 20px;
+    }
+
+    .tirana-description {
+      margin-top: 24px;
+      line-height: 1.8;
+      text-align: justify;
     }
 
     .photo-gallery {
-      margin-top: 35px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 32px auto 0;
       padding: 28px 24px;
       background: #f2f2f2;
       border-radius: 8px;
-      text-align: center;
+      text-align: center !important;
     }
 
     .photo-gallery h2 {
+      width: 100%;
       margin: 0 0 12px;
-      text-align: center;
+      text-align: center !important;
     }
 
     .photo-gallery p {
+      display: block;
+      width: 100%;
       margin: 0 0 20px;
-      text-align: center;
-      line-height: 1.7;
+      text-align: center !important;
     }
 
-    .photo-gallery .photos {
-      display: inline-block;
+    .photo-gallery a {
+      display: table;
+      width: fit-content;
+      margin: 0 auto;
       padding: 12px 24px;
-      background-color: #000;
+      background: #000;
       color: #fff;
       text-decoration: none;
+      text-align: center;
       border-radius: 5px;
-      font-weight: 600;
     }
 
-    .photo-gallery .photos:hover {
-      background-color: #333;
-    }
-
-    @media (max-width: 600px) {
-      .photo-gallery {
-        padding: 24px 16px;
-      }
+    .photo-gallery a:hover {
+      background: #333;
     }
   </style>
 </head>
 
 <body>
 
-  <header class="site-header">
-    <a href="index.html">Dr. Çağdaş Duman</a>
-    <nav>
-      <a href="world.html">Around the World</a>
-    </nav>
-  </header>
+  <main class="tirana-page">
 
-  <main class="container tirana-gallery-page">
-
-    <p><a href="tirana.html">← Back to Tirana</a></p>
-
-    <h1>Tirana City Views</h1>
-
-    <p class="description">
-      Tirana, the capital of Albania, offers a distinctive combination
-      of historic landmarks, colorful streets, urban architecture, and
-      everyday city life. This page brings together personal photographs
-      taken during my visit to Tirana.
-    </p>
-
+    <!-- 1. Cover photo -->
     <img
-      class="cover"
+      class="tirana-cover"
       src="assets/images/world/albania/tirana/city-views-cover.jpg.jpg"
       alt="City views of Tirana, Albania"
     >
 
+    <!-- 2. Title -->
+    <h1>Tirana City Views</h1>
+
+    <!-- 3. Subtitle -->
+    <p class="tirana-subtitle">Tirana, Albania</p>
+
+    <!-- 4. Introduction -->
+    <div class="tirana-description">
+      <p>
+        Tirana, the capital of Albania, offers a distinctive combination
+        of historic landmarks, colorful streets, urban architecture, and
+        everyday city life. This page brings together personal photographs
+        taken during my visit to Tirana.
+      </p>
+    </div>
+
+    <!-- 5. Google Photos gallery -->
     <section class="photo-gallery">
       <h2>My Photo Gallery</h2>
 
-      <p>Explore my personal travel photos of Tirana.</p>
+      <p>
+        Explore my personal travel photos of Tirana.
+      </p>
 
       <a
-        class="photos"
         href="https://photos.app.goo.gl/59rUiZkHhq971ceb9"
         target="_blank"
         rel="noopener noreferrer"
