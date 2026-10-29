@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,12 +62,14 @@
       font-size: 23px;
     }
 
-    .place a {
+    .explore-link {
+      display: inline-block;
+      margin-top: 8px;
       color: #333;
       text-decoration: none;
     }
 
-    .place a:hover {
+    .explore-link:hover {
       text-decoration: underline;
     }
 
@@ -110,23 +111,29 @@
 
     <section class="places">
       <div class="place">
-        <h2>
-          <a href="salzburg-city-views.html">City Views</a>
-        </h2>
+        <h2>City Views</h2>
+
         <p>
           Discover Salzburg's historic streets, architecture, and
           scenic city views through my personal travel photographs.
         </p>
+
+        <a class="explore-link" href="salzburg-city-views.html">
+          Explore Photos ↗
+        </a>
       </div>
 
       <div class="place">
-        <h2>
-          <a href="mirabell-gardens.html">Mirabell Gardens</a>
-        </h2>
+        <h2>Mirabell Gardens</h2>
+
         <p>
           Explore the beautiful flower beds, landscaped gardens,
           and elegant surroundings of Mirabell Gardens.
         </p>
+
+        <a class="explore-link" href="mirabell-gardens.html">
+          Explore Photos ↗
+        </a>
       </div>
     </section>
   </main>
