@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     .event-page {
       max-width: 900px;
       margin: 0 auto;
@@ -18,22 +22,25 @@
       display: block;
       width: 100%;
       height: auto;
-      max-height: 560px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 0 0 28px;
+      border-radius: 6px;
+      margin-top: 24px;
+    }
+
+    .event-location {
+      color: #777;
+      margin: 12px 0 0;
     }
 
     .event-description {
-      margin: 24px 0;
+      margin-top: 24px;
       line-height: 1.8;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 30px;
-      padding: 25px;
-      background: #f6f5f0;
+      margin-top: 35px;
+      padding: 28px 24px;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
@@ -42,18 +49,22 @@
       margin-top: 0;
     }
 
+    .gallery p {
+      line-height: 1.7;
+    }
+
     .photos-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background: #276749;
-      color: white;
+      margin-top: 12px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     .photos-link:hover {
-      background: #1f5139;
+      background: #333;
     }
   </style>
 </head>
@@ -63,17 +74,20 @@
   <header class="site-head" id="site-head"></header>
 
   <main class="event-page">
-    <a href="world.html">← Back to Around the World</a>
+
+    <p><a href="tirana.html">← Back to Tirana</a></p>
 
     <div class="page-eyebrow">ALBANIA · TIRANA</div>
 
+    <h1 class="page-title">Automotiva Fair Albania 2025</h1>
+
     <img
       class="event-cover"
-      src="assets/images/world/albania/tirana/automotiva-fair-albania-2025-cover.jpg"
+      src="assets/images/world/albania/tirana/automotiva-fair-albania-2025/automotiva-fair-albania-2025-cover.jpg.jpg"
       alt="Automotiva Fair Albania 2025 in Tirana"
     >
 
-    <h1 class="page-title">Automotiva Fair Albania 2025</h1>
+    <p class="event-location">Albania · Tirana</p>
 
     <div class="event-description">
       <p>
@@ -86,7 +100,10 @@
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal photos from Automotiva Fair Albania 2025.</p>
+
+      <p>
+        Explore my personal photos from Automotiva Fair Albania 2025.
+      </p>
 
       <a
         class="photos-link"
@@ -95,6 +112,7 @@
         rel="noopener noreferrer"
       >View All Photos ↗</a>
     </section>
+
   </main>
 
   <footer class="site-foot" id="site-foot"></footer>
