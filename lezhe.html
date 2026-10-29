@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lezhë | Çağdaş Duman</title>
+  <meta name="description" content="Explore personal travel photographs and memories from Lezhë, Albania.">
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,45 +18,107 @@
       color: #252525;
       line-height: 1.7;
     }
+
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 22px;
+      padding: 40px 22px 60px;
     }
-    a { color: #276749; }
-    .back { display: inline-block; margin-bottom: 24px; }
-    h1 { font-size: 2.3rem; line-height: 1.2; }
+
+    a {
+      color: #276749;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
     .places {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      gap: 24px;
       margin-top: 30px;
     }
+
     .place {
-      padding: 24px;
-      background: white;
+      padding: 26px;
+      background: #fff;
       border-radius: 12px;
       border: 1px solid #e2e0d8;
     }
-    .place h2 { font-size: 1.3rem; }
-    .place a { font-weight: bold; }
+
+    .place h2 {
+      font-size: 1.3rem;
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .place p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .place a {
+      display: inline-block;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .place a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 28px 18px 45px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
+
 <body>
   <main>
     <a class="back" href="world.html">← Back to Around the World</a>
+
     <h1>Lezhë</h1>
-    <p>Explore places and memories from the Lezhë region of Albania.</p>
+
+    <p class="intro">
+      Explore places and personal travel memories from the Lezhë region
+      of Albania, including Shëngkoll Camping Area and Skanderbeg Memorial.
+    </p>
+
     <div class="places">
       <section class="place">
         <h2>Shëngkoll Camping Area</h2>
-        <p>Explore the natural beauty of Albania.</p>
-        <a href="shengjoll-camping-area.html">View Photos →</a>
+        <p>Explore the natural beauty and peaceful surroundings of Albania.</p>
+        <a href="shengjoll-camping-area.html">Explore Photos ↗</a>
       </section>
+
       <section class="place">
         <h2>Skanderbeg Memorial</h2>
-        <p>Discover the memorial dedicated to Albania's national hero.</p>
-        <a href="skanderbeg-memorial.html">View Photos →</a>
+        <p>
+          Discover the memorial dedicated to Albania's national hero,
+          Gjergj Kastrioti Skanderbeg.
+        </p>
+        <a href="skanderbeg-memorial.html">Explore Photos ↗</a>
       </section>
     </div>
   </main>
