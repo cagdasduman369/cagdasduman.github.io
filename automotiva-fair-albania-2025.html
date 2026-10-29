@@ -4,82 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automotiva Fair Albania 2025 — Çağdaş Duman</title>
+  <meta name="description" content="Personal travel memories from Automotiva Fair Albania 2025 in Tirana.">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     .event-page {
       max-width: 900px;
       margin: 0 auto;
       padding: 32px 20px 60px;
     }
 
+    .event-title {
+      margin: 0 0 24px;
+    }
+
     .event-cover {
       display: block;
       width: 100%;
       height: auto;
+      max-height: 560px;
+      object-fit: cover;
       border-radius: 6px;
-      margin-top: 24px;
+      margin-bottom: 30px;
     }
 
-    .event-location {
-      color: #777;
-      margin: 12px 0 0;
+    .event-subtitle {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+      line-height: 1.4;
     }
 
-    .event-description {
-      margin-top: 24px;
+    .event-intro {
+      margin: 0;
       line-height: 1.8;
       text-align: justify;
     }
 
-    .gallery {
+    .photo-gallery {
       margin-top: 35px;
       padding: 28px 24px;
-      background: #f6f6f6;
+      background: #f2f2f2;
       border-radius: 8px;
       text-align: center;
     }
 
-    .gallery h2 {
-      margin-top: 0;
+    .photo-gallery h2 {
+      margin: 0 0 12px;
+      text-align: center;
     }
 
-    .gallery p {
+    .photo-gallery p {
+      margin: 0 0 20px;
       line-height: 1.7;
+      text-align: center;
     }
 
-    .photos-link {
+    .photo-gallery .photos-link {
       display: inline-block;
-      margin-top: 12px;
       padding: 12px 24px;
       background: #000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: 600;
     }
 
-    .photos-link:hover {
+    .photo-gallery .photos-link:hover {
       background: #333;
+    }
+
+    @media (max-width: 600px) {
+      .photo-gallery {
+        padding: 24px 16px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="classbar" id="classbar"></div>
   <header class="site-head" id="site-head"></header>
 
   <main class="event-page">
 
-    <p><a href="tirana.html">← Back to Tirana</a></p>
-
     <div class="page-eyebrow">ALBANIA · TIRANA</div>
 
-    <h1 class="page-title">Automotiva Fair Albania 2025</h1>
+    <h1 class="page-title event-title">
+      Automotiva Fair Albania 2025
+    </h1>
 
     <img
       class="event-cover"
@@ -87,18 +101,20 @@
       alt="Automotiva Fair Albania 2025 in Tirana"
     >
 
-    <p class="event-location">Albania · Tirana</p>
+    <h2 class="event-subtitle">
+      Exploring Albania’s Automotive Scene
+    </h2>
 
-    <div class="event-description">
-      <p>
-        Automotiva Fair Albania 2025 brought together automotive
-        enthusiasts, businesses, and visitors to explore vehicles,
-        automotive products, and developments in the industry.
-        These photos preserve personal memories of the event in Tirana.
-      </p>
-    </div>
+    <p class="event-intro">
+      Automotiva Fair Albania 2025 offered an opportunity to explore
+      Albania’s automotive scene, discover vehicles and automotive
+      products, and experience an event bringing together businesses,
+      professionals, and enthusiasts in Tirana. This page is part of
+      my personal travel collection, preserving memories and photographs
+      from the event.
+    </p>
 
-    <section class="gallery">
+    <section class="photo-gallery">
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -121,5 +137,6 @@
   <script>
     buildChrome('world.html');
   </script>
+
 </body>
 </html>
