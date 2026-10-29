@@ -8,61 +8,100 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     .tekke-page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-
-    .tekke-page .page-title {
-      margin-bottom: 8px;
-    }
-
-    .tekke-page .page-eyebrow {
-      margin-bottom: 24px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .tekke-cover {
       display: block;
       width: 100%;
-      height: auto;
-      max-height: 560px;
+      height: 430px;
       object-fit: cover;
-      border-radius: 6px;
-      margin: 24px 0 28px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tekke-page .page-title {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .tekke-location {
+      color: #777;
+      margin-top: 0;
     }
 
     .tekke-description {
-      margin-top: 24px;
+      font-size: 17px;
       line-height: 1.8;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .photos-link {
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      margin-top: 0;
+    }
+
+    .gallery p {
+      margin-bottom: 20px;
+    }
+
+    .gallery a {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .gallery a:hover {
+      background: #222;
+    }
+
+    @media (max-width: 600px) {
+      .tekke-cover {
+        height: 250px;
+      }
+
+      .tekke-page .page-title {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <div class="classbar" id="classbar"></div>
   <header class="site-head" id="site-head"></header>
 
   <main class="tekke-page">
-
     <p><a href="sarande.html">← Back to Sarandë</a></p>
-
-    <h1 class="page-title">Baba Sadık Tekke</h1>
-
-    <div class="page-eyebrow">ALBANIA · SARANDË</div>
 
     <img
       class="tekke-cover"
       src="assets/images/world/albania/sarande/city-views/baba-sadik-tekke-cover.jpg.jpg"
       alt="Baba Sadık Tekke in Sarandë, Albania"
     >
+
+    <h1 class="page-title">Baba Sadık Tekke</h1>
+
+    <p class="tekke-location">Albania · Ionian Coast</p>
 
     <div class="tekke-description">
       <p>
@@ -73,15 +112,16 @@
       </p>
     </div>
 
-    <p>
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from Baba Sadık Tekke.</p>
+
       <a
-        class="photos-link"
         href="https://photos.app.goo.gl/zm7TXnptGtHtP28j6"
         target="_blank"
         rel="noopener noreferrer"
       >View All Photos ↗</a>
-    </p>
-
+    </section>
   </main>
 
   <footer class="site-foot" id="site-foot"></footer>
@@ -90,6 +130,5 @@
   <script>
     buildChrome('world.html');
   </script>
-
 </body>
 </html>
