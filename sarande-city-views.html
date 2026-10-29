@@ -13,8 +13,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f6f2;
-      color: #252525;
+      color: #333;
+      background: #fff;
       line-height: 1.7;
     }
 
@@ -29,24 +29,14 @@
     }
 
     main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 22px;
-    }
-
-    .cover {
-      display: block;
-      width: 100%;
-      max-height: 560px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin: 0 0 28px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      font-size: 2.3rem;
-      line-height: 1.2;
-      margin: 0 0 8px;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
     .location {
@@ -54,15 +44,25 @@
       margin-top: 0;
     }
 
+    .cover-photo {
+      width: 100%;
+      max-height: 550px;
+      object-fit: cover;
+      display: block;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+
     .description {
+      font-size: 17px;
       margin: 24px 0;
       text-align: justify;
     }
 
     .gallery {
       margin-top: 30px;
-      padding: 25px;
-      background: #eeede7;
+      padding: 28px 24px;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
@@ -71,17 +71,22 @@
       margin-top: 0;
     }
 
-    .photos {
-      display: inline-block;
-      padding: 12px 18px;
-      background: #276749;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+    .gallery p {
+      text-align: center;
     }
 
-    .photos:hover {
-      background: #1f5139;
+    .gallery a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -92,36 +97,33 @@
     }
 
     @media (max-width: 600px) {
-      main {
-        padding: 25px 16px;
-      }
-
       h1 {
-        font-size: 1.9rem;
+        font-size: 30px;
       }
 
-      .cover {
-        max-height: 350px;
+      main {
+        padding: 0 18px;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <a href="sarande.html">← Back to Sarandë</a>
   </header>
 
   <main>
-    <img
-      class="cover"
-      src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg.jpg"
-      alt="City views of Sarandë, Albania"
-    >
-
     <h1>City Views of Sarandë</h1>
 
     <p class="location">Sarandë, Albania · Ionian Coast</p>
+
+    <img
+      src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg.jpg"
+      alt="City views of Sarandë, Albania"
+      class="cover-photo"
+    >
 
     <div class="description">
       <p>
@@ -136,10 +138,12 @@
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photos from Sarandë.</p>
+
+      <p>
+        Explore my personal travel photos from Sarandë.
+      </p>
 
       <a
-        class="photos"
         href="https://photos.app.goo.gl/QfWyPfr3nbAnZYi58"
         target="_blank"
         rel="noopener noreferrer"
@@ -150,5 +154,6 @@
   <footer>
     © Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
