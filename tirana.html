@@ -4,8 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tirana — Çağdaş Duman</title>
-  <meta name="description" content="Personal travel photo collections from Tirana, Albania.">
+  <meta name="description" content="Explore personal travel photographs and memories from Tirana, Albania.">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .tirana-places {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .tirana-place {
+      padding: 24px;
+      background: #fff;
+      border: 1px solid #e2e0d8;
+      border-radius: 12px;
+    }
+
+    .tirana-place h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .tirana-place p {
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .tirana-place .explore-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #276749;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .tirana-place .explore-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,38 +57,38 @@
 
       <h1 class="page-title">Tirana</h1>
 
-      <p class="page-lede" style="text-align: justify;">
+      <p class="page-lede">
         Tirana, the capital of Albania, is a lively city known for its
         colorful architecture, history, museums, and surrounding mountains.
         This collection brings together memories from different places
         and experiences around the city.
       </p>
 
-      <div class="region-grid">
+      <div class="tirana-places">
 
-        <div class="region">
-          <h4>
-            <a href="automotiva-fair-albania-2025.html">
-              Automotiva Fair Albania 2025
-            </a>
-          </h4>
-          <p>Explore photos from Automotiva Fair Albania 2025.</p>
-        </div>
+        <section class="tirana-place">
+          <h2>Automotiva Fair Albania 2025</h2>
+          <p>Explore photos and memories from Automotiva Fair Albania 2025.</p>
+          <a class="explore-link" href="automotiva-fair-albania-2025.html">Explore Photos ↗</a>
+        </section>
 
-        <div class="region">
-          <h4><a href="bunkart-1.html">BUNK'ART 1</a></h4>
+        <section class="tirana-place">
+          <h2>BUNK'ART 1</h2>
           <p>Discover the history and exhibits of BUNK'ART 1.</p>
-        </div>
+          <a class="explore-link" href="bunkart-1.html">Explore Photos ↗</a>
+        </section>
 
-        <div class="region">
-          <h4><a href="bunkart-2.html">BUNK'ART 2</a></h4>
+        <section class="tirana-place">
+          <h2>BUNK'ART 2</h2>
           <p>Explore BUNK'ART 2 and its historical exhibitions.</p>
-        </div>
+          <a class="explore-link" href="bunkart-2.html">Explore Photos ↗</a>
+        </section>
 
-        <div class="region">
-          <h4><a href="tirana-city-views.html">City Views</a></h4>
-          <p>Views of Tirana and its urban landscape.</p>
-        </div>
+        <section class="tirana-place">
+          <h2>City Views</h2>
+          <p>Views of Tirana, its colorful streets, and urban landscape.</p>
+          <a class="explore-link" href="tirana-city-views.html">Explore Photos ↗</a>
+        </section>
 
       </div>
     </section>
