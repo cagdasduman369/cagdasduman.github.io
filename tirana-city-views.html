@@ -1,47 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tirana City Views | Around the World</title>
+  <title>Tirana City Views | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs of Tirana, Albania.">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <a href="index.html">Dr. Çağdaş Duman</a>
-    <nav>
-      <a href="world.html">Around the World</a>
-    </nav>
-  </header>
 
-  <main class="container">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .destination-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .destination-cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 24px 0 28px;
+    }
+
+    .destination-description {
+      margin: 24px 0;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .gallery {
+      margin-top: 30px;
+      padding: 25px;
+      background: #f6f5f0;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      margin-top: 0;
+    }
+
+    .photos-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: #276749;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .photos-link:hover {
+      background: #1f5139;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="destination-page">
     <p><a href="tirana.html">← Back to Tirana</a></p>
 
-    <h1>Tirana City Views</h1>
-
-    <p style="text-align: justify;">
-      Tirana, the capital of Albania, offers a distinctive combination
-      of historic landmarks, colorful streets, urban architecture, and
-      everyday city life. This page brings together personal photographs
-      taken during my visit to Tirana.
-    </p>
-
     <img
+      class="destination-cover"
       src="assets/images/world/albania/tirana/city-views-cover.jpg.jpg"
       alt="City views of Tirana, Albania"
-      style="display:block;width:100%;max-width:900px;height:auto;margin:24px auto;border-radius:8px;"
     >
 
-    <p>
-      <a class="photos"
-         href="https://photos.app.goo.gl/59rUiZkHhq971ceb9"
-         target="_blank"
-         rel="noopener noreferrer">
-        View All Photos ↗
-      </a>
-    </p>
+    <h1 class="page-title">Tirana City Views</h1>
+
+    <div class="destination-description">
+      <p>
+        Tirana, the capital of Albania, offers a distinctive combination
+        of historic landmarks, colorful streets, urban architecture, and
+        everyday city life. This page brings together personal photographs
+        taken during my visit to Tirana.
+      </p>
+    </div>
+
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos of Tirana.</p>
+
+      <a
+        class="photos-link"
+        href="https://photos.app.goo.gl/59rUiZkHhq971ceb9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View All Photos ↗</a>
+    </section>
   </main>
 </body>
 </html>
