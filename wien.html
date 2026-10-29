@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vienna — Around the World</title>
+  <title>Vienna, Austria | Çağdaş Duman</title>
 
   <meta name="description" content="Personal travel memories from Vienna, Austria, including City Views, Burggarten, and Stadtpark.">
 
@@ -13,16 +14,31 @@
     }
 
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px;
-      line-height: 1.7;
       color: #333;
       background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
+      font-size: 38px;
       margin-bottom: 8px;
     }
 
@@ -31,123 +47,103 @@
       margin-top: 0;
     }
 
-    p {
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
-      text-decoration: none;
-    }
-
-    .description {
-      margin: 24px 0 35px;
-    }
-
-    .places {
+    .sections {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 24px;
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
-    .place {
-      padding: 24px;
-      border: 1px solid #eee;
+    .card {
+      padding: 28px;
+      background: #f6f6f6;
       border-radius: 8px;
     }
 
-    .place h2 {
+    .card h2 {
       margin-top: 0;
-      font-size: 23px;
     }
 
-    .place p {
-      margin-bottom: 16px;
-    }
-
-    .place a {
+    .card a {
       display: inline-block;
-      margin-top: 8px;
-      color: #333;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
     }
 
-    .place a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background: #555;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 25px 0;
       text-align: center;
+      padding: 25px;
       color: #777;
       font-size: 14px;
-    }
-
-    @media (max-width: 650px) {
-      .places {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
     }
   </style>
 </head>
 
 <body>
-
-  <a class="back-link" href="world.html">← Back to Around the World</a>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
   <main>
-    <h1>Vienna</h1>
+    <h1>Vienna, Austria</h1>
     <p class="location">Austria · Vienna</p>
 
     <div class="description">
       <p>
-        Vienna, the capital of Austria, is known for its imperial architecture,
-        elegant gardens, and rich cultural heritage. This collection brings together
-        my personal travel memories of the city, including its charming streets,
-        historic parks, and green spaces.
+        Vienna, the capital of Austria, is known for its imperial
+        architecture, elegant gardens, and rich cultural heritage.
+        This collection brings together my personal travel memories
+        of the city, including its charming streets, historic parks,
+        and green spaces.
       </p>
     </div>
 
-    <section class="places">
-
-      <div class="place">
-        <h2>Vienna City Views</h2>
+    <section class="sections">
+      <div class="card">
+        <h2>City Views</h2>
         <p>
-          Discover Vienna's streets, architecture, and urban landscapes.
+          Explore my personal photographs of Vienna's streets,
+          architecture, and urban landscapes.
         </p>
         <a href="wien-city-views.html">Explore Photos ↗</a>
       </div>
 
-      <div class="place">
+      <div class="card">
         <h2>Burggarten</h2>
         <p>
-          Personal memories from this historic garden in the heart of Vienna.
+          Explore my personal photographs of this historic garden
+          in the heart of Vienna.
         </p>
         <a href="burggarten.html">Explore Photos ↗</a>
       </div>
 
-      <div class="place">
+      <div class="card">
         <h2>Stadtpark</h2>
         <p>
-          Explore the greenery, pathways, and scenery of Stadtpark.
+          Explore my personal photographs of Stadtpark's greenery,
+          pathways, and scenery.
         </p>
         <a href="stadtpark.html">Explore Photos ↗</a>
       </div>
-
     </section>
   </main>
 
   <footer>
     © Çağdaş Duman · Around the World
   </footer>
-
 </body>
 </html>
