@@ -33,22 +33,24 @@
       margin-bottom: 24px;
     }
 
-    h1 {
-      font-size: 2.3rem;
-      line-height: 1.2;
-    }
-
-    p {
-      text-align: justify;
-    }
-
     .cover {
       display: block;
       width: 100%;
       max-height: 560px;
       object-fit: cover;
       border-radius: 12px;
-      margin: 25px 0;
+      margin: 0 0 28px;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .description {
+      text-align: justify;
+      margin-bottom: 25px;
     }
 
     .photos {
@@ -59,6 +61,16 @@
       text-decoration: none;
       border-radius: 6px;
     }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 25px 16px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
   </style>
 </head>
 
@@ -66,21 +78,21 @@
   <main>
     <a class="back" href="lezhe.html">← Back to Lezhë</a>
 
-    <h1>Skanderbeg Memorial</h1>
-
     <img
       class="cover"
       src="assets/images/world/albania/lezhe/Skanderbeg-Memorial/skanderbeg-memorial.jpg.jpg"
       alt="Skanderbeg Memorial in Lezhë, Albania"
     >
 
-    <p>
-      Skanderbeg Memorial in Lezhë, Albania, commemorates Gjergj Kastrioti
-      Skanderbeg, the national hero of Albania. The memorial stands at the
-      site associated with the former Cathedral of Saint Nicholas, where
-      Skanderbeg was buried in 1468. Today, the site is an important
-      historical landmark for visitors interested in Albania's history,
-      heritage, and national identity.
+    <h1>Skanderbeg Memorial</h1>
+
+    <p class="description">
+      Skanderbeg Memorial in Lezhë, Albania, commemorates Gjergj
+      Kastrioti Skanderbeg, the national hero of Albania. The memorial
+      stands at the site associated with the former Cathedral of
+      Saint Nicholas, where Skanderbeg was buried in 1468. Today,
+      the site is an important historical landmark for visitors
+      interested in Albania's history, heritage, and national identity.
     </p>
 
     <p>
@@ -94,4 +106,3 @@
   </main>
 </body>
 </html>
-```
