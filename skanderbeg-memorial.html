@@ -4,56 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skanderbeg Memorial | Çağdaş Duman</title>
-  <meta name="description" content="Personal travel photographs of the Skanderbeg Memorial in Lezhë, Albania.">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Personal travel photos of Skanderbeg Memorial in Lezhë, Albania.">
 
   <style>
-    .memorial-page {
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f6f2;
+      color: #252525;
+      line-height: 1.7;
+    }
+
+    main {
       max-width: 900px;
       margin: 0 auto;
-      padding: 32px 20px 60px;
+      padding: 40px 22px 60px;
     }
 
-    .memorial-cover {
+    a {
+      color: #276749;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .location {
+      color: #777;
+      margin-top: 0;
+      text-align: left;
+    }
+
+    .cover {
       display: block;
       width: 100%;
-      height: auto;
       max-height: 560px;
       object-fit: cover;
-      border-radius: 8px;
-      margin: 24px 0 28px;
+      border-radius: 12px;
+      margin: 25px 0;
     }
 
-    .memorial-page .page-title {
-      margin-bottom: 8px;
-    }
-
-    .memorial-page .page-eyebrow {
-      margin-bottom: 20px;
-    }
-
-    .memorial-description {
+    .description {
       margin: 24px 0;
-      line-height: 1.8;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 30px;
+      margin-top: 35px;
       padding: 25px;
-      background: #f6f5f0;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
     .gallery h2 {
       margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .gallery p {
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .photos-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
+      padding: 12px 24px;
       background: #276749;
       color: white;
       text-decoration: none;
@@ -63,24 +91,41 @@
     .photos-link:hover {
       background: #1f5139;
     }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 28px 18px 45px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <main class="memorial-page">
-    <p><a href="lezhe.html">← Back to Lezhë</a></p>
+  <main>
+    <a class="back" href="lezhe.html">← Back to Lezhë</a>
 
     <img
-      class="memorial-cover"
+      class="cover"
       src="assets/images/world/albania/lezhe/Skanderbeg-Memorial/skanderbeg-memorial.jpg.jpg"
       alt="Skanderbeg Memorial in Lezhë, Albania"
     >
 
-    <h1 class="page-title">Skanderbeg Memorial</h1>
+    <h1>Skanderbeg Memorial</h1>
 
-    <div class="page-eyebrow">ALBANIA · LEZHË</div>
+    <p class="location">ALBANIA · LEZHË</p>
 
-    <div class="memorial-description">
+    <div class="description">
       <p>
         Skanderbeg Memorial in Lezhë, Albania, commemorates Gjergj Kastrioti
         Skanderbeg, the national hero of Albania. The memorial stands at the
@@ -95,9 +140,17 @@
       <h2>My Photo Gallery</h2>
       <p>Explore my personal travel photos of the Skanderbeg Memorial.</p>
 
-      <!-- Google Photos album link goes here when recovered. -->
-      <p>Photo album link will be added soon.</p>
+      <a
+        class="photos-link"
+        href="https://photos.app.goo.gl/uy6G1rpPgspFzjsdA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View All Photos ↗</a>
     </section>
   </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 </body>
 </html>
