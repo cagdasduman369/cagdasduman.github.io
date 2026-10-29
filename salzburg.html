@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salzburg, Austria — Çağdaş Duman</title>
+  <title>Salzburg, Austria | Çağdaş Duman</title>
 
   <meta name="description" content="Personal travel memories from Salzburg, Austria, including City Views and Mirabell Gardens.">
 
@@ -13,19 +13,27 @@
     }
 
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 24px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #333;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #333;
-      text-decoration: none;
     }
 
     h1 {
@@ -39,66 +47,55 @@
     }
 
     .description {
-      margin: 24px 0 35px;
       font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .places {
+    .sections {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 24px;
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
-    .place {
-      padding: 24px;
-      border: 1px solid #eee;
+    .card {
+      padding: 28px;
+      background: #f6f6f6;
       border-radius: 8px;
     }
 
-    .place h2 {
+    .card h2 {
       margin-top: 0;
-      font-size: 23px;
     }
 
-    .place p {
-      margin-bottom: 16px;
-    }
-
-    .place a {
+    .card a {
       display: inline-block;
-      margin-top: 8px;
-      color: #333;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
     }
 
-    .place a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background: #555;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 25px 0;
       text-align: center;
+      padding: 25px;
       color: #777;
       font-size: 14px;
-    }
-
-    @media (max-width: 650px) {
-      .places {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
     }
   </style>
 </head>
 
 <body>
-  <a class="back-link" href="world.html">← Around the World</a>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
   <main>
     <h1>Salzburg, Austria</h1>
@@ -107,27 +104,28 @@
     <div class="description">
       <p>
         Salzburg is a historic Austrian city known for its charming
-        streets, beautiful architecture, and elegant gardens. This page
-        brings together my personal travel memories from Salzburg,
-        including its city views and the famous Mirabell Gardens.
+        streets, beautiful architecture, and rich cultural heritage.
+        This collection brings together my personal travel memories
+        from Salzburg, including its city views and the famous
+        Mirabell Gardens.
       </p>
     </div>
 
-    <section class="places">
-      <div class="place">
+    <section class="sections">
+      <div class="card">
         <h2>City Views</h2>
         <p>
-          Discover Salzburg's historic streets, architecture, and
-          scenic city views through my personal travel photographs.
+          Explore my personal photographs of Salzburg's city views,
+          historic streets, and architecture.
         </p>
         <a href="salzburg-city-views.html">Explore Photos ↗</a>
       </div>
 
-      <div class="place">
+      <div class="card">
         <h2>Mirabell Gardens</h2>
         <p>
-          Explore the beautiful flower beds, landscaped gardens,
-          and elegant surroundings of Mirabell Gardens.
+          Explore my personal photographs of the beautiful gardens
+          and landscaped grounds of Mirabell Gardens.
         </p>
         <a href="mirabell-gardens.html">Explore Photos ↗</a>
       </div>
