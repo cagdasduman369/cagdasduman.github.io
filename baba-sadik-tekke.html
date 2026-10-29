@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baba Sadık Tekke — Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs of Baba Sadık Tekke in Sarandë, Albania.">
-
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
@@ -15,14 +14,6 @@
       padding: 32px 20px 60px;
     }
 
-    .tekke-page .page-title {
-      margin-bottom: 8px;
-    }
-
-    .tekke-page .page-eyebrow {
-      margin-bottom: 24px;
-    }
-
     .tekke-cover {
       display: block;
       width: 100%;
@@ -30,54 +21,62 @@
       max-height: 560px;
       object-fit: cover;
       border-radius: 6px;
-      margin: 24px 0 28px;
+      margin: 24px 0;
+    }
+
+    .tekke-page .page-title {
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    .tekke-page .page-eyebrow {
+      margin-bottom: 20px;
     }
 
     .tekke-description {
-      margin-top: 24px;
+      margin-top: 20px;
       line-height: 1.8;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 35px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 32px auto 0;
       padding: 28px 24px;
-      background: #f6f6f6;
+      background: #f2f2f2;
       border-radius: 8px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .gallery h2 {
+      width: 100%;
       margin: 0 0 12px;
       text-align: center;
     }
 
     .gallery p {
+      width: 100%;
       margin: 0 0 20px;
-      line-height: 1.7;
       text-align: center;
     }
 
-    .gallery .photos-link {
+    .gallery-button {
       display: inline-block;
-      margin: 0;
+      align-self: center;
       padding: 12px 24px;
       background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
+      border-radius: 4px;
       text-align: center;
     }
 
-    .gallery .photos-link:hover {
+    .gallery-button:hover {
       background: #333;
-    }
-
-    @media (max-width: 600px) {
-      .gallery {
-        padding: 24px 16px;
-      }
     }
   </style>
 </head>
@@ -91,15 +90,15 @@
 
     <p><a href="sarande.html">← Back to Sarandë</a></p>
 
-    <h1 class="page-title">Baba Sadık Tekke</h1>
-
-    <div class="page-eyebrow">ALBANIA · SARANDË</div>
-
     <img
       class="tekke-cover"
       src="assets/images/world/albania/sarande/city-views/baba-sadik-tekke-cover.jpg.jpg"
       alt="Baba Sadık Tekke in Sarandë, Albania"
     >
+
+    <h1 class="page-title">Baba Sadık Tekke</h1>
+
+    <div class="page-eyebrow">ALBANIA · SARANDË</div>
 
     <div class="tekke-description">
       <p>
@@ -114,11 +113,11 @@
       <h2>My Photo Gallery</h2>
 
       <p>
-        Explore my personal travel photos of Baba Sadık Tekke.
+        Explore my personal photographs of Baba Sadık Tekke in Sarandë, Albania.
       </p>
 
       <a
-        class="photos-link"
+        class="gallery-button"
         href="https://photos.app.goo.gl/zm7TXnptGtHtP28j6"
         target="_blank"
         rel="noopener noreferrer"
