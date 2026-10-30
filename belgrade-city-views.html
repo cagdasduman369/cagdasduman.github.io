@@ -3,45 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City Views of Belgrade | Çağdaş Duman</title>
+  <title>City Views of Belgrade, Serbia | Çağdaş Duman</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .cover {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      color: #777;
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
+      text-align: justify;
+    }
+
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-  <div class="classbar" id="classbar"></div>
-  <header class="site-head" id="site-head"></header>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
   <main>
-
-    <div class="page-eyebrow">
-      <a href="world.html">← Around the World</a>
-    </div>
-
     <img
+      class="cover"
       src="assets/images/world/serbia/city-views/belgrade-city-views-cover.jpg.jpg"
-      alt="City Views of Belgrade"
-      style="display:block; width:100%; height:auto; margin:30px 0;"
+      alt="City Views of Belgrade, Serbia"
     >
 
-    <h1 class="page-title">City Views of Belgrade</h1>
+    <h1>City Views of Belgrade</h1>
+    <p class="location">Serbia · Danube and Sava Rivers</p>
 
-    <p class="page-lede">
-      Serbia · Danube and Sava Rivers
-    </p>
-
-    <p class="page-description" style="text-align:justify;">
-      Belgrade, the capital of Serbia, is a city shaped by its history, architecture, and location at the meeting point of the Danube and Sava rivers. Its lively streets, historic landmarks, and riverside landscapes reveal the distinctive character of the city.
-    </p>
-
-    <section class="photo-gallery">
-      <h2>My Photo Gallery</h2>
-
+    <div class="description">
       <p>
-        Explore my personal travel photos from Belgrade.
+        Belgrade, the capital of Serbia, is a vibrant city situated at the
+        confluence of the Danube and Sava rivers. Known for its historic
+        architecture, lively streets, riverside views, and distinctive urban
+        atmosphere, the city offers a fascinating blend of history and modern
+        life. This page presents my personal travel memories and photographs
+        from Belgrade.
       </p>
+    </div>
 
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from Belgrade.</p>
       <a
         href="https://photos.app.goo.gl/vao28nwNzfiqWSzj6"
         target="_blank"
@@ -50,19 +131,10 @@
         View All Photos ↗
       </a>
     </section>
-
   </main>
 
-  <footer class="site-foot" id="site-foot"></footer>
-
-  <script src="assets/js/common.js"></script>
-  <script src="assets/js/gallery.js"></script>
-
-  <script>
-    (async function () {
-      await buildChrome('world.html');
-    })();
-  </script>
-
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 </body>
 </html>
