@@ -3,118 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City Views — Belgrade | Çağdaş Duman</title>
+  <title>City Views of Belgrade | Çağdaş Duman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-    }
-
-    header {
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .cover {
+    .city-cover {
+      display: block;
       width: 100%;
-      max-height: 480px;
+      height: auto;
+      max-height: 520px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 25px;
+      margin: 30px auto;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+    .city-title,
+    .city-location {
+      text-align: left;
     }
 
-    .location {
-      color: #777;
-      margin-bottom: 25px;
-    }
-
-    .description {
-      line-height: 1.7;
+    .city-description {
       text-align: justify;
-      margin-bottom: 30px;
+      line-height: 1.7;
+      margin-top: 25px;
+    }
+
+    .photo-gallery {
+      text-align: center;
+      margin: 55px auto 40px;
+    }
+
+    .photo-gallery h2 {
+      margin-bottom: 15px;
+    }
+
+    .photo-gallery p {
+      margin-bottom: 25px;
     }
 
     .album-link {
       display: inline-block;
-      background: #333;
-      color: #fff;
-      padding: 13px 24px;
-      border-radius: 5px;
+      background: #222;
+      color: white;
+      padding: 13px 25px;
       text-decoration: none;
-      margin: 0 auto;
+      border-radius: 3px;
+      transition: background 0.2s;
     }
 
     .album-link:hover {
       background: #555;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 50px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <a href="belgrade.html">← Back to Belgrade</a>
-  </header>
+  <div class="classbar" id="classbar"></div>
+  <header class="site-head" id="site-head"></header>
 
   <main>
 
+    <p>
+      <a href="belgrade.html">← Back to Belgrade</a>
+    </p>
+
     <img
-      class="cover"
-      src="assets/images/world/serbia/belgrade/city-views/belgrade-city-views-cover.jpg.jpg"
-      alt="Belgrade City Views"
+      class="city-cover"
+      src="assets/images/world/serbia/belgrade/city-views/belgrade-city-views-cover.jpg"
+      alt="City Views of Belgrade"
     >
 
-    <h1>City Views</h1>
+    <h1 class="city-title">City Views of Belgrade</h1>
 
-    <div class="location">Belgrade, Serbia</div>
+    <p class="city-location">Belgrade, Serbia</p>
 
-    <p class="description">
+    <p class="city-description">
       Belgrade offers a fascinating mix of historic architecture, lively streets, and scenic views along the Danube and Sava rivers. This photo collection captures the city's distinctive atmosphere, urban landscapes, and memorable views.
     </p>
 
-    <a
-      class="album-link"
-      href="https://photos.app.goo.gl/vao28nwNzfiqWSzj6"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Photo Album ↗
-    </a>
+    <section class="photo-gallery">
+      <h2>My Photo Gallery</h2>
+
+      <p>
+        Explore my personal photo collection from Belgrade, Serbia.
+      </p>
+
+      <a
+        class="album-link"
+        href="https://photos.app.goo.gl/vao28nwNzfiqWSzj6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Photos ↗
+      </a>
+    </section>
 
   </main>
 
-  <footer>
-    © Çağdaş Duman
-  </footer>
+  <footer class="site-foot" id="site-foot"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/gallery.js"></script>
+
+  <script>
+    (async function () {
+      await buildChrome('world.html');
+    })();
+  </script>
 
 </body>
 </html>
