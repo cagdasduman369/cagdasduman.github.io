@@ -3,100 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Bamberg — Çağdaş Duman</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Bamberg, Germany | Çağdaş Duman</title>
 
   <style>
-    body {
-      margin: 0;
-      padding: 50px 20px;
-      background: #fff;
-      color: #333;
-      font-family: 'Roboto', sans-serif;
+    * {
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 850px;
-      margin: 0 auto;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      font-weight: 400;
-      margin-bottom: 10px;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
-    .subtitle {
+    .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 35px;
+      margin-top: 0;
     }
 
-    .intro {
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
-    .gallery-links {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      margin-top: 30px;
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
     }
 
-    .gallery-links a {
-      display: block;
-      padding: 18px 20px;
-      border: 1px solid #ddd;
-      color: #333;
+    .card {
+      padding: 28px;
+      background: #f6f6f6;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
       text-decoration: none;
-      font-size: 16px;
-      transition: background 0.2s ease;
-    }
-
-    .gallery-links a:hover {
-      background: #f5f5f5;
+      border-radius: 5px;
     }
 
     footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      color: #888;
-      font-size: 13px;
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-  <div class="container">
+  <main>
+    <h1>Bamberg, Germany</h1>
+    <p class="location">Germany · Bavaria</p>
 
-    <h1>Bamberg</h1>
-
-    <div class="subtitle">Germany · Bavaria</div>
-
-    <p class="intro">
-      Bamberg is a historic town in Bavaria, Germany, known for its medieval architecture, charming Old Town, and picturesque riverside views. With its rich history and distinctive character, Bamberg offers a memorable glimpse into Germany's cultural heritage.
-    </p>
-
-    <div class="gallery-links">
-      <a href="bamberg-city-views.html">City Views →</a>
-      <a href="bamberg-natural-history-museum.html">Natural History Museum →</a>
+    <div class="description">
+      <p>
+        Bamberg is a historic town in Bavaria, Germany, known for its medieval architecture, charming Old Town, and picturesque riverside views. With its rich history and distinctive character, Bamberg offers a memorable glimpse into Germany's cultural heritage.
+      </p>
     </div>
 
-    <footer>
-      © Çağdaş Duman
-    </footer>
+    <section class="sections">
+      <div class="card">
+        <h2>City Views</h2>
+        <p>Explore my personal photographs of Bamberg's city views.</p>
+        <a href="bamberg-city-views.html">Explore Photos ↗</a>
+      </div>
 
-  </div>
+      <div class="card">
+        <h2>Natural History Museum</h2>
+        <p>Explore my personal photographs of Bamberg's Natural History Museum.</p>
+        <a href="bamberg-natural-history-museum.html">Explore Photos ↗</a>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 </body>
 </html>
