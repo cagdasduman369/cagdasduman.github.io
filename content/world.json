@@ -15,7 +15,7 @@
     { "country": "Kosovo", "folder": "kosovo", "places": ["Prishtine"] },
     { "country": "Lebanon", "folder": "lebanon", "places": ["Beirut", "Bekaa Valley", "South Lebanon"] },
     { "country": "Montenegro", "folder": "montenegro", "places": ["Budva", "Kotor"] },
-    { "country": "North Macedonia","folder": "north-macedonia", "places": ["Skopje"]}
+    { "country": "North Macedonia", "folder": "north-macedonia", "places": ["Skopje"] },
     { "country": "Poland", "folder": "poland", "places": ["Białystok"] },
     { "country": "Romania", "folder": "romania", "places": ["Bucharest", "Craiova", "Cluj-Timisoara"] },
     { "country": "Serbia", "folder": "serbia", "places": ["Belgrade", "Cacak", "Kragujevac", "Novi Sad"] },
