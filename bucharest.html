@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bucharest, Romania | Çağdaş Duman</title>
+  <title>Bucharest — Around the World | Çağdaş Duman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -11,7 +16,7 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       color: #333;
       background: #fff;
       line-height: 1.7;
@@ -25,6 +30,7 @@
     header a {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
     }
 
     main {
@@ -34,52 +40,67 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      font-weight: 600;
+      margin: 28px 0 5px;
     }
 
     .location {
-      color: #777;
+      color: #888;
+      font-size: 14px;
       margin-top: 0;
     }
 
     .description {
-      font-size: 17px;
-      margin: 24px 0;
+      font-size: 16px;
+      margin: 25px 0 35px;
       text-align: justify;
     }
 
     .gallery {
       margin-top: 35px;
-      padding: 25px;
+      padding: 35px 25px;
       background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+
+    .gallery p {
+      font-size: 14px;
+      color: #777;
+      margin: 0 0 15px;
     }
 
     .gallery a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
-      color: white;
+      background: #222;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 14px;
     }
 
     footer {
       text-align: center;
       padding: 25px;
-      color: #777;
-      font-size: 14px;
+      color: #888;
+      font-size: 13px;
     }
 
     @media (max-width: 600px) {
@@ -106,7 +127,7 @@
       alt="Bucharest, Romania"
     >
 
-    <h1>Bucharest, Romania</h1>
+    <h1>Bucharest</h1>
     <p class="location">Romania · Wallachia</p>
 
     <div class="description">
