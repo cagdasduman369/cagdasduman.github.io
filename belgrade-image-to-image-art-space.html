@@ -6,17 +6,21 @@
   <title>Image to Image Art Space — Belgrade | Çağdaş Duman</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
+      font-family: Arial, sans-serif;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
     header {
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
     header a {
@@ -25,68 +29,85 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
+      padding: 0 24px;
     }
 
     .cover {
+      display: block;
       width: 100%;
-      max-height: 480px;
+      height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 25px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 38px;
       margin-bottom: 8px;
+      text-align: left;
     }
 
     .location {
       color: #777;
-      margin-bottom: 25px;
+      margin-top: 0;
+      text-align: left;
     }
 
     .description {
-      line-height: 1.7;
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 30px;
     }
 
-    .album-link {
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #333;
       color: #fff;
-      padding: 13px 24px;
-      border-radius: 5px;
       text-decoration: none;
-      margin: 0 auto;
+      border-radius: 5px;
     }
 
-    .album-link:hover {
+    .gallery a:hover {
       background: #555;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px;
       color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <header>
     <a href="belgrade.html">← Back to Belgrade</a>
   </header>
 
   <main>
-
     <img
       class="cover"
       src="assets/images/world/serbia/belgrade/image-to-image-art-space/image-to-image-art-space-cover.jpg"
@@ -95,26 +116,39 @@
 
     <h1>Image to Image Art Space</h1>
 
-    <div class="location">Belgrade, Serbia</div>
+    <p class="location">Belgrade, Serbia</p>
 
-    <p class="description">
-      Image to Image Art Space offers an opportunity to explore contemporary visual expression and artistic creativity in Belgrade. This collection captures my visit and personal impressions of the space.
-    </p>
+    <div class="description">
+      <p>
+        Image to Image Art Space offers a perspective on contemporary
+        artistic expression in Belgrade, inviting visitors to consider
+        how images, visual ideas and creative practices shape the way
+        we experience art. My visit provided an opportunity to explore
+        this artistic space and reflect on the ways contemporary art
+        can communicate ideas, inspire curiosity and encourage new
+        ways of seeing the world. This collection preserves my personal
+        memories of the visit and the visual details that made the
+        experience meaningful.
+      </p>
+    </div>
 
-    <a
-      class="album-link"
-      href="https://photos.app.goo.gl/f7sQrnJJiTEnUjUj9"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Photo Album ↗
-    </a>
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photos from Image to Image Art Space in Belgrade.</p>
 
+      <a
+        href="https://photos.app.goo.gl/f7sQrnJJiTEnUjUj9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Photos ↗
+      </a>
+    </section>
   </main>
 
   <footer>
-    © Çağdaş Duman
+    © Çağdaş Duman · Around the World
   </footer>
-
 </body>
 </html>
+```
