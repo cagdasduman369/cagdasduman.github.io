@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banja Luka, Bosnia and Herzegovina — Çağdaş Duman</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Banja Luka, Bosnia and Herzegovina | Çağdaş Duman</title>
 
   <style>
     * {
@@ -16,167 +12,154 @@
 
     body {
       margin: 0;
-      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      color: #333;
       background: #fff;
-      color: #222;
-      font-family: 'Roboto', sans-serif;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
-      font-size: 15px;
     }
 
-    .back:hover {
-      color: #000;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      margin: 10px 0 8px;
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      font-weight: 500;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 28px;
+      margin-top: 0;
     }
 
-    .intro {
+    .description {
       font-size: 17px;
-      line-height: 1.85;
-      margin: 25px 0 40px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .places-grid {
+    .sections {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
       margin-top: 35px;
     }
 
-    .place-card {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 105px;
-      padding: 25px;
-      border: 1px solid #e8e8e8;
+    .card {
+      padding: 28px;
+      background: #f6f6f6;
       border-radius: 8px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
       text-decoration: none;
-      color: #222;
-      transition: border-color 0.2s, transform 0.2s;
+      border-radius: 5px;
     }
 
-    .place-card:hover {
-      border-color: #999;
-      transform: translateY(-3px);
-    }
-
-    .place-card h2 {
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      font-size: 21px;
-      font-weight: 500;
-    }
-
-    .arrow {
-      font-size: 21px;
-      color: #777;
-      margin-left: 15px;
+    .card a:hover {
+      background: #555;
     }
 
     footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      color: #888;
-      font-size: 13px;
       text-align: center;
-    }
-
-    @media (max-width: 650px) {
-      body {
-        padding: 25px 15px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .places-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-      }
-
-      .place-card {
-        min-height: 85px;
-      }
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <a class="back" href="world.html">← Around the World</a>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-    <h1>Banja Luka</h1>
+  <main>
 
-    <div class="location">Bosnia and Herzegovina · Republika Srpska</div>
+    <h1>Banja Luka, Bosnia and Herzegovina</h1>
 
-    <p class="intro">
-      Nestled along the banks of the Vrbas River in northwestern Bosnia and
-      Herzegovina, Banja Luka is a city where natural beauty, cultural
-      heritage and everyday life come together. Known for its tree-lined
-      avenues, green parks and relaxed atmosphere, the city has a distinctive
-      character shaped by centuries of history and its close connection
-      with the river. The emerald waters of the Vrbas, the surrounding
-      landscapes and the city's lively cultural scene create an inviting
-      atmosphere for exploration. From panoramic city views and outdoor
-      art to the university campus and peaceful riverside scenery, Banja
-      Luka offers many different ways to experience its character.
+    <p class="location">
+      Bosnia and Herzegovina · Republika Srpska
     </p>
 
-    <div class="places-grid">
-
-      <a class="place-card" href="banja-luka-city-view.html">
-        <h2>City View</h2>
-        <span class="arrow">↗</span>
-      </a>
-
-      <a class="place-card" href="banja-luka-outdoor-art-exhibition.html">
-        <h2>Outdoor Art Exhibition</h2>
-        <span class="arrow">↗</span>
-      </a>
-
-      <a class="place-card" href="banja-luka-university.html">
-        <h2>University of Banja Luka</h2>
-        <span class="arrow">↗</span>
-      </a>
-
-      <a class="place-card" href="banja-luka-vrbas-river.html">
-        <h2>Vrbas River</h2>
-        <span class="arrow">↗</span>
-      </a>
-
+    <div class="description">
+      <p>
+        Nestled along the banks of the Vrbas River in northwestern Bosnia and
+        Herzegovina, Banja Luka is a city where natural beauty, cultural
+        heritage and everyday life come together. Known for its tree-lined
+        avenues, green parks and relaxed atmosphere, the city has a distinctive
+        character shaped by centuries of history and its close connection
+        with the river. The emerald waters of the Vrbas, the surrounding
+        landscapes and the city's lively cultural scene create an inviting
+        atmosphere for exploration. From panoramic city views and outdoor
+        art to the university campus and peaceful riverside scenery, Banja
+        Luka offers many different ways to experience its character.
+      </p>
     </div>
 
-    <footer>
-      © Çağdaş Duman · Around the World
-    </footer>
+    <section class="sections">
 
-  </div>
+      <div class="card">
+        <h2>City View</h2>
+        <p>
+          Explore my personal photographs of Banja Luka's city views.
+        </p>
+        <a href="banja-luka-city-view.html">Explore Photos ↗</a>
+      </div>
+
+      <div class="card">
+        <h2>Outdoor Art Exhibition</h2>
+        <p>
+          Explore my personal photographs of Banja Luka's outdoor art exhibition.
+        </p>
+        <a href="banja-luka-outdoor-art-exhibition.html">Explore Photos ↗</a>
+      </div>
+
+      <div class="card">
+        <h2>University of Banja Luka</h2>
+        <p>
+          Explore my personal photographs of the University of Banja Luka.
+        </p>
+        <a href="banja-luka-university.html">Explore Photos ↗</a>
+      </div>
+
+      <div class="card">
+        <h2>Vrbas River</h2>
+        <p>
+          Explore my personal photographs of the Vrbas River.
+        </p>
+        <a href="banja-luka-vrbas-river.html">Explore Photos ↗</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
