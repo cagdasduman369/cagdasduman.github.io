@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tirana — Çağdaş Duman</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tirana, Albania | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and impressions of Tirana, Albania, exploring its history, landmarks, museums, and vibrant city life.">
 
   <style>
     * {
       box-sizing: border-box;
     }
 
-    .tirana-page {
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 24px;
     }
 
-    .tirana-description {
+    h1 {
+      font-size: 38px;
+      margin: 25px 0 8px;
+    }
+
+    .location {
+      color: #777;
+      font-size: 15px;
+    }
+
+    .description {
       font-size: 17px;
-      line-height: 1.8;
       margin: 24px 0;
       text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .sections {
@@ -49,53 +85,73 @@
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
     }
 
     .card a:hover {
-      background: #222;
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      .tirana-page {
+      main {
+        margin-top: 24px;
         padding: 0 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="classbar" id="classbar"></div>
-  <header class="site-head" id="site-head"></header>
 
-  <main class="tirana-page">
-    <p><a href="world.html">← Around the World</a></p>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-    <div class="page-eyebrow">ALBANIA</div>
-    <h1 class="page-title">Tirana</h1>
+  <main>
+    <h1>Tirana, Albania</h1>
 
-    <div class="tirana-description">
+    <div class="location">
+      Albania · Capital City
+    </div>
+
+    <div class="description">
       <p>
         Tirana, the capital of Albania, is a city shaped by centuries
-        of history and cultural change. Its architecture brings
-        together Ottoman-era landmarks, Italian-influenced buildings,
-        and reminders of the communist period, while colorful streets,
-        lively squares, and cafés give the city its distinctive character.
+        of history and cultural change. Its architecture brings together
+        Ottoman-era landmarks, Italian-influenced buildings, and reminders
+        of the communist period, while colorful streets, lively squares,
+        and cafés give the city its distinctive character.
       </p>
 
       <p>
         Today, Tirana combines its historical heritage with the energy
         of a modern Balkan capital. Its museums, landmarks, and diverse
         neighborhoods offer different perspectives on Albania's past
-        and present. This collection brings together my personal
-        impressions of the city and its everyday atmosphere.
+        and present. These photographs capture my personal impressions
+        of the city and its everyday atmosphere.
       </p>
     </div>
 
     <section class="sections">
+
       <div class="card">
         <h2>Automotiva Fair Albania 2025</h2>
         <p>Explore photos from Automotiva Fair Albania 2025.</p>
@@ -119,14 +175,13 @@
         <p>Views of Tirana and its urban landscape.</p>
         <a href="tirana-city-views.html">Explore Photos ↗</a>
       </div>
+
     </section>
   </main>
 
-  <footer class="site-foot" id="site-foot"></footer>
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 
-  <script src="assets/js/common.js"></script>
-  <script>
-    buildChrome('world.html');
-  </script>
 </body>
 </html>
