@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Himarë, Albania | Çağdaş Duman</title>
+
+  <meta name="description" content="Personal travel photographs and impressions of Himarë, Albania, on the beautiful Ionian coast of the Albanian Riviera.">
+
   <style>
     * {
       box-sizing: border-box;
@@ -35,6 +37,7 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
@@ -44,7 +47,8 @@
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -55,6 +59,11 @@
     .description {
       font-size: 17px;
       margin: 24px 0;
+      text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
@@ -65,14 +74,26 @@
       text-align: center;
     }
 
+    .gallery h2 {
+      margin-top: 0;
+    }
+
+    .gallery p {
+      margin-bottom: 18px;
+    }
+
     .gallery a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
-      color: white;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -83,12 +104,21 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
         height: 250px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -102,26 +132,45 @@
   <main>
     <img
       class="cover"
-      src="assets/images/world/albania/himare/himare-cover.jpg.jpg"
-      alt="Himarë, Albania"
+      src="assets/images/world/albania/himare/himare-cover.jpg"
+      alt="Coastal scenery in Himarë, Albania"
     >
 
     <h1>Himarë, Albania</h1>
-    <p class="location">Albania · Adriatic Coast</p>
+    <p class="location">Albania · Albanian Riviera · Ionian Coast</p>
 
     <div class="description">
       <p>
-        Himarë is a charming coastal town on the Albanian Riviera,
-        known for its crystal-clear waters, beautiful beaches, and
-        relaxed Mediterranean atmosphere. Surrounded by mountains
-        and the Ionian Sea, it offers a wonderful blend of natural
-        beauty, traditional Albanian culture, and picturesque seaside life.
+        Himarë is a coastal town on the Albanian Riviera where the
+        rugged mountains of southern Albania descend toward the deep
+        blue waters of the Ionian Sea. Known for its crystal-clear
+        beaches, traditional stone houses, and traces of a long and
+        layered history, Himarë offers a quieter, more intimate
+        perspective on Albania’s Mediterranean coastline. Its cultural
+        heritage, shaped by centuries of local traditions and
+        connections across the region, gives the town a character
+        that extends far beyond its beautiful seafront.
+      </p>
+
+      <p>
+        What makes Himarë special is the balance between its natural
+        beauty and the unhurried rhythm of everyday life. Narrow
+        streets wind between old houses, the coastline opens onto
+        secluded coves, and the surrounding hills provide a striking
+        backdrop to the sea. These photographs capture my personal
+        impressions of Himarë—a place where mountain landscapes,
+        coastal traditions, and the changing colors of the Ionian Sea
+        come together to create a memorable corner of the Albanian
+        Riviera.
       </p>
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photos from Himarë.</p>
+      <p>
+        Explore my personal photographs capturing the landscapes,
+        coastal scenery, and atmosphere of Himarë.
+      </p>
 
       <a
         href="https://photos.app.goo.gl/PTpV2hXaKxDCWLLN9"
@@ -138,4 +187,3 @@
   </footer>
 </body>
 </html>
-
