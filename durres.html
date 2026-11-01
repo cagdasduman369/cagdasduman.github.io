@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Durrës, Albania | Çağdaş Duman</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -23,4 +24,166 @@
     }
 
     header a {
-     
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .cover {
+      width: 100%;
+      height: 480px;
+      overflow: hidden;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 45px 25px 70px;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+      margin: 0 0 5px;
+      color: #222;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 1.9;
+      text-align: justify;
+      margin-bottom: 55px;
+    }
+
+    .gallery {
+      text-align: center;
+      padding: 35px 20px 45px;
+      background: #f8f8f8;
+      border-radius: 4px;
+    }
+
+    .gallery h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin: 0 0 12px;
+      color: #222;
+    }
+
+    .gallery p {
+      font-size: 15px;
+      color: #666;
+      margin: 0 auto 25px;
+      max-width: 600px;
+    }
+
+    .gallery-button {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 27px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      transition: background 0.2s ease;
+    }
+
+    .gallery-button:hover {
+      background: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #999;
+      font-size: 13px;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        height: 300px;
+      }
+
+      .container {
+        padding: 30px 20px 50px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="world.html">← Back to Around the World</a>
+  </header>
+
+  <section class="cover">
+    <img
+      src="assets/images/world/albania/durres/durres-cover.jpg"
+      alt="Durrës, Albania"
+    >
+  </section>
+
+  <main class="container">
+
+    <h1>Durrës</h1>
+
+    <div class="subtitle">Albania · Adriatic Coast</div>
+
+    <div class="intro">
+      Located along Albania's Adriatic coast, Durrës is a city where
+      seaside life, ancient history and everyday urban culture come
+      together. Its long waterfront, Mediterranean atmosphere and
+      historical landmarks make it one of the country's most distinctive
+      coastal destinations. Walking through the city offers a glimpse
+      into its layered past while revealing the relaxed rhythm of life
+      along the Adriatic Sea.
+    </div>
+
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
+
+      <p>
+        A collection of personal photographs capturing the streets,
+        coastline and everyday atmosphere of Durrës.
+      </p>
+
+      <a
+        class="gallery-button"
+        href="https://photos.app.goo.gl/U5McD5g4JVSo7Wix6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Photos ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © Çağdaş Duman
+  </footer>
+
+</body>
+</html>
