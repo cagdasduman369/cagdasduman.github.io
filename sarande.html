@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarandë, Albania | Çağdaş Duman</title>
 
+  <meta name="description" content="Personal travel photographs and impressions of Sarandë, Albania, along the beautiful Ionian coast of the Albanian Riviera.">
+
   <style>
     * {
       box-sizing: border-box;
@@ -34,9 +36,19 @@
       padding: 0 24px;
     }
 
+    .cover {
+      display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
+    }
+
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -50,31 +62,42 @@
       text-align: justify;
     }
 
-    .sections {
+    .description p {
+      margin-bottom: 18px;
+    }
+
+    .subpages {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
       margin-top: 35px;
     }
 
-    .card {
-      padding: 28px;
-      background: #f6f6f6;
+    .subpage {
+      padding: 24px;
+      border: 1px solid #e5e5e5;
       border-radius: 8px;
     }
 
-    .card h2 {
+    .subpage h2 {
       margin-top: 0;
+      font-size: 22px;
     }
 
-    .card a {
+    .subpage p {
+      color: #555;
+    }
+
+    .subpage a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #333;
-      color: white;
+      margin-top: 8px;
+      color: #222;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
+    }
+
+    .subpage a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -82,6 +105,25 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -92,31 +134,53 @@
   </header>
 
   <main>
+    <!-- Verify the cover image path against the existing GitHub file. -->
+    <img
+      class="cover"
+      src="assets/images/world/albania/sarande/sarande-cover.jpg"
+      alt="Sarandë, Albania"
+    >
+
     <h1>Sarandë, Albania</h1>
-    <p class="location">Albania · Ionian Coast</p>
+    <p class="location">Albania · Albanian Riviera · Ionian Coast</p>
 
     <div class="description">
       <p>
-        Sarandë is a beautiful coastal city in southern Albania,
-        overlooking the Ionian Sea. Known for its waterfront,
-        scenic views, and cultural heritage, the city offers
-        wonderful opportunities to explore the region's landscapes
-        and history.
+        Sarandë is one of Albania’s most captivating coastal towns,
+        stretching along a sweeping bay where the turquoise waters
+        of the Ionian Sea meet the sunlit hills of the southern
+        Riviera. Shaped by centuries of Mediterranean exchange, the
+        town reflects a rich history that reaches back to antiquity,
+        while its waterfront, palm-lined promenade, and lively streets
+        reveal the character of a modern seaside destination. Beyond
+        its beaches, Sarandë also offers a gateway to the cultural
+        and natural treasures of southern Albania, from ancient
+        archaeological sites to secluded coves and dramatic coastal
+        landscapes.
+      </p>
+
+      <p>
+        What makes Sarandë memorable is the way the sea shapes both
+        its scenery and its rhythm of life. Fishing boats share the
+        horizon with ferries, cafés open onto the waterfront, and
+        the changing light transforms the bay throughout the day.
+        These photographs capture my personal impressions of
+        Sarandë—a place where the warmth of the Mediterranean, the
+        depth of history, and the beauty of the Albanian Riviera
+        come together along one remarkable stretch of coastline.
       </p>
     </div>
 
-    <section class="sections">
-      <div class="card">
-        <h2>City Views</h2>
-        <p>Explore my personal photographs of Sarandë's city views.</p>
+    <!-- Preserve and verify the existing Sarandë subpage links. -->
+    <section class="subpages">
+      <article class="subpage">
+        <h2>Explore Sarandë</h2>
+        <p>
+          Discover the waterfront, coastal scenery, and everyday
+          atmosphere of this Ionian seaside town.
+        </p>
         <a href="sarande-city-views.html">Explore Photos ↗</a>
-      </div>
-
-      <div class="card">
-        <h2>Baba Sadık Tekke</h2>
-        <p>Explore my personal photographs of Baba Sadık Tekke.</p>
-        <a href="baba-sadik-tekke.html">Explore Photos ↗</a>
-      </div>
+      </article>
     </section>
   </main>
 
