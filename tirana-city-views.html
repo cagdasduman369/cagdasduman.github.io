@@ -6,76 +6,122 @@
   <title>Tirana City Views | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs of Tirana, Albania.">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-
   <style>
-    .tirana-page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+    * {
+      box-sizing: border-box;
     }
 
-    .tirana-cover {
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .cover {
       display: block;
       width: 100%;
-      max-width: 900px;
-      height: auto;
-      margin: 0 auto 28px;
+      height: 430px;
+      object-fit: cover;
       border-radius: 8px;
     }
 
-    .tirana-page h1 {
-      margin: 0 0 8px;
+    h1 {
+      font-size: 38px;
+      margin: 25px 0 8px;
     }
 
-    .tirana-subtitle {
+    .location {
       color: #777;
-      margin: 0 0 20px;
+      font-size: 15px;
     }
 
-    .tirana-description {
-      margin-top: 24px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .photo-gallery {
-      width: 100%;
-      box-sizing: border-box;
-      margin: 32px auto 0;
-      padding: 28px 24px;
-      background: #f2f2f2;
+    .description p {
+      margin-bottom: 18px;
+    }
+
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
       border-radius: 8px;
-      text-align: center !important;
+      text-align: center;
     }
 
-    .photo-gallery h2 {
-      width: 100%;
-      margin: 0 0 12px;
-      text-align: center !important;
+    .gallery h2 {
+      margin-top: 0;
     }
 
-    .photo-gallery p {
-      display: block;
-      width: 100%;
-      margin: 0 0 20px;
-      text-align: center !important;
+    .gallery p {
+      text-align: center;
     }
 
-    .photo-gallery a {
-      display: table;
-      width: fit-content;
-      margin: 0 auto;
+    .gallery a {
+      display: inline-block;
+      margin-top: 10px;
       padding: 12px 24px;
       background: #000;
       color: #fff;
       text-decoration: none;
-      text-align: center;
       border-radius: 5px;
     }
 
-    .photo-gallery a:hover {
+    .gallery a:hover {
       background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -86,23 +132,21 @@
     <a href="world.html">← Around the World</a>
   </header>
 
-  <main class="tirana-page">
+  <main>
 
-    <!-- 1. Cover photo -->
     <img
-      class="tirana-cover"
+      class="cover"
       src="assets/images/world/albania/tirana/city-views-cover.jpg.jpg"
       alt="City views of Tirana, Albania"
     >
 
-    <!-- 2. Title -->
     <h1>Tirana City Views</h1>
 
-    <!-- 3. Subtitle -->
-    <p class="tirana-subtitle">Tirana, Albania</p>
+    <div class="location">
+      Albania · Capital City
+    </div>
 
-    <!-- 4. Introduction -->
-    <div class="tirana-description">
+    <div class="description">
       <p>
         Tirana, the vibrant capital of Albania, is a city where
         layers of history meet the energy of modern urban life.
@@ -120,8 +164,7 @@
       </p>
     </div>
 
-    <!-- 5. Google Photos gallery -->
-    <section class="photo-gallery">
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -136,6 +179,10 @@
     </section>
 
   </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
