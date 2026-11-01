@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lezhë, Albania | Çağdaş Duman</title>
 
-  <meta name="description" content="Personal travel photographs and impressions of Lezhë, Albania, a historic town associated with Skanderbeg and the country's rich cultural heritage.">
-
   <style>
     * {
       box-sizing: border-box;
@@ -39,15 +37,15 @@
     .cover {
       display: block;
       width: 100%;
-      height: 430px;
+      height: auto;
+      max-height: 560px;
       object-fit: cover;
-      border-radius: 8px;
-      background: #e8edf0;
+      border-radius: 6px;
+      margin-bottom: 28px;
     }
 
     h1 {
       font-size: 38px;
-      line-height: 1.25;
       margin-bottom: 8px;
     }
 
@@ -62,64 +60,35 @@
       text-align: justify;
     }
 
-    .description p {
-      margin-bottom: 18px;
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
     }
 
-    .gallery {
-      margin-top: 35px;
-      padding: 25px;
+    .card {
+      padding: 28px;
       background: #f6f6f6;
       border-radius: 8px;
-      text-align: center;
     }
 
-    .gallery h2 {
+    .card h2 {
       margin-top: 0;
     }
 
-    .gallery a {
+    .card a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-
-    .gallery a:hover {
       background: #333;
-    }
-
-    .subpages {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 35px;
-    }
-
-    .subpage {
-      padding: 24px;
-      border: 1px solid #e5e5e5;
-      border-radius: 8px;
-    }
-
-    .subpage h2 {
-      margin-top: 0;
-      font-size: 22px;
-    }
-
-    .subpage a {
-      display: inline-block;
-      margin-top: 8px;
-      color: #222;
-      font-weight: bold;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
     }
 
-    .subpage a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background: #555;
     }
 
     footer {
@@ -128,35 +97,17 @@
       color: #777;
       font-size: 14px;
     }
-
-    @media (max-width: 600px) {
-      main {
-        margin-top: 24px;
-        padding: 0 18px;
-      }
-
-      .cover {
-        height: 250px;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
-
-      .description {
-        font-size: 16px;
-      }
-    }
   </style>
 </head>
 
 <body>
+
   <header>
     <a href="world.html">← Around the World</a>
   </header>
 
   <main>
-    <!-- Replace this image path with the exact existing Lezhë cover path. -->
+
     <img
       class="cover"
       src="assets/images/world/albania/lezhe/lezhe-cover.jpg"
@@ -164,59 +115,64 @@
     >
 
     <h1>Lezhë, Albania</h1>
-    <p class="location">Albania · Northwestern Albania</p>
+
+    <p class="location">
+      Albania · Northwestern Albania
+    </p>
 
     <div class="description">
       <p>
-        Lezhë is a historic town in northwestern Albania where the
-        stories of the country's past meet the quiet beauty of its
-        surrounding landscapes. With roots reaching back to the ancient
-        city of Lissus, Lezhë has occupied an important position at the
-        crossroads of Mediterranean and Balkan history. Its most
-        enduring historical association is with Gjergj Kastrioti
-        Skanderbeg, Albania's celebrated national hero, whose alliance
-        of Albanian nobles was established here in 1444. The town's
-        historic landmarks offer a glimpse into the events and people
-        who helped shape Albania's national identity.
+        Lezhë is a historic town in northwestern Albania where the stories
+        of the country's past meet the quiet beauty of its surrounding
+        landscapes. With roots reaching back to the ancient city of Lissus,
+        Lezhë has occupied an important position at the crossroads of
+        Mediterranean and Balkan history. Its most enduring historical
+        association is with Gjergj Kastrioti Skanderbeg, Albania's celebrated
+        national hero, whose alliance of Albanian nobles was established
+        here in 1444. The town's historic landmarks offer a glimpse into
+        the events and people that helped shape Albania's national identity.
       </p>
 
       <p>
-        Beyond its historical significance, Lezhë reveals a quieter
-        side of Albania, with its castle overlooking the town, nearby
-        rivers and wetlands, and the Adriatic coastline within easy
-        reach. The surrounding region brings together cultural
-        heritage, open landscapes, and the rhythms of everyday local
-        life. These photographs capture my personal impressions of
-        Lezhë and its surroundings—a place where history remains part
-        of the landscape and where even a short visit can open a window
-        onto Albania's rich and complex past.
+        Beyond its historical significance, Lezhë reveals a quieter side
+        of Albania, with its castle overlooking the town, nearby rivers
+        and wetlands, and the Adriatic coastline within easy reach.
+        The surrounding region brings together cultural heritage, open
+        landscapes, and the rhythms of everyday local life. These
+        photographs capture my personal impressions of Lezhë and its
+        surroundings—a place where history remains part of the landscape
+        and where even a short visit can open a window onto Albania's
+        rich and complex past.
       </p>
     </div>
 
-    <!-- Keep the existing subpage links if their paths differ. -->
-    <section class="subpages">
-      <article class="subpage">
+    <section class="sections">
+
+      <div class="card">
         <h2>Skanderbeg Memorial</h2>
         <p>
-          Discover the memorial dedicated to Albania's national hero
-          and the historical legacy associated with Lezhë.
+          Explore my photographs of the memorial dedicated to
+          Albania's national hero, Gjergj Kastrioti Skanderbeg.
         </p>
         <a href="skanderbeg-memorial.html">Explore Photos ↗</a>
-      </article>
+      </div>
 
-      <article class="subpage">
+      <div class="card">
         <h2>Shëngjoll Camping Area</h2>
         <p>
-          Explore photographs from the nearby coastal area and its
-          natural surroundings.
+          Discover my photographs of the coastal surroundings
+          and natural landscapes of Shëngjoll.
         </p>
         <a href="shengjoll-camping-area.html">Explore Photos ↗</a>
-      </article>
+      </div>
+
     </section>
+
   </main>
 
   <footer>
     © Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
