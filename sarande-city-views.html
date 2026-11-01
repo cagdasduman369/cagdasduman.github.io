@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City Views of Sarandë | Çağdaş Duman</title>
+
+  <title>Sarandë City Views | Çağdaş Duman</title>
+
+  <meta name="description" content="Personal photographs of Sarandë, Albania, capturing the waterfront, urban scenery, and everyday atmosphere of the Albanian Riviera.">
 
   <style>
     * {
@@ -34,23 +37,24 @@
       padding: 0 24px;
     }
 
+    .cover {
+      display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
+    }
+
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
       color: #777;
       margin-top: 0;
-    }
-
-    .cover-photo {
-      width: 100%;
-      max-height: 550px;
-      object-fit: cover;
-      display: block;
-      margin: 25px 0;
-      border-radius: 8px;
     }
 
     .description {
@@ -59,39 +63,30 @@
       text-align: justify;
     }
 
+    .description p {
+      margin-bottom: 18px;
+    }
+
     .gallery {
-      margin-top: 30px;
-      padding: 28px 24px;
-      background: #f2f2f2;
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     .gallery h2 {
-      width: 100%;
-      margin: 0 0 12px;
-      text-align: center;
-    }
-
-    .gallery p {
-      width: 100%;
-      margin: 0 0 20px;
-      text-align: center;
+      margin-top: 0;
     }
 
     .gallery a {
       display: inline-block;
-      align-self: center;
-      margin: 0 auto;
+      margin-top: 10px;
       padding: 12px 24px;
       background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      text-align: center;
+      border-radius: 4px;
     }
 
     .gallery a:hover {
@@ -106,59 +101,85 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-
   <header>
-    <a href="sarande.html">← Back to Sarandë</a>
+    <a href="world.html">← Around the World</a>
   </header>
 
   <main>
-
     <img
-      src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg.jpg"
+      class="cover"
+      src="assets/images/world/albania/sarande/sarande-city-views-cover.jpg"
       alt="City views of Sarandë, Albania"
-      class="cover-photo"
     >
 
-    <h1>City Views of Sarandë</h1>
-
-    <p class="location">Sarandë, Albania · Ionian Coast</p>
+    <h1>Sarandë City Views</h1>
+    <p class="location">Sarandë · Albanian Riviera · Albania</p>
 
     <div class="description">
       <p>
-        Sarandë is a picturesque coastal city in southern Albania,
-        overlooking the Ionian Sea. Its waterfront, hillside buildings,
-        and sweeping sea views make it a wonderful place to explore
-        and photograph.
+        Sarandë's cityscape unfolds along one of the most striking
+        bays of the Albanian Riviera, where buildings climb the
+        surrounding hills and the Ionian Sea provides a vivid blue
+        backdrop. From its waterfront promenade to its hillside
+        streets, the town reveals a fascinating combination of
+        Mediterranean scenery, contemporary development, and the
+        everyday life of a growing coastal destination. Its changing
+        skyline reflects Sarandë's transformation into one of
+        southern Albania's best-known seaside towns.
+      </p>
+
+      <p>
+        Exploring Sarandë on foot offers a different perspective
+        from simply enjoying its beaches. Streets open onto
+        unexpected sea views, balconies overlook the bay, and the
+        light changes the appearance of the town throughout the day.
+        These photographs capture my personal impressions of
+        Sarandë beyond the shoreline, documenting its urban
+        landscapes, architectural contrasts, and distinctive
+        relationship with the Ionian coast.
       </p>
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-
       <p>
-        Explore my personal travel photos from Sarandë.
+        Explore my personal photographs of Sarandë's streets,
+        architecture, waterfront, and city views.
       </p>
 
       <a
-        href="https://photos.app.goo.gl/QfWyPfr3nbAnZYi58"
+        href="https://photos.app.goo.gl/59rUiZkHhq971ceb9"
         target="_blank"
         rel="noopener noreferrer"
-      >View All Photos ↗</a>
+      >
+        View All Photos ↗
+      </a>
     </section>
-
   </main>
 
   <footer>
     © Çağdaş Duman · Around the World
   </footer>
-
 </body>
 </html>
