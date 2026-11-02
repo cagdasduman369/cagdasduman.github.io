@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ljubljana City Views | Çağdaş Duman</title>
 
+  <meta name="description" content="Personal travel photographs and impressions of Ljubljana, Slovenia, capturing its historic architecture, riverside streets, bridges, and beautiful city views.">
+
   <style>
     * {
       box-sizing: border-box;
@@ -28,22 +30,25 @@
       text-decoration: none;
     }
 
-    .cover {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      display: block;
-    }
-
     main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 24px;
     }
 
+    .cover {
+      display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
+    }
+
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -57,32 +62,38 @@
       text-align: justify;
     }
 
-    .gallery-section {
-      text-align: center;
-      margin-top: 55px;
-      padding: 35px 20px;
+    .description p {
+      margin-bottom: 18px;
+    }
+
+    .gallery {
+      margin-top: 35px;
+      padding: 25px;
       background: #f6f6f6;
       border-radius: 8px;
+      text-align: center;
     }
 
-    .gallery-section h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
+    .gallery h2 {
+      margin-top: 0;
     }
 
-    .gallery-section p {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 25px;
+    .gallery p {
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
-      padding: 13px 28px;
-      background: #333;
-      color: white;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -93,12 +104,21 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 280px;
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -109,41 +129,35 @@
     <a href="ljubljana.html">← Back to Ljubljana</a>
   </header>
 
-  <img
-    class="cover"
-    src="assets/images/world/slovenia/ljubljana/city-views/ljubljana-city-views-cover.jpg"
-    alt="Ljubljana city views"
-  >
-
   <main>
+    <img
+      class="cover"
+      src="assets/images/world/slovenia/ljubljana/city-views/ljubljana-city-views-cover.jpg"
+      alt="Ljubljana city views"
+    >
+
     <h1>Ljubljana City Views</h1>
     <p class="location">Ljubljana · Slovenia</p>
 
     <div class="description">
       <p>
-        Ljubljana reveals its beauty through a delightful blend of
-        historic architecture, charming riverside streets and peaceful
-        urban landscapes. At the heart of the city, the Ljubljanica River
-        winds beneath elegant bridges and past colourful buildings,
-        creating some of the most picturesque scenes in Slovenia.
-        From the lively squares and narrow streets of the old town to
-        the impressive views of Ljubljana Castle rising above the
-        rooftops, every corner offers a different perspective on the
-        city's character. These photographs capture my personal
-        impressions of Ljubljana, its architectural charm and the
-        atmosphere that makes this capital so memorable.
+        Ljubljana reveals its character through a harmonious blend of historic architecture, elegant bridges, and the peaceful atmosphere of a riverside capital. At the heart of the city, the Ljubljanica River flows past colourful façades, outdoor cafés, and lively public squares, creating one of the most recognisable urban landscapes in Slovenia. The Triple Bridge and Dragon Bridge are among the city's distinctive landmarks, while Ljubljana Castle stands above the historic centre, offering impressive views across the rooftops and surrounding hills.
+      </p>
+
+      <p>
+        Beyond its architectural highlights, Ljubljana is known for its welcoming atmosphere, walkable streets, and thoughtful combination of historic heritage and contemporary city life. Its compact centre invites visitors to explore at a relaxed pace, discovering picturesque corners and different perspectives along the river. These photographs capture my personal impressions of Ljubljana, preserving the city's distinctive scenery, architectural details, and the atmosphere that made my visit memorable.
       </p>
     </div>
 
-    <section class="gallery-section">
-      <h2>Ljubljana City Views — Photo Gallery</h2>
+    <section class="gallery">
+      <h2>My Photo Gallery</h2>
       <p>
-        Explore my personal collection of photographs capturing
-        Ljubljana's streets, architecture and beautiful city scenery.
+        Explore my personal travel photographs capturing the
+        historic streets, architecture, bridges, riverside scenery,
+        and everyday atmosphere of Ljubljana.
       </p>
 
       <a
-        class="gallery-button"
         href="https://photos.app.goo.gl/X9fYZgunPkdwQpcb7"
         target="_blank"
         rel="noopener noreferrer"
@@ -158,4 +172,3 @@
   </footer>
 </body>
 </html>
-```
