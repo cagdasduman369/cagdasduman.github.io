@@ -58,7 +58,7 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
@@ -97,6 +97,16 @@
       color: #777;
       font-size: 14px;
     }
+
+    @media (max-width: 600px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
 
@@ -117,28 +127,20 @@
     <div class="description">
       <p>
         Located in the mountainous landscapes of western Bosnia and
-        Herzegovina, Mrkonjić Grad is a place where nature, local
-        traditions, and the quiet rhythm of small-town life come
-        together. Surrounded by forests, hills, and clear rivers,
-        the wider region offers a remarkable variety of natural
+        Herzegovina, Mrkonjić Grad is surrounded by forests, hills,
+        and clear rivers. The wider region offers beautiful natural
         scenery and opportunities to experience the countryside.
-        Among its distinctive destinations is the village of Pecka,
-        known for its impressive limestone landscapes and its
-        growing role as a center for outdoor activities,
-        environmental awareness, and community-based initiatives.
+        Nearby Pecka is particularly known for its limestone
+        landscapes, outdoor activities, and community initiatives.
       </p>
 
       <p>
-        My time in this region offered an opportunity to discover
-        places and experiences beyond the usual travel routes.
-        From the climbing landscapes around Pecka and the community
+        My visit offered an opportunity to discover places beyond
+        the usual travel routes. From the climbing area and community
         workshops at Pecka Visitor Center to the natural beauty of
         the Sana River springs, each location revealed a different
-        aspect of the area's character. This collection brings
-        together my personal photographs and memories of Mrkonjić
-        Grad and its surroundings, capturing the landscapes,
-        activities, and local experiences that made this visit
-        particularly memorable.
+        aspect of the region. This collection brings together my
+        personal photographs and memories of these experiences.
       </p>
     </div>
 
@@ -158,8 +160,8 @@
         <h2>Pecka Visitor Center – Community Workshop</h2>
         <p>
           Explore photographs from a community workshop at Pecka
-          Visitor Center, highlighting local participation,
-          collaboration, and community life.
+          Visitor Center, highlighting local participation
+          and collaboration.
         </p>
         <a href="pecka-visitor-center-community-workshop.html">Explore Photos ↗</a>
       </div>
@@ -169,7 +171,7 @@
         <p>
           Discover moments from a mushroom workshop exploring
           local knowledge, wild mushrooms, and the natural
-          resources of the surrounding countryside.
+          resources of the countryside.
         </p>
         <a href="pecka-visitor-center-mushroom-workshop.html">Explore Photos ↗</a>
       </div>
@@ -177,9 +179,9 @@
       <div class="card">
         <h2>Sana River Springs</h2>
         <p>
-          Experience the peaceful natural scenery of the Sana
-          River springs, where clear waters and lush surroundings
-          create one of the region's memorable landscapes.
+          Experience the peaceful scenery of the Sana River
+          springs, where clear waters and lush surroundings
+          create a memorable natural landscape.
         </p>
         <a href="sana-river-springs.html">Explore Photos ↗</a>
       </div>
