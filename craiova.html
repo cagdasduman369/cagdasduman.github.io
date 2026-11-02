@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Craiova, Romania | Çağdaş Duman</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Personal travel photographs and impressions of Craiova, Romania.">
 
   <style>
     * {
@@ -16,7 +14,7 @@
 
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       color: #333;
       background: #fff;
       line-height: 1.7;
@@ -30,7 +28,6 @@
     header a {
       color: #333;
       text-decoration: none;
-      font-size: 14px;
     }
 
     main {
@@ -41,29 +38,118 @@
 
     h1 {
       font-size: 38px;
-      font-weight: 600;
       margin-bottom: 8px;
     }
 
     .location {
-      color: #888;
-      font-size: 14px;
+      color: #777;
       margin-top: 0;
     }
 
     .description {
-      font-size: 16px;
-      margin: 25px 0 35px;
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .gallery-section {
-      margin-top: 30px;
-      padding: 30px 25px;
-      background: #f6f6f6;
-      border-radius: 8px;
-      text-align: center;
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
     }
 
-    .gallery-section h2 {
-      font
+    .card {
+      padding: 28px;
+      background: #f6f6f6;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
+
+  <main>
+
+    <h1>Craiova, Romania</h1>
+
+    <p class="location">
+      Romania · Oltenia Region
+    </p>
+
+    <div class="description">
+      <p>
+        Craiova is one of southern Romania's most distinctive cities,
+        known for its historic architecture, lively streets, and
+        cultural heritage. As an important regional centre in Oltenia,
+        the city combines a rich past with the atmosphere of modern
+        Romanian urban life.
+      </p>
+
+      <p>
+        From its elegant city views to the quieter places connected
+        with everyday life, Craiova offers different perspectives
+        on the character of the region. These photographs capture
+        my personal impressions and memories of the city.
+      </p>
+    </div>
+
+    <section class="sections">
+
+      <div class="card">
+        <h2>City Views</h2>
+        <p>
+          Explore my photographs of Craiova's streets,
+          architecture, landmarks, and urban atmosphere.
+        </p>
+        <a href="city-views.html">Explore Photos ↗</a>
+      </div>
+
+      <div class="card">
+        <h2>Kindergarten</h2>
+        <p>
+          Discover my photographs and personal memories
+          from a kindergarten in Craiova.
+        </p>
+        <a href="kindergarten.html">Explore Photos ↗</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+
+</body>
+</html>
