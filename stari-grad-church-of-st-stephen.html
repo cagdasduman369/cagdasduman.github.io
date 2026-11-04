@@ -19,92 +19,79 @@
       line-height: 1.7;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 0 auto;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
       width: 100%;
-      height: auto;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
       display: block;
-    }
-
-    header {
-      text-align: center;
-      padding: 35px 0 15px;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: 36px;
-      font-weight: 600;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
-    .subtitle {
+    .location {
       color: #777;
-      font-size: 16px;
+      margin-top: 0;
     }
 
-    .intro {
-      max-width: 850px;
-      margin: 20px auto 45px;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      font-size: 16px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding: 20px 0 65px;
     }
 
-    .gallery h2 {
-      font-size: 27px;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    .gallery p {
-      color: #666;
-      margin-bottom: 25px;
-    }
-
-    .gallery-button {
+    .gallery a {
       display: inline-block;
-      background: #111;
-      color: #fff;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
       text-decoration: none;
-      padding: 13px 28px;
-      font-size: 14px;
-      letter-spacing: 0.3px;
-      transition: background 0.3s ease;
+      border-radius: 5px;
     }
 
-    .gallery-button:hover {
-      background: #444;
-    }
-
-    .back-link {
-      display: block;
+    footer {
       text-align: center;
-      padding: 0 0 35px;
-      color: #555;
-      text-decoration: none;
+      padding: 25px;
+      color: #777;
       font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 28px;
+    @media (max-width: 600px) {
+      .cover {
+        height: 250px;
       }
 
-      .intro {
-        font-size: 15px;
+      h1 {
+        font-size: 30px;
       }
     }
   </style>
@@ -112,20 +99,22 @@
 
 <body>
 
-  <img
-    src="assets/images/world/croatia/stari-grad/church-of-st-stephen/church-of-st-stephen-cover.jpg"
-    alt="Church of St. Stephen in Stari Grad, Croatia"
-    class="cover"
-  >
+  <header>
+    <a href="stari-grad.html">← Back to Stari Grad</a>
+  </header>
 
-  <div class="container">
+  <main>
 
-    <header>
-      <h1>Church of St. Stephen</h1>
-      <div class="subtitle">Stari Grad · Hvar Island · Croatia</div>
-    </header>
+    <img
+      class="cover"
+      src="assets/images/world/croatia/stari-grad/church-of-st-stephen/church-of-st-stephen-cover.jpg"
+      alt="Church of St. Stephen, Stari Grad, Croatia"
+    >
 
-    <section class="intro">
+    <h1>Church of St. Stephen</h1>
+    <p class="location">Stari Grad · Hvar Island · Croatia</p>
+
+    <div class="description">
       <p>
         Located in the historic heart of Stari Grad, the Church of St. Stephen
         is one of the town's most recognizable landmarks. Surrounded by narrow
@@ -134,7 +123,7 @@
         character. These photographs capture my visit to this peaceful
         historic corner of Hvar Island.
       </p>
-    </section>
+    </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
@@ -146,17 +135,16 @@
         href="https://photos.app.goo.gl/eVxDfwTVAG9eJTN58"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
     </section>
 
-    <a href="stari-grad.html" class="back-link">
-      ← Back to Stari Grad
-    </a>
+  </main>
 
-  </div>
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
