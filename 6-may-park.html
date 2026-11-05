@@ -39,13 +39,13 @@
       width: 100%;
       height: 430px;
       object-fit: cover;
-      border-radius: 8px;
-      background: #e8edf0;
+      border-radius: 6px;
+      display: block;
     }
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      margin: 28px 0 5px;
     }
 
     .location {
@@ -55,26 +55,36 @@
 
     .description {
       font-size: 17px;
-      margin: 24px 0;
+      margin: 25px 0 40px;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 35px;
-      padding: 25px;
-      background: #f6f6f6;
-      border-radius: 8px;
       text-align: center;
+      margin: 45px 0;
+    }
+
+    .gallery h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 22px;
     }
 
     .gallery a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #333;
-      color: white;
+      padding: 12px 28px;
+      background: #222;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
+    }
+
+    .gallery a:hover {
+      background: #444;
     }
 
     footer {
@@ -82,11 +92,12 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
+      border-top: 1px solid #eee;
     }
 
     @media (max-width: 600px) {
       .cover {
-        height: 250px;
+        height: 260px;
       }
 
       h1 {
@@ -98,40 +109,35 @@
 
 <body>
   <header>
-    <a href="../../world.html">← Around the World</a>
+    <a href="batumi.html">← Back to Batumi</a>
   </header>
 
   <main>
     <img
       class="cover"
-      src="../../assets/images/world/georgia/batumi/6-may-park/6-may-park-cover.jpg"
-      alt="6 May Park, Batumi, Georgia"
+      src="assets/images/world/georgia/batumi/6-may-park/6-may-park-cover.jpg"
+      alt="6 May Park in Batumi, Georgia"
     >
 
-    <h1>6 May Park, Batumi</h1>
+    <h1>6 May Park</h1>
     <p class="location">Batumi · Georgia</p>
 
     <div class="description">
       <p>
         Located in the heart of Batumi, 6 May Park is one of the city's
-        oldest and most beloved green spaces. With its leafy walking paths,
-        peaceful lake, and relaxing atmosphere, the park offers a welcome
-        escape from the busy streets of the city. It is a popular place
-        for both locals and visitors to enjoy nature, spend time outdoors,
-        and experience a quieter side of Batumi. These photographs capture
-        my personal memories of 6 May Park and its pleasant atmosphere.
+        oldest and most beloved green spaces. With its peaceful pathways,
+        beautiful trees, and relaxing atmosphere, the park offers a pleasant
+        escape from the busy streets of the city. It is a popular place for
+        walking, spending time outdoors, and enjoying nature in the middle
+        of Batumi. These photographs capture my personal memories of
+        6 May Park and its pleasant atmosphere.
       </p>
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photos from 6 May Park.</p>
-
-      <a
-        href="https://photos.app.goo.gl/ZDfYT1jgiUNfEPdy9"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <p>Explore my personal photographs and memories of 6 May Park.</p>
+      <a href="https://photos.app.goo.gl/ZDfYT1jgiUNfEPdy9" target="_blank" rel="noopener">
         View All Photos ↗
       </a>
     </section>
