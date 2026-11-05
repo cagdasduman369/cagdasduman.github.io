@@ -25,14 +25,26 @@
       padding: 30px 20px 50px;
     }
 
+    .back {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
     .cover {
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: contain;
-    display: block;
-    border-radius: 5px;
-  }
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
+      display: block;
+      border-radius: 5px;
+    }
 
     h1 {
       font-size: 34px;
@@ -81,39 +93,19 @@
       background: #444;
     }
 
-    .back {
-      display: inline-block;
-      margin-top: 40px;
-      color: #333;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
       color: #888;
       font-size: 13px;
       margin-top: 45px;
     }
-
-    @media (max-width: 700px) {
-      .cover {
-        height: 260px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <main class="container">
+
+    <a class="back" href="budapest.html">← Back to Budapest</a>
 
     <img
       class="cover"
@@ -142,10 +134,8 @@
       </a>
     </section>
 
-    <a class="back" href="budapest.html">← Back to Budapest</a>
-
     <footer>
-      © Çağdaş Duman
+      © 2026 Çağdaş Duman
     </footer>
 
   </main>
