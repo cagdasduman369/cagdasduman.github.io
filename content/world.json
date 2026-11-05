@@ -21,6 +21,6 @@
     { "country": "Serbia", "folder": "serbia", "places": ["Belgrade", "Divčibare", "Gornji Milanovac", "Kamenica", "Kragujevac", "Novi Sad"] },
     { "country": "Slovakia", "folder": "slovakia", "places": ["Bratislava"] },
     { "country": "Slovenia", "folder": "slovenia", "places": ["Ljubljana", "Maribor"] },
-    { "country": "The United States", "folder": "united-states", "places": ["New York", "Philadelphia", "Washington DC"] }
+    { "country": "The United States", "folder": "united-states", "places": ["New York City", "Washington DC", "Virginia", "Philadelphia", "Maryland", "Pattenburg"] }
   ]
 }
