@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Metropolitan Museum of Art, New York City | Çağdaş Duman</title>
+
   <meta name="description" content="Personal travel photographs and memories from The Metropolitan Museum of Art in New York City, by Çağdaş Duman.">
 
   <style>
@@ -24,15 +26,6 @@
       padding: 45px 25px;
     }
 
-    .cover {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
-    }
-
     .back-link {
       display: inline-block;
       margin-bottom: 25px;
@@ -43,6 +36,16 @@
 
     .back-link:hover {
       color: #000;
+    }
+
+    .cover-image {
+      display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+      margin: 0 0 30px;
     }
 
     h1 {
@@ -62,36 +65,41 @@
       font-size: 16px;
       line-height: 1.8;
       text-align: justify;
-      margin-bottom: 40px;
+      margin: 0 0 40px;
     }
 
-    .gallery {
+    .gallery-section {
       text-align: center;
-      padding-top: 20px;
+      margin: 45px auto 20px;
+      padding: 30px 20px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      max-width: 700px;
     }
 
-    .gallery h2 {
-      font-size: 25px;
-      margin-bottom: 12px;
+    .gallery-section h2 {
+      font-size: 23px;
       color: #222;
+      margin: 0 0 15px;
     }
 
-    .gallery p {
+    .gallery-section p {
       color: #666;
       font-size: 15px;
       line-height: 1.7;
-      margin-bottom: 25px;
+      margin: 0 0 25px;
     }
 
     .gallery-button {
       display: inline-block;
-      padding: 14px 28px;
-      background: #111;
+      background: #222;
       color: #fff;
       text-decoration: none;
+      padding: 14px 28px;
       border-radius: 5px;
-      font-size: 14px;
-      transition: background 0.2s ease;
+      font-size: 15px;
+      transition: 0.2s ease;
     }
 
     .gallery-button:hover {
@@ -103,12 +111,16 @@
         padding: 30px 18px;
       }
 
-      .cover {
+      h1 {
+        font-size: 30px;
+      }
+
+      .cover-image {
         height: 260px;
       }
 
-      h1 {
-        font-size: 30px;
+      .gallery-section {
+        padding: 25px 15px;
       }
     }
   </style>
@@ -118,12 +130,14 @@
 
   <main class="container">
 
-    <a href="new-york-city.html" class="back-link">← Back to New York City</a>
+    <a href="new-york-city.html" class="back-link">
+      ← Back to New York City
+    </a>
 
     <img
       src="assets/images/world/united-states/new-york-city/the-metropolitan-museum-of-art/metropolitan-museum-cover.jpeg"
       alt="The Metropolitan Museum of Art, New York City"
-      class="cover"
+      class="cover-image"
     >
 
     <h1>The Metropolitan Museum of Art</h1>
@@ -131,19 +145,23 @@
     <div class="location">New York City · United States</div>
 
     <p class="intro">
-      The Metropolitan Museum of Art, widely known as The Met, is one of
-      the world's most renowned art museums, located along Fifth Avenue
-      beside Central Park in Manhattan. Founded in 1870, the museum houses
-      an extraordinary collection spanning thousands of years and cultures,
-      from ancient Egyptian artifacts and classical sculptures to European
-      paintings and works of modern art. Its impressive galleries and
-      architectural details make it an essential cultural destination
-      in New York City. Visiting The Met offers an opportunity to explore
-      the artistic achievements and cultural heritage of civilizations
-      from around the world.
+      The Metropolitan Museum of Art, widely known as The Met, is one
+      of the world's most distinguished cultural institutions, located
+      along Fifth Avenue beside Central Park in Manhattan. Founded in
+      1870, the museum brings together an extraordinary collection of
+      art and historical objects spanning more than five thousand years
+      of human creativity. From ancient Egyptian artifacts and classical
+      sculptures to European masterpieces, Asian art, and modern works,
+      its galleries offer a remarkable journey through the artistic
+      achievements of civilizations across the world. Beyond its
+      collections, the museum's impressive architecture and carefully
+      designed exhibition spaces make it one of New York City's most
+      memorable cultural destinations. These photographs capture my
+      personal memories of exploring this remarkable museum.
     </p>
 
-    <section class="gallery">
+    <section class="gallery-section">
+
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -159,6 +177,7 @@
       >
         View All Photos ↗
       </a>
+
     </section>
 
   </main>
