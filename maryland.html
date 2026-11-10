@@ -31,7 +31,7 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 24px;
     }
@@ -59,15 +59,25 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
 
     .card {
-      padding: 28px;
+      padding: 20px;
       background: #f6f6f6;
       border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
     }
 
     .card h2 {
@@ -112,6 +122,10 @@
       .description {
         font-size: 16px;
       }
+
+      .sections {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -147,6 +161,7 @@
     <section class="sections">
 
       <div class="card">
+        <img src="assets/images/world/united-states/maryland/national-harbor/national-harbor-cover.jpeg" alt="National Harbor, Maryland">
         <h2>National Harbor</h2>
         <p>
           A vibrant waterfront destination along the Potomac
@@ -157,6 +172,7 @@
       </div>
 
       <div class="card">
+        <img src="assets/images/world/united-states/maryland/peach-orchard/peach-orchard-cover.jpg" alt="Peach Orchard, Maryland">
         <h2>Peach Orchard</h2>
         <p>
           A peaceful place in Maryland, captured through
@@ -175,5 +191,3 @@
 
 </body>
 </html>
-```
-
