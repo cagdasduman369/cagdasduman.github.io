@@ -53,48 +53,73 @@
       font-size: 16px;
       line-height: 1.8;
       text-align: justify;
-      margin-bottom: 35px;
+      margin: 0 0 35px;
     }
 
     .places-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      width: 100%;
+      max-width: 900px;
     }
 
     .place-card {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      min-height: 85px;
-      padding: 22px 24px;
+      min-width: 0;
       background: #fff;
       border: 1px solid #e5e5e5;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
       text-decoration: none;
       color: #333;
       transition: 0.2s ease;
     }
 
     .place-card:hover {
-      background: #f0f0f0;
       border-color: #ccc;
       transform: translateY(-2px);
+    }
+
+    .place-card img {
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
 
     .place-card h2 {
       font-size: 17px;
       font-weight: 600;
-      margin: 0;
+      margin: 18px 12px 14px;
     }
 
-    .arrow {
-      font-size: 20px;
-      color: #777;
-      margin-left: 15px;
+    .explore-button {
+      display: inline-block;
+      margin: auto 0 20px;
+      padding: 11px 23px;
+      background: #000;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
     }
 
-    @media (max-width: 650px) {
+    .place-card:hover .explore-button {
+      background: #333;
+    }
+
+    .place-card:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .place-card:last-child img {
+      height: 220px;
+    }
+
+    @media (max-width: 700px) {
       .container {
         padding: 30px 18px;
       }
@@ -105,6 +130,15 @@
 
       .places-grid {
         grid-template-columns: 1fr;
+      }
+
+      .place-card:last-child {
+        grid-column: auto;
+      }
+
+      .place-card img,
+      .place-card:last-child img {
+        height: 240px;
       }
     }
   </style>
@@ -131,38 +165,45 @@
     <section class="places-grid">
 
       <a href="cityscape-and-views.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/cityscape-and-views/cityscape-and-views-cover.jpg" alt="Baku Cityscape and Views">
         <h2>Cityscape &amp; Views</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="central-botanical-garden.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/central-botanical-garden/central-botanical-garden-cover.jpg" alt="Central Botanical Garden, Baku">
         <h2>Central Botanical Garden</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="icheri-sheher.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/icheri-sheher/icheri-sheher-cover.jpg" alt="Old City, Baku">
         <h2>Old City</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="military-trophies-park.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/military-trophies-park/military-trophies-park-cover.jpg" alt="Military Trophies Park, Baku">
         <h2>Military Trophies Park</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="national-flag-museum.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/national-flag-museum/national-flag-museum-cover.jpg" alt="National Flag Museum, Baku">
         <h2>National Flag Museum</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="railway-museum.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/railway-museum/railway-museum-cover.jpg" alt="Railway Museum, Baku">
         <h2>Railway Museum</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
       <a href="alley-of-martyrs.html" class="place-card">
+        <img src="assets/images/world/azerbaijan/baku/alley-of-martyrs/alley-of-martyrs-cover.jpg" alt="Alley of Martyrs, Baku">
         <h2>Alley of Martyrs</h2>
-        <span class="arrow">↗</span>
+        <span class="explore-button">Explore Photos ↗</span>
       </a>
 
     </section>
