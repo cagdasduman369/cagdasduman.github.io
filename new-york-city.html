@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>New York City | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from New York City, by Çağdaş Duman.">
 
@@ -15,7 +16,8 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #333;
-      background: #f7f7f7;
+      background: #fff;
+      line-height: 1.7;
     }
 
     .container {
@@ -58,40 +60,50 @@
 
     .places-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
     .place-card {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 85px;
-      padding: 22px 24px;
-      background: #fff;
-      border: 1px solid #e5e5e5;
+      padding: 20px;
+      background: #f6f6f6;
       border-radius: 8px;
-      text-decoration: none;
-      color: #333;
-      transition: 0.2s ease;
+      text-align: center;
     }
 
-    .place-card:hover {
-      background: #f0f0f0;
-      border-color: #ccc;
-      transform: translateY(-2px);
+    .place-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
     }
 
     .place-card h2 {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 600;
-      margin: 0;
+      margin: 0 0 15px;
     }
 
-    .arrow {
-      font-size: 20px;
-      color: #777;
-      margin-left: 15px;
+    .place-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .place-card a:hover {
+      background: #555;
+    }
+
+    @media (max-width: 700px) {
+      .places-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 650px) {
@@ -101,10 +113,6 @@
 
       h1 {
         font-size: 30px;
-      }
-
-      .places-grid {
-        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -131,40 +139,53 @@
 
     <section class="places-grid">
 
-      <a href="brooklyn-bridge.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/brooklyn-bridge/brooklyn-bridge-cover.jpeg" alt="Brooklyn Bridge">
         <h2>Brooklyn Bridge</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="brooklyn-bridge.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="central-park.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/central-park/central-park-cover.jpeg" alt="Central Park">
         <h2>Central Park</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="central-park.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="new-york-city-view.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/city-view/city-view-cover.jpeg" alt="New York City View">
         <h2>City View</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="new-york-city-view.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="the-metropolitan-museum-of-art.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/pattenburg/pattenburg-cover.jpeg" alt="Pattenburg">
+        <h2>Pattenburg</h2>
+        <a href="pattenburg.html">Explore Photos ↗</a>
+      </div>
+
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/the-metropolitan-museum-of-art/metropolitan-museum-cover.jpeg" alt="The Metropolitan Museum of Art">
         <h2>The Metropolitan Museum of Art</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="the-metropolitan-museum-of-art.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="times-square.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/times-square/times-square-cover.jpeg" alt="Times Square">
         <h2>Times Square</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="times-square.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="wall-street.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/wall-street/wall-street-cover.jpeg" alt="Wall Street">
         <h2>Wall Street</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="wall-street.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="world-trade-center.html" class="place-card">
+      <div class="place-card">
+        <img src="assets/images/world/united-states/new-york-city/world-trade-center/world-trade-center-cover.jpeg" alt="World Trade Center">
         <h2>World Trade Center</h2>
-        <span class="arrow">↗</span>
-      </a>
+        <a href="world-trade-center.html">Explore Photos ↗</a>
+      </div>
 
     </section>
 
