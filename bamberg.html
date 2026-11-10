@@ -29,7 +29,7 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 24px;
     }
@@ -52,29 +52,49 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
       margin-top: 35px;
     }
 
     .card {
-      padding: 28px;
-      background: #f6f6f6;
+      background: #fff;
+      border: 1px solid #e5e5e5;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
     }
 
     .card h2 {
-      margin-top: 0;
+      font-size: 22px;
+      margin: 18px 15px 10px;
+    }
+
+    .card p {
+      color: #666;
+      margin: 0 20px 20px;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #333;
+      padding: 10px 22px;
+      background: #111;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: #444;
     }
 
     footer {
@@ -82,6 +102,16 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -113,19 +143,26 @@
     </div>
 
     <section class="sections">
+
       <div class="card">
+        <img src="assets/images/world/germany/bamberg/city-views/bamberg-city-views-cover.jpg.jpg" alt="Bamberg City Views">
         <h2>City Views</h2>
         <p>Explore my personal photographs of Bamberg's city views.</p>
         <a href="bamberg-city-views.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/germany/bamberg/natural-history-museum/bamberg-natural-history-museum-cover.jpg" alt="Bamberg Natural History Museum">
         <h2>Natural History Museum</h2>
         <p>Explore my personal photographs of Bamberg's Natural History Museum.</p>
         <a href="bamberg-natural-history-museum.html">Explore Photos ↗</a>
       </div>
+
     </section>
   </main>
 
   <footer>
-    © Çağ
+    © Çağdaş Duman
+  </footer>
+</body>
+</html>
