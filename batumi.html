@@ -53,33 +53,45 @@
 
     .places {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
+      width: 100%;
     }
 
     .place {
-      padding: 25px;
-      background: #f6f6f6;
+      min-width: 0;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
       text-align: center;
     }
 
+    .place img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
     .place h2 {
-      font-size: 21px;
-      margin: 0 0 12px;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 15px 10px 12px;
     }
 
     .place a {
       display: inline-block;
-      padding: 10px 22px;
-      background: #333;
+      margin-bottom: 18px;
+      padding: 9px 18px;
+      background: #111;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 13px;
     }
 
     .place a:hover {
-      background: #555;
+      background: #444;
     }
 
     footer {
@@ -89,13 +101,17 @@
       font-size: 14px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       h1 {
         font-size: 30px;
       }
 
       .places {
         grid-template-columns: 1fr;
+      }
+
+      .place img {
+        height: 240px;
       }
     }
   </style>
@@ -127,33 +143,39 @@
     <section class="places">
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/6-may-park/6-may-park-cover.jpg" alt="6 May Park, Batumi">
         <h2>6 May Park</h2>
-        <a href="6-may-park.html">Explore Photos</a>
+        <a href="6-may-park.html">Explore Photos ↗</a>
       </div>
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/argo-cable-car/argo-cable-car-cover.jpg" alt="Argo Cable Car, Batumi">
         <h2>Argo Cable Car</h2>
-        <a href="argo-cable-car.html">Explore Photos</a>
+        <a href="argo-cable-car.html">Explore Photos ↗</a>
       </div>
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/batumi-boulevard/batumi-boulevard-cover.jpg" alt="Batumi Boulevard">
         <h2>Batumi Boulevard</h2>
-        <a href="batumi-boulevard.html">Explore Photos</a>
+        <a href="batumi-boulevard.html">Explore Photos ↗</a>
       </div>
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/birds-zoo/birds-zoo-cover.jpg" alt="Birds Zoo, Batumi">
         <h2>Birds Zoo</h2>
-        <a href="birds-zoo.html">Explore Photos</a>
+        <a href="birds-zoo.html">Explore Photos ↗</a>
       </div>
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/botanical-garden/botanical-garden-cover.jpg" alt="Batumi Botanical Garden">
         <h2>Botanical Garden</h2>
-        <a href="botanical-garden.html">Explore Photos</a>
+        <a href="botanical-garden.html">Explore Photos ↗</a>
       </div>
 
       <div class="place">
+        <img src="assets/images/world/georgia/batumi/city-view/city-view-cover.jpg" alt="City View, Batumi">
         <h2>City View</h2>
-        <a href="city-view.html">Explore Photos</a>
+        <a href="city-view.html">Explore Photos ↗</a>
       </div>
 
     </section>
