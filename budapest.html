@@ -57,33 +57,38 @@
 
     .places-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      width: 100%;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .place-card {
-      border: 1px solid #e5e5e5;
-      padding: 22px;
-      border-radius: 5px;
-      color: #333;
+      width: 100%;
+      min-width: 0;
+      background: #f7f7f7;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
     }
 
     .place-card h2 {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 600;
-      margin: 0 0 8px;
-    }
-
-    .place-card p {
-      color: #777;
-      font-size: 14px;
-      margin: 0;
+      margin: 15px 10px 12px;
     }
 
     .explore {
       display: inline-block;
-      margin-top: 15px;
+      margin: 0 0 18px;
       padding: 9px 18px;
       background: #111;
       color: #fff;
@@ -104,13 +109,17 @@
       margin-top: 65px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       h1 {
         font-size: 29px;
       }
 
       .places-grid {
         grid-template-columns: 1fr;
+      }
+
+      .place-card img {
+        height: 240px;
       }
     }
   </style>
@@ -144,38 +153,38 @@
     <section class="places-grid">
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/buda-castle/buda-castle-cover.jpg" alt="Buda Castle">
         <h2>Buda Castle</h2>
-        <p>Historic architecture and views across the city.</p>
         <a class="explore" href="buda-castle.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/city-park/city-park-cover.jpg" alt="City Park">
         <h2>City Park</h2>
-        <p>Green spaces and landmarks in one of Budapest's largest parks.</p>
         <a class="explore" href="budapest-city-park.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/city-view/city-view-cover.jpg" alt="Budapest City View">
         <h2>City View</h2>
-        <p>Panoramic scenes of Budapest and its distinctive skyline.</p>
         <a class="explore" href="budapest-city-view.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/danube-river/danube-river-cover.jpg" alt="Danube River">
         <h2>Danube River</h2>
-        <p>Riverside scenery and views of Budapest's famous bridges.</p>
         <a class="explore" href="danube-river.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/parliamentary-building/parliamentary-building-cover.jpg" alt="Parliamentary Building">
         <h2>Parliamentary Building</h2>
-        <p>One of the city's most recognizable architectural landmarks.</p>
         <a class="explore" href="parliamentary-building.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
+        <img src="assets/images/world/hungary/budapest/st-stephens-basilica/st-stephens-basilica-cover.jpg" alt="St. Stephen's Basilica">
         <h2>St. Stephen's Basilica</h2>
-        <p>A landmark church in the heart of Budapest.</p>
         <a class="explore" href="st-stephens-basilica.html">Explore Photos ↗</a>
       </div>
 
@@ -189,4 +198,3 @@
 
 </body>
 </html>
-```
