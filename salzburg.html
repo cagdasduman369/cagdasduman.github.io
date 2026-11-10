@@ -52,35 +52,52 @@
       text-align: justify;
     }
 
+    .description p {
+      margin: 0;
+    }
+
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      margin-top: 35px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      width: 100%;
+      max-width: none;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .card {
-      padding: 28px;
-      background: #f6f6f6;
+      width: 100%;
+      min-width: 0;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
     }
 
     .card h2 {
-      margin-top: 0;
+      margin: 18px 12px 12px;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
+      margin: 0 0 22px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: white;
       text-decoration: none;
       border-radius: 5px;
     }
 
     .card a:hover {
-      background: #555;
+      background: #333;
     }
 
     footer {
@@ -88,6 +105,16 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 240px;
+      }
     }
   </style>
 </head>
@@ -119,20 +146,14 @@
 
     <section class="sections">
       <div class="card">
+        <img src="assets/images/world/austria/salzburg/salzburg-city-views/salzburg-city-views-cover.jpg.jpg" alt="Salzburg City Views">
         <h2>City Views</h2>
-        <p>
-          Explore my personal photographs of Salzburg's city views,
-          historic streets, and architecture.
-        </p>
         <a href="salzburg-city-views.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/austria/salzburg/mirabell-gardens/mirabell-gardens-cover.jpg.jpg" alt="Mirabell Gardens, Salzburg">
         <h2>Mirabell Gardens</h2>
-        <p>
-          Explore my personal photographs of the beautiful gardens
-          and landscaped grounds of Mirabell Gardens.
-        </p>
         <a href="mirabell-gardens.html">Explore Photos ↗</a>
       </div>
     </section>
