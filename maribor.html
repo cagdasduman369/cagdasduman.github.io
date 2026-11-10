@@ -29,7 +29,7 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 24px;
     }
@@ -52,15 +52,25 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
 
     .card {
-      padding: 28px;
+      padding: 20px;
       background: #f6f6f6;
       border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
     }
 
     .card h2 {
@@ -82,6 +92,16 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -110,18 +130,21 @@
 
     <section class="sections">
       <div class="card">
+        <img src="assets/images/world/slovenia/maribor/city-view/city-view-cover.jpg" alt="Maribor City View">
         <h2>City View</h2>
         <p>Explore my personal photographs of Maribor's city views.</p>
         <a href="maribor-city-view.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/slovenia/maribor/national-park/national-park-cover.jpg" alt="National Park">
         <h2>National Park</h2>
         <p>Explore my personal photographs of the natural surroundings of Maribor.</p>
         <a href="maribor-national-park.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/slovenia/maribor/regional-museum/regional-museum-cover.jpg" alt="Maribor Regional Museum">
         <h2>Regional Museum</h2>
         <p>Explore my personal photographs of Maribor Regional Museum.</p>
         <a href="maribor-regional-museum.html">Explore Photos ↗</a>
