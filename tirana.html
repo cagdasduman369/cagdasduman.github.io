@@ -62,44 +62,50 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
       margin-top: 35px;
     }
 
     .card {
-      padding: 28px;
-      background: #f6f6f6;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
     }
 
     .card h2 {
-      margin-top: 0;
+      font-size: 19px;
+      margin: 17px 12px 12px;
+      color: #222;
     }
 
     .card p {
       line-height: 1.7;
+      display: none;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #000;
+      background: #111;
       color: #fff;
+      padding: 11px 23px;
+      margin: 0 0 20px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: background 0.2s ease;
     }
 
     .card a:hover {
-      background: #333;
+      background: #444;
     }
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      font-size: 14px;
+    @media (max-width: 750px) {
+      .sections {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     @media (max-width: 600px) {
@@ -159,25 +165,25 @@
       <div class="card">
         <h2>Automotiva Fair Albania 2025</h2>
         <p>Explore photos from Automotiva Fair Albania 2025.</p>
-        <a href="automotiva-fair-albania-2025.html">Explore Photos ↗</a>
+        <a href="automotiva-fair-albania-2025.html">Explore Photos</a>
       </div>
 
       <div class="card">
         <h2>BUNK'ART 1</h2>
         <p>Discover the history and exhibits of BUNK'ART 1.</p>
-        <a href="bunkart-1.html">Explore Photos ↗</a>
+        <a href="bunkart-1.html">Explore Photos</a>
       </div>
 
       <div class="card">
         <h2>BUNK'ART 2</h2>
         <p>Explore BUNK'ART 2 and its historical exhibitions.</p>
-        <a href="bunkart-2.html">Explore Photos ↗</a>
+        <a href="bunkart-2.html">Explore Photos</a>
       </div>
 
       <div class="card">
         <h2>City Views</h2>
         <p>Views of Tirana and its urban landscape.</p>
-        <a href="tirana-city-views.html">Explore Photos ↗</a>
+        <a href="tirana-city-views.html">Explore Photos</a>
       </div>
 
     </section>
