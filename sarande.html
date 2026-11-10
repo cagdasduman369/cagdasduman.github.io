@@ -58,27 +58,34 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-      margin-top: 35px;
+      width: 100%;
+      max-width: none;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .card {
+      width: 100%;
+      min-width: 0;
       background: #f7f7f7;
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
     }
 
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
     .card h2 {
       font-size: 19px;
       margin: 17px 12px 12px;
       color: #222;
-    }
-
-    .card p {
-      line-height: 1.7;
-      display: none;
     }
 
     .card a {
@@ -100,7 +107,7 @@
 
     @media (max-width: 750px) {
       .sections {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -115,6 +122,11 @@
 
       .sections {
         grid-template-columns: 1fr;
+        max-width: 100%;
+      }
+
+      .card img {
+        height: 240px;
       }
     }
 
@@ -150,36 +162,32 @@
         of a modern Mediterranean destination. Beyond its beaches,
         Sarandë offers access to the cultural and natural treasures
         of southern Albania, including ancient sites and beautiful
-        coastal landscapes.
-      </p>
-
-      <p>
-        The sea shapes both the scenery and everyday life in Sarandë.
-        Fishing boats share the horizon with ferries, cafés line the
-        waterfront, and changing light transforms the bay throughout
-        the day. These photographs capture my personal impressions
-        of Sarandë, where Mediterranean warmth, history, and the
-        beauty of the Albanian Riviera come together.
+        coastal landscapes. The sea shapes both the scenery and everyday
+        life in Sarandë. Fishing boats share the horizon with ferries,
+        cafés line the waterfront, and changing light transforms the
+        bay throughout the day. These photographs capture my personal
+        impressions of Sarandë, where Mediterranean warmth, history,
+        and the beauty of the Albanian Riviera come together.
       </p>
     </div>
 
     <section class="sections">
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/sarande/city-views/city-views-cover.jpg.jpg"
+          alt="Sarandë city views"
+        >
         <h2>Explore Sarandë</h2>
-        <p>
-          Discover the waterfront, coastal scenery, and everyday
-          atmosphere of this Ionian seaside town.
-        </p>
         <a href="sarande-city-views.html">Explore Photos</a>
       </div>
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/sarande/city-views/baba-sadik-tekke-cover.jpg.jpg"
+          alt="Baba Sadık Tekke near Sarandë"
+        >
         <h2>Baba Sadık Tekke</h2>
-        <p>
-          Explore my photographs of this Bektashi religious
-          complex overlooking the Ionian Sea near Sarandë.
-        </p>
         <a href="baba-sadik-tekke.html">Explore Photos</a>
       </div>
 
