@@ -53,42 +53,51 @@
     }
 
     .description p {
-      margin-bottom: 18px;
+      margin: 0;
     }
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-top: 35px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      width: 100%;
+      max-width: none;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .card {
-      padding: 28px;
-      background: #f6f6f6;
+      width: 100%;
+      min-width: 0;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
     }
 
     .card h2 {
-      margin-top: 0;
-    }
-
-    .card p {
-      line-height: 1.7;
+      margin: 18px 12px 12px;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
+      margin: 0 0 22px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: white;
       text-decoration: none;
       border-radius: 5px;
     }
 
     .card a:hover {
-      background: #555;
+      background: #333;
     }
 
     footer {
@@ -98,9 +107,13 @@
       font-size: 14px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .sections {
         grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 240px;
       }
 
       h1 {
@@ -132,9 +145,6 @@
         scenery and opportunities to experience the countryside.
         Nearby Pecka is particularly known for its limestone
         landscapes, outdoor activities, and community initiatives.
-      </p>
-
-      <p>
         My visit offered an opportunity to discover places beyond
         the usual travel routes. From the climbing area and community
         workshops at Pecka Visitor Center to the natural beauty of
@@ -147,32 +157,20 @@
     <section class="sections">
 
       <div class="card">
+        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-climbing-area-cover.jpg" alt="Pecka Climbing Area">
         <h2>Pecka Climbing Area</h2>
-        <p>
-          Discover the limestone cliffs and natural surroundings
-          of Pecka, a destination known for its outdoor climbing
-          opportunities and impressive scenery.
-        </p>
         <a href="pecka-climbing-area.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-visitor-center-mushroom-workshop/pecka-visitor-center-mushroom-workshop-cover.jpg" alt="Pecka Visitor Center Mushroom Workshop">
         <h2>Pecka Visitor Center – Mushroom Workshop</h2>
-        <p>
-          Discover moments from a mushroom workshop exploring
-          local knowledge, wild mushrooms, and the natural
-          resources of the countryside.
-        </p>
         <a href="pecka-visitor-center-mushroom-workshop.html">Explore Photos ↗</a>
       </div>
 
       <div class="card">
+        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/sana-river-cover.jpg" alt="Sana River Springs">
         <h2>Sana River Springs</h2>
-        <p>
-          Experience the peaceful scenery of the Sana River
-          springs, where clear waters and lush surroundings
-          create a memorable natural landscape.
-        </p>
         <a href="/sana-river.html">Explore Photos ↗</a>
       </div>
 
