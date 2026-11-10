@@ -58,37 +58,64 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
       margin-top: 35px;
     }
 
     .card {
-      padding: 28px;
-      background: #f6f6f6;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
     }
 
     .card h2 {
-      margin-top: 0;
+      font-size: 19px;
+      margin: 17px 12px 12px;
+      color: #222;
     }
 
     .card p {
       line-height: 1.7;
+      display: none;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #333;
-      color: white;
+      background: #111;
+      color: #fff;
+      padding: 11px 23px;
+      margin: 0 0 20px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: background 0.2s ease;
     }
 
     .card a:hover {
-      background: #555;
+      background: #444;
+    }
+
+    @media (max-width: 750px) {
+      .sections {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      main {
+        padding: 0 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .sections {
+        grid-template-columns: 1fr;
+      }
     }
 
     footer {
@@ -144,7 +171,7 @@
           Discover the waterfront, coastal scenery, and everyday
           atmosphere of this Ionian seaside town.
         </p>
-        <a href="sarande-city-views.html">Explore Photos ↗</a>
+        <a href="sarande-city-views.html">Explore Photos</a>
       </div>
 
       <div class="card">
@@ -153,7 +180,7 @@
           Explore my photographs of this Bektashi religious
           complex overlooking the Ionian Sea near Sarandë.
         </p>
-        <a href="baba-sadik-tekke.html">Explore Photos ↗</a>
+        <a href="baba-sadik-tekke.html">Explore Photos</a>
       </div>
 
     </section>
