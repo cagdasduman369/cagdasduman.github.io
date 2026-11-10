@@ -62,27 +62,34 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-      margin-top: 35px;
+      width: 100%;
+      max-width: none;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .card {
+      width: 100%;
+      min-width: 0;
       background: #f7f7f7;
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
     }
 
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
     .card h2 {
       font-size: 19px;
       margin: 17px 12px 12px;
       color: #222;
-    }
-
-    .card p {
-      line-height: 1.7;
-      display: none;
     }
 
     .card a {
@@ -104,7 +111,7 @@
 
     @media (max-width: 750px) {
       .sections {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -124,6 +131,10 @@
 
       .sections {
         grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 240px;
       }
     }
   </style>
@@ -148,41 +159,50 @@
         of history and cultural change. Its architecture brings together
         Ottoman-era landmarks, Italian-influenced buildings, and reminders
         of the communist period, while colorful streets, lively squares,
-        and cafés give the city its distinctive character.
-      </p>
-
-      <p>
-        Today, Tirana combines its historical heritage with the energy
-        of a modern Balkan capital. Its museums, landmarks, and diverse
-        neighborhoods offer different perspectives on Albania's past
-        and present. These photographs capture my personal impressions
-        of the city and its everyday atmosphere.
+        and cafés give the city its distinctive character. Today, Tirana
+        combines its historical heritage with the energy of a modern
+        Balkan capital. Its museums, landmarks, and diverse neighborhoods
+        offer different perspectives on Albania's past and present.
+        These photographs capture my personal impressions of the city
+        and its everyday atmosphere.
       </p>
     </div>
 
     <section class="sections">
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/tirana/automotiva-fair-albania-2025/automotiva-fair-albania-2025-cover.jpg.jpg"
+          alt="Automotiva Fair Albania 2025"
+        >
         <h2>Automotiva Fair Albania 2025</h2>
-        <p>Explore photos from Automotiva Fair Albania 2025.</p>
         <a href="automotiva-fair-albania-2025.html">Explore Photos</a>
       </div>
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/tirana/bunkart-1/bunkart-1-cover.jpg.jpg"
+          alt="BUNK'ART 1"
+        >
         <h2>BUNK'ART 1</h2>
-        <p>Discover the history and exhibits of BUNK'ART 1.</p>
         <a href="bunkart-1.html">Explore Photos</a>
       </div>
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/tirana/bunkart-2/bunkart-2-cover.jpg.jpg"
+          alt="BUNK'ART 2"
+        >
         <h2>BUNK'ART 2</h2>
-        <p>Explore BUNK'ART 2 and its historical exhibitions.</p>
         <a href="bunkart-2.html">Explore Photos</a>
       </div>
 
       <div class="card">
+        <img
+          src="assets/images/world/albania/tirana/city-views-cover.jpg.jpg"
+          alt="Tirana city views"
+        >
         <h2>City Views</h2>
-        <p>Views of Tirana and its urban landscape.</p>
         <a href="tirana-city-views.html">Explore Photos</a>
       </div>
 
