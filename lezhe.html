@@ -62,9 +62,10 @@
 
     .sections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-      margin-top: 35px;
+      max-width: 680px;
+      margin: 35px auto 0;
     }
 
     .card {
@@ -106,7 +107,7 @@
 
     @media (max-width: 750px) {
       .sections {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -121,6 +122,7 @@
 
       .sections {
         grid-template-columns: 1fr;
+        max-width: 100%;
       }
 
       .card img {
@@ -167,7 +169,7 @@
 
       <div class="card">
         <img
-          src="assets/images/world/albania/lezhe/skanderbeg-memorial/skanderbeg-memorial-cover.jpeg"
+          src="assets/images/world/albania/lezhe/Skanderbeg-Memorial/skanderbeg-memorial.jpg.jpg"
           alt="Skanderbeg Memorial, Lezhë"
         >
         <h2>Skanderbeg Memorial</h2>
@@ -178,7 +180,7 @@
 
       <div class="card">
         <img
-          src="assets/images/world/albania/lezhe/shengjoll-camping-area/shengjoll-camping-area-cover.jpeg"
+          src="assets/images/world/albania/lezhe/Shengjoll-Camping-Area/IMG_20250315_141432.jpg"
           alt="Shënkoll Camping Area, Lezhë"
         >
         <h2>Shënkoll Camping Area</h2>
