@@ -60,8 +60,9 @@
 
     .places-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+      margin-top: 35px;
     }
 
     .place-card {
@@ -86,6 +87,10 @@
       margin: 0 0 15px;
     }
 
+    .place-card p {
+      margin-bottom: 18px;
+    }
+
     .place-card a {
       display: inline-block;
       margin-top: 10px;
@@ -100,19 +105,17 @@
       background: #555;
     }
 
-    @media (max-width: 700px) {
-      .places-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
       .container {
         padding: 30px 18px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .places-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -140,6 +143,15 @@
       experience the city's unique energy and discover something new around
       every corner. This collection brings together my personal photographs
       and memories from different corners of New York City.
+
+      Beyond its famous landmarks, New York City is also a place of extraordinary
+      historical and cultural significance. Its neighborhoods reflect
+      generations of immigration and the experiences of communities from
+      across the world. The city's museums, public spaces, historic streets,
+      and architectural landmarks offer a fascinating perspective on American
+      society and urban development. From the financial district of Lower
+      Manhattan to the cultural atmosphere of its many neighborhoods, New York
+      reveals different dimensions of life in one of the world's great cities.
     </p>
 
     <section class="places-grid">
@@ -147,48 +159,88 @@
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/brooklyn-bridge/brooklyn-bridge-cover.jpeg" alt="Brooklyn Bridge">
         <h2>Brooklyn Bridge</h2>
+        <p>
+          One of New York's most iconic landmarks, celebrated
+          for its historic architecture, impressive structure,
+          and spectacular views of the Manhattan skyline.
+        </p>
         <a href="brooklyn-bridge.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/central-park/central-park-cover.jpeg" alt="Central Park">
         <h2>Central Park</h2>
+        <p>
+          A famous urban park offering beautiful landscapes,
+          peaceful walking paths, lakes, and green spaces
+          in the heart of Manhattan.
+        </p>
         <a href="central-park.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/city-view/city-view-cover.jpeg" alt="New York City View">
         <h2>City View</h2>
+        <p>
+          A collection of photographs capturing New York's
+          impressive skyline, distinctive architecture,
+          and remarkable urban landscapes.
+        </p>
         <a href="new-york-city-view.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/pattenburg/pattenburg-cover.jpeg" alt="Pattenburg">
         <h2>Pattenburg</h2>
+        <p>
+          A collection of personal travel photographs
+          capturing the surroundings, landscapes,
+          and memories of Pattenburg.
+        </p>
         <a href="pattenburg.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/the-metropolitan-museum-of-art/metropolitan-museum-cover.jpeg" alt="The Metropolitan Museum of Art">
         <h2>The Metropolitan Museum of Art</h2>
+        <p>
+          One of the world's leading art museums, featuring
+          extraordinary collections spanning ancient
+          civilizations, classical art, and modern works.
+        </p>
         <a href="the-metropolitan-museum-of-art.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/times-square/times-square-cover.jpeg" alt="Times Square">
         <h2>Times Square</h2>
+        <p>
+          A world-famous destination known for its enormous
+          digital billboards, bright lights, theaters,
+          and vibrant atmosphere.
+        </p>
         <a href="times-square.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/wall-street/wall-street-cover.jpeg" alt="Wall Street">
         <h2>Wall Street</h2>
+        <p>
+          The historic financial district of Manhattan,
+          recognized for its iconic buildings and central
+          role in global finance.
+        </p>
         <a href="wall-street.html">Explore Photos ↗</a>
       </div>
 
       <div class="place-card">
         <img src="assets/images/world/united-states/new-york-city/world-trade-center/world-trade-center-cover.jpeg" alt="World Trade Center">
         <h2>World Trade Center</h2>
+        <p>
+          A significant landmark in Lower Manhattan,
+          featuring modern architecture and places
+          commemorating the history of September 11.
+        </p>
         <a href="world-trade-center.html">Explore Photos ↗</a>
       </div>
 
