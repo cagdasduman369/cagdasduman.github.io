@@ -54,13 +54,18 @@
     }
 
     .intro p {
-      margin: 0;
+      margin: 0 0 16px;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
     }
 
     .places {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+      margin-top: 35px;
     }
 
     .place-card {
@@ -68,6 +73,10 @@
       background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
+    }
+
+    .place-card:last-child {
+      grid-column: 1 / -1;
     }
 
     .place-card img {
@@ -108,7 +117,7 @@
       font-size: 14px;
     }
 
-    @media(max-width:700px) {
+    @media(max-width:600px) {
       main {
         margin-top: 24px;
         padding: 0 18px;
@@ -124,6 +133,10 @@
 
       .places {
         grid-template-columns: 1fr;
+      }
+
+      .place-card:last-child {
+        grid-column: auto;
       }
     }
   </style>
@@ -142,14 +155,31 @@
 
     <div class="intro">
       <p>
-        Philadelphia is one of America's most historically significant
-        cities, known for its rich heritage, distinctive architecture,
-        and vibrant urban atmosphere. From impressive city views and
-        historic landmarks to cultural attractions, the city offers
-        many opportunities to explore its character and history.
-        This collection brings together my personal photographs and
-        memories from Philadelphia, capturing some of the places and
-        moments that made my visit memorable.
+        Philadelphia is one of the most historically significant cities
+        in the United States and played a central role in the country's
+        founding. Known as the birthplace of American independence, it
+        is home to important landmarks connected with the Declaration
+        of Independence and the early development of the nation. Its
+        historic streets, distinctive architecture, and cultural
+        institutions reflect centuries of American history.
+      </p>
+
+      <p>
+        Beyond its historical importance, Philadelphia is a city with
+        a distinctive urban character and a vibrant cultural life.
+        Impressive public buildings, museums, religious landmarks, and
+        lively neighborhoods contribute to its unique atmosphere.
+        The city also combines historic surroundings with modern
+        architecture and striking views of its skyline.
+      </p>
+
+      <p>
+        During my visit, I explored several places that reflect
+        different aspects of Philadelphia's identity, from its
+        architectural heritage to its popular landmarks and city
+        scenery. This collection brings together my personal
+        photographs and memories, offering a glimpse into the
+        places and experiences that made the visit memorable.
       </p>
     </div>
 
