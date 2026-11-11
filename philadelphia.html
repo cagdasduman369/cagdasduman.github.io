@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Philadelphia, United States | Çağdaş Duman</title>
-  <meta name="description" content="Personal travel photographs and memories from Philadelphia, Pennsylvania, by Çağdaş Duman.">
+  <title>Maryland, United States | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories from Maryland, United States, by Çağdaş Duman.">
 
   <style>
     * {
@@ -47,35 +47,31 @@
       margin-top: 0;
     }
 
-    .intro {
+    .description {
       font-size: 17px;
-      margin: 24px 0 35px;
+      margin: 24px 0;
       text-align: justify;
     }
 
-    .intro p {
-      margin: 0;
+    .description p {
+      margin-bottom: 18px;
     }
 
-    .places {
+    .sections {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
 
-    .place-card {
+    .card {
       padding: 20px;
       background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
-    .place-card:last-child {
-      grid-column: 1 / -1;
-    }
-
-    .place-card img {
+    .card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
@@ -84,15 +80,15 @@
       margin-bottom: 18px;
     }
 
-    .place-card h2 {
+    .card h2 {
       margin-top: 0;
     }
 
-    .place-card p {
+    .card p {
       margin-bottom: 18px;
     }
 
-    .place-card a {
+    .card a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
@@ -102,7 +98,7 @@
       border-radius: 5px;
     }
 
-    .place-card a:hover {
+    .card a:hover {
       background: #555;
     }
 
@@ -123,16 +119,12 @@
         font-size: 30px;
       }
 
-      .intro {
+      .description {
         font-size: 16px;
       }
 
-      .places {
+      .sections {
         grid-template-columns: 1fr;
-      }
-
-      .place-card:last-child {
-        grid-column: auto;
       }
     }
   </style>
@@ -141,53 +133,55 @@
 <body>
 
   <header>
-    <a href="world.html">← Back to World</a>
+    <a href="world.html">← Back to Around the World</a>
   </header>
 
   <main>
 
-    <h1>Philadelphia</h1>
-    <p class="location">Pennsylvania · United States</p>
+    <h1>Maryland</h1>
+    <p class="location">United States</p>
 
-    <div class="intro">
+    <div class="description">
       <p>
-        Philadelphia is one of America's most historically significant
-        cities, known for its rich heritage, distinctive architecture,
-        and vibrant urban atmosphere. As the birthplace of American
-        independence, it played a central role in the country's
-        founding and remains an important destination for understanding
-        American history. Beyond its historical landmarks, Philadelphia
-        is known for its impressive public buildings, museums, cultural
-        attractions, and lively neighborhoods. The city's architecture
-        reflects different periods of its development, creating an
-        interesting contrast between historic streets and modern
-        city views. This collection brings together my personal
-        photographs and memories from Philadelphia, capturing some
-        of the places and moments that made my visit memorable.
+        Maryland is a state known for its historic towns,
+        waterfront destinations, natural landscapes, and
+        distinctive cultural heritage. Located along the
+        Chesapeake Bay and close to Washington, DC, it offers
+        a variety of places to explore and experience.
+        The state's maritime traditions, charming coastal
+        communities, and rich history give it a character
+        that sets it apart in the Mid-Atlantic region.
+        From lively waterfront areas to peaceful rural
+        surroundings, Maryland offers many memorable
+        sights and experiences. This collection brings
+        together my personal photographs and memories
+        from different locations across Maryland, capturing
+        its landmarks, peaceful surroundings, and
+        memorable places.
       </p>
     </div>
 
-    <section class="places">
+    <section class="sections">
 
-      <div class="place-card">
-        <img src="assets/images/world/united-states/philadelphia/philadelphia/city-view/philadelphia-city-view-cover.jpeg" alt="Philadelphia City View">
-        <h2>City View</h2>
-        <p>Explore my personal photographs of Philadelphia's city views.</p>
-        <a href="philadelphia-city-view.html">Explore Photos ↗</a>
+      <div class="card">
+        <img src="assets/images/world/united-states/maryland/national-harbor/national-harbor-cover.jpeg" alt="National Harbor, Maryland">
+        <h2>National Harbor</h2>
+        <p>
+          A vibrant waterfront destination along the Potomac
+          River, known for its marina, restaurants, public art,
+          and scenic views.
+        </p>
+        <a href="national-harbor.html">Explore Photos ↗</a>
       </div>
 
-      <div class="place-card">
-        <img src="assets/images/world/united-states/philadelphia/masonic-temple/philadelphia-masonic-temple-cover.jpeg" alt="Philadelphia Masonic Temple">
-        <h2>Masonic Temple</h2>
-        <p>Explore my personal photographs of Philadelphia's Masonic Temple.</p>
-        <a href="philadelphia-masonic-temple.html">Explore Photos ↗</a>
-      </div>
-
-      <div class="place-card">
-        <img src="assets/images/world/united-states/philadelphia/rocky-stairs/rocky-stairs-cover.jpeg" alt="Rocky Stairs, Philadelphia">
-        <h2>Rocky Stairs</h2>
-        <p>Explore my personal photographs of the famous Rocky Steps.</p>
-        <a href="rocky-stairs.html">Explore Photos ↗</a>
+      <div class="card">
+        <img src="assets/images/world/united-states/maryland/peach-orchard/peach-orchard-cover.jpg" alt="Peach Orchard, Maryland">
+        <h2>Peach Orchard</h2>
+        <p>
+          A peaceful place in Maryland, captured through
+          personal photographs and travel memories.
+        </p>
+        <a href="peach-orchard.html">Explore Photos ↗</a>
       </div>
 
     </section>
