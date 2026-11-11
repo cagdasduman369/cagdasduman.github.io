@@ -53,9 +53,13 @@
       text-align: justify;
     }
 
+    .description p {
+      margin-bottom: 18px;
+    }
+
     .sections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
@@ -98,17 +102,15 @@
       background: #555;
     }
 
+    .card:last-child {
+      grid-column: 1 / -1;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
       color: #777;
       font-size: 14px;
-    }
-
-    @media(max-width:700px) {
-      .sections {
-        grid-template-columns: 1fr;
-      }
     }
 
     @media(max-width:600px) {
@@ -123,6 +125,14 @@
 
       .description {
         font-size: 16px;
+      }
+
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      .card:last-child {
+        grid-column: auto;
       }
     }
   </style>
@@ -140,7 +150,40 @@
     <p class="location">United States</p>
 
     <div class="description">
-      Virginia is a state rich in American history, national landmarks, and cultural heritage. From historic memorials and monumental architecture to places connected with the country's political and military history, the state offers a fascinating journey through America's past and present. This collection brings together my personal photographs and memories from different locations across Virginia, highlighting its remarkable landmarks, memorial sites, and distinctive places of interest.
+
+      <p>
+        Virginia is one of the most historically significant states
+        in the United States, with a heritage closely connected to
+        the country's founding, political development, and national
+        identity. Often associated with the early history of American
+        independence, Virginia was home to several influential figures
+        who helped shape the nation's political traditions. Its historic
+        towns, preserved landmarks, and cultural institutions offer
+        valuable insights into the events and people that influenced
+        the development of the United States.
+      </p>
+
+      <p>
+        Beyond its colonial heritage, Virginia is also known for its
+        important military history and national memorials. The state
+        contains places that commemorate generations of American
+        service members, significant historical events, and individuals
+        who played important roles in the country's history. Its
+        landscapes range from historic communities and monumental
+        architecture to natural scenery and distinctive urban areas.
+      </p>
+
+      <p>
+        Located in the Mid-Atlantic region, Virginia combines historical
+        significance with a diverse contemporary cultural landscape.
+        Its proximity to Washington, DC, further connects the state
+        with the institutions, political history, and national
+        landmarks of the United States. This collection brings together
+        my personal photographs and memories from different locations
+        across Virginia, highlighting its memorials, historical sites,
+        architecture, and places of cultural interest.
+      </p>
+
     </div>
 
     <section class="sections">
