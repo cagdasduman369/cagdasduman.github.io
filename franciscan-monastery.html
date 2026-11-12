@@ -19,69 +19,83 @@
       color: #333;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 25px;
       color: #333;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .back-link:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
+      display: block;
       width: 100%;
-      max-height: 420px;
+      height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
-      font-size: 16px;
+    .description {
+      font-size: 17px;
       line-height: 1.7;
-      margin-bottom: 35px;
+      margin: 24px 0;
+      text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     .gallery-button {
       display: inline-block;
       background: #000;
       color: #fff;
-      padding: 15px 28px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
+      font-size: 14px;
       transition: background 0.3s ease;
     }
 
@@ -89,26 +103,41 @@
       background: #333;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
-      }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
 
-      h1 {
-        font-size: 26px;
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        max-height: 300px;
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
+  <header>
     <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/washington-dc/franciscan-monastery/franciscan-monastery-cover.jpeg"
@@ -118,14 +147,15 @@
 
     <h1>Franciscan Monastery of the Holy Land in America</h1>
 
-    <div class="location">Washington, DC · United States</div>
+    <p class="location">Washington, DC · United States</p>
 
-    <p class="intro">
-      The Franciscan Monastery of the Holy Land in America is a remarkable religious and architectural landmark in Washington, DC. Its beautiful gardens, peaceful grounds, and detailed architecture create a quiet atmosphere away from the busy city. The monastery is also known for its replicas of sacred sites associated with the Holy Land. These photographs capture my visit to this distinctive place.
+    <p class="description">
+      The Franciscan Monastery of the Holy Land in America is a distinctive religious and architectural landmark located in Washington, DC. Established in 1898, the monastery was built to support the Franciscan mission of preserving and sharing the spiritual heritage of the Holy Land. Its architecture draws inspiration from important Christian sites in the Middle East, while its peaceful gardens and carefully maintained grounds create a tranquil atmosphere away from the busy capital. One of its most remarkable features is the series of replicas of sacred places associated with the life of Jesus, allowing visitors to experience elements of the Holy Land without leaving the United States. The monastery also contains beautiful chapels, detailed mosaics, and artistic decorations that reflect centuries of religious tradition. Walking through the grounds offers an opportunity to appreciate the connection between architecture, history, and spirituality. These photographs capture my visit to this unique and peaceful place in Washington, DC.
     </p>
 
     <div class="gallery">
       <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photographs and memories from the Franciscan Monastery of the Holy Land in America in Washington, DC.</p>
 
       <a
         href="https://photos.app.goo.gl/KZedNhs3UC2L9d9V6"
@@ -137,6 +167,11 @@
       </a>
     </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
