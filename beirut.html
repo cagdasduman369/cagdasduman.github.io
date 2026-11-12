@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Beirut, Lebanon | Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of Beirut, Lebanon.">
 
@@ -19,77 +20,112 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    .back-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    border-radius: 8px;
-}
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 430px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #f6f6f6;
+    }
 
     h1 {
-      font-size: 36px;
-      margin: 28px 0 4px;
-      color: #222;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
-      font-size: 16px;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 45px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding: 25px 0;
     }
 
     .gallery h2 {
-      font-size: 27px;
-      margin-bottom: 10px;
-      color: #222;
+      font-size: 25px;
+      margin: 0 0 10px;
     }
 
     .gallery p {
       color: #666;
-      font-size: 16px;
       margin-bottom: 25px;
     }
 
     .gallery-button {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
-      padding: 13px 28px;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 15px;
-      transition: background 0.3s ease;
+      border-radius: 4px;
+      font-size: 14px;
     }
 
     .gallery-button:hover {
-      background: #444;
+      background: #333;
     }
 
-    @media (max-width: 768px) {
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 280px;
+        max-height: 280px;
       }
 
       h1 {
-        font-size: 29px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -97,19 +133,23 @@
 
 <body>
 
-  <div class="container">
+  <header>
+    <a class="back-link" href="world.html">← Back to Around the World</a>
+  </header>
+
+  <main>
 
     <img
+      class="cover"
       src="assets/images/world/lebanon/beirut/beirut-cover.jpg"
       alt="Beirut, Lebanon"
-      class="cover"
     >
 
     <h1>Beirut</h1>
 
     <div class="location">Lebanon · Eastern Mediterranean</div>
 
-    <div class="intro">
+    <div class="description">
       Beirut is a city where history, culture, and everyday life come together
       along the Mediterranean coast. Known for its remarkable contrasts, the
       Lebanese capital brings together historic neighbourhoods, lively streets,
@@ -119,13 +159,15 @@
       character, with traces of different eras visible throughout the city.
       From its bustling streets to its coastal atmosphere, Beirut leaves a
       lasting impression through its energy, diversity, and distinctive
-      Mediterranean spirit.
+      Mediterranean spirit. The city's streets and waterfront also offer
+      fascinating opportunities to observe its architecture and daily life.
 
       These photographs capture my personal memories and experiences in
       Beirut, preserving moments from my time exploring the city.
     </div>
 
-    <div class="gallery">
+    <section class="gallery">
+
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -133,16 +175,21 @@
       </p>
 
       <a
+        class="gallery-button"
         href="https://photos.app.goo.gl/VYZaAXJhqDdhVu256"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
 
-  </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
