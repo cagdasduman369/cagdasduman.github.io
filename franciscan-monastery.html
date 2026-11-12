@@ -15,23 +15,19 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
     header {
       padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
     }
 
     main {
@@ -53,20 +49,21 @@
       font-size: 38px;
       line-height: 1.25;
       margin: 25px 0 8px;
-      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
-      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
-      line-height: 1.7;
       margin: 24px 0;
       text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
@@ -78,28 +75,24 @@
     }
 
     .gallery h2 {
-      font-size: 25px;
-      margin: 0 0 10px;
+      margin-top: 0;
     }
 
     .gallery p {
-      color: #666;
-      margin-bottom: 25px;
-      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 14px;
-      transition: background 0.3s ease;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
@@ -134,7 +127,7 @@
 <body>
 
   <header>
-    <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+    <a href="washington-dc.html">← Back to Washington, DC</a>
   </header>
 
   <main>
@@ -149,28 +142,36 @@
 
     <p class="location">Washington, DC · United States</p>
 
-    <p class="description">
-      The Franciscan Monastery of the Holy Land in America is a distinctive religious and architectural landmark located in Washington, DC. Established in 1898, the monastery was built to support the Franciscan mission of preserving and sharing the spiritual heritage of the Holy Land. Its architecture draws inspiration from important Christian sites in the Middle East, while its peaceful gardens and carefully maintained grounds create a tranquil atmosphere away from the busy capital. One of its most remarkable features is the series of replicas of sacred places associated with the life of Jesus, allowing visitors to experience elements of the Holy Land without leaving the United States. The monastery also contains beautiful chapels, detailed mosaics, and artistic decorations that reflect centuries of religious tradition. Walking through the grounds offers an opportunity to appreciate the connection between architecture, history, and spirituality. These photographs capture my visit to this unique and peaceful place in Washington, DC.
-    </p>
+    <div class="description">
+      <p>
+        The Franciscan Monastery of the Holy Land in America is a distinctive religious and architectural landmark located in Washington, DC. Established in 1898, the monastery was built to support the Franciscan mission of preserving and sharing the spiritual heritage of the Holy Land. Its architecture draws inspiration from important Christian sites in the Middle East, while its peaceful gardens and carefully maintained grounds create a tranquil atmosphere away from the busy capital.
+      </p>
 
-    <div class="gallery">
+      <p>
+        One of its most remarkable features is the series of replicas of sacred places associated with the life of Jesus, allowing visitors to experience elements of the Holy Land without leaving the United States. The monastery also contains beautiful chapels, detailed mosaics, and artistic decorations that reflect centuries of religious tradition. Walking through the grounds offers an opportunity to appreciate the connection between architecture, history, and spirituality. These photographs capture my visit to this unique and peaceful place in Washington, DC.
+      </p>
+    </div>
+
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photographs and memories from the Franciscan Monastery of the Holy Land in America in Washington, DC.</p>
+
+      <p>
+        Explore my personal travel photographs and memories from the Franciscan Monastery of the Holy Land in America in Washington, DC.
+      </p>
 
       <a
         href="https://photos.app.goo.gl/KZedNhs3UC2L9d9V6"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
+    </section>
 
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman · Around the World
+    © Çağdaş Duman · Around the World
   </footer>
 
 </body>
