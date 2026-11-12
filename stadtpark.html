@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Stadtpark, Vienna — Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of Stadtpark in Vienna, Austria.">
 
@@ -12,96 +13,113 @@
     }
 
     body {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 24px;
+      margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.7;
       color: #333;
+      background: #fff;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 30px;
+      margin: 22px 8% 30px;
       color: #333;
       text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
       display: block;
       width: 100%;
-      margin-bottom: 28px;
+      height: 430px;
+      object-fit: cover;
       border-radius: 6px;
+      margin: 0 0 28px;
     }
 
     h1 {
+      margin: 0 0 8px;
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
     }
 
     .location {
+      margin: 0;
       color: #777;
-      margin-top: 0;
     }
 
     .description {
-      margin: 24px 0 35px;
+      margin: 24px 0;
       font-size: 17px;
+      line-height: 1.7;
+      color: #333;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 40px;
-      padding: 35px 24px;
-      background: #f5f5f5;
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
     .gallery h2 {
-      margin: 0 0 12px;
-      font-size: 26px;
+      margin-top: 0;
     }
 
     .gallery p {
       max-width: 650px;
-      margin: 0 auto 24px;
+      margin: 0 auto 20px;
       text-align: center;
     }
 
     .gallery-button {
       display: inline-block;
+      margin-top: 10px;
       padding: 12px 24px;
-      background: #222;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 5px;
     }
 
     .gallery-button:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 25px 0;
+      padding: 25px;
       text-align: center;
       color: #777;
       font-size: 14px;
     }
 
-    @media (max-width: 650px) {
-      body {
-        margin-top: 24px;
-        padding: 0 16px;
+    @media (max-width: 600px) {
+      main {
+        margin: 24px auto;
+        padding: 0 18px;
+      }
+
+      .back-link {
+        margin: 20px 18px 24px;
+      }
+
+      .cover {
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .gallery {
-        padding: 28px 18px;
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -123,7 +141,18 @@
 
     <div class="description">
       <p>
-        Stadtpark is one of Vienna's most beloved public parks, offering a beautiful combination of landscaped gardens, open green spaces, and historic monuments in the heart of the Austrian capital. Opened in 1862, it was Vienna's first public park and has since become an important part of the city's cultural and recreational life. Its winding paths, carefully maintained flower beds, peaceful ponds, and elegant bridges create a pleasant atmosphere throughout the seasons. The park is particularly famous for the golden statue of Johann Strauss II, one of Vienna's most recognizable landmarks and a tribute to the city's extraordinary musical heritage. Visitors can also discover monuments dedicated to other important composers and cultural figures, making Stadtpark a place where nature and history come together. Whether enjoying a quiet walk or admiring its sculptures and beautiful scenery, the park offers a welcome escape from the surrounding urban environment. This collection brings together my personal travel photographs and memories, capturing the atmosphere, landmarks, and natural beauty of Stadtpark.
+        Stadtpark is one of Vienna's most beloved public parks, combining
+        landscaped gardens, green spaces, and historic monuments in the
+        heart of the Austrian capital. Opened in 1862 as Vienna's first
+        public park, it has become an important part of the city's cultural
+        life. Its winding paths, flower beds, peaceful ponds, and elegant
+        bridges create a pleasant atmosphere throughout the seasons. The
+        park is especially famous for the golden statue of Johann Strauss II,
+        a tribute to Vienna's rich musical heritage. Visitors can also
+        discover monuments dedicated to other composers and cultural
+        figures. This collection brings together my personal photographs
+        and memories, capturing the natural beauty and historic character
+        of Stadtpark.
       </p>
     </div>
 
@@ -150,4 +179,3 @@
   </footer>
 </body>
 </html>
-```
