@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Zagreb, Croatia | Çağdaş Duman</title>
-  <meta name="description" content="Personal travel memories and photographs of Zagreb, Croatia, including city views, Maksimir Park and Trg Kralja Tomislava City Park.">
+  <meta name="description" content="Personal travel photographs and memories from Zagreb, Croatia, including city views, Maksimir Park and Trg Kralja Tomislava City Park.">
 
   <style>
     * {
@@ -16,10 +17,11 @@
       font-family: Arial, sans-serif;
       color: #333;
       background: #fff;
+      line-height: 1.7;
     }
 
     header {
-      padding: 20px 24px;
+      padding: 22px 8%;
       border-bottom: 1px solid #eee;
     }
 
@@ -30,13 +32,14 @@
     }
 
     main {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 24px;
     }
 
     h1 {
       font-size: 38px;
+      line-height: 1.25;
       margin: 0 0 8px;
       font-weight: 600;
     }
@@ -51,12 +54,12 @@
       font-size: 17px;
       line-height: 1.8;
       text-align: justify;
-      margin-bottom: 35px;
+      margin: 24px 0 35px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 30px;
     }
@@ -91,8 +94,15 @@
 
     .card h2 {
       font-size: 20px;
-      margin: 0 0 12px;
+      margin: 0 0 8px;
       font-weight: 600;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666;
+      margin: 0 0 16px;
     }
 
     .card span {
@@ -104,6 +114,10 @@
       font-size: 13px;
     }
 
+    .card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -111,15 +125,9 @@
       font-size: 13px;
     }
 
-    @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
       main {
-        margin: 25px auto;
+        margin: 24px auto;
         padding: 0 18px;
       }
 
@@ -133,6 +141,10 @@
 
       .grid {
         grid-template-columns: 1fr;
+      }
+
+      .card:last-child:nth-child(odd) {
+        grid-column: auto;
       }
 
       .card img {
@@ -154,7 +166,7 @@
     <div class="subtitle">Croatia · Central Europe</div>
 
     <div class="description">
-      Zagreb, the capital of Croatia, combines historic architecture, lively squares and peaceful green spaces. From the city's elegant streets and panoramic views to its expansive parks, Zagreb offers a variety of places to explore. The city's Austro-Hungarian heritage is reflected in its grand buildings, charming streets and distinctive urban atmosphere. Its parks and public squares provide welcoming spaces to slow down and experience everyday life in the Croatian capital. This page brings together my personal photographs and memories from three different locations across the city.
+      Zagreb, the capital of Croatia, is a city where historic architecture, lively public squares and peaceful green spaces come together. Its streets reflect a rich Central European heritage, with elegant Austro-Hungarian buildings, charming neighborhoods and distinctive architectural details. Beyond its historic center, the city offers beautiful parks and open spaces that provide a quieter side of urban life. Maksimir Park, with its wooded paths and natural scenery, offers a welcome escape from the busy city, while Trg Kralja Tomislava is one of Zagreb's most recognizable public spaces, surrounded by impressive architecture. Together, these places reveal different aspects of the Croatian capital, from its urban character to its green landscapes. This page brings together my personal photographs and memories from three locations across Zagreb.
     </div>
 
     <section class="grid">
@@ -163,6 +175,7 @@
         <img src="assets/images/world/croatia/zagreb/city-view/zagreb-city-view-cover.jpg" alt="City View, Zagreb">
         <div class="card-content">
           <h2>City View</h2>
+          <p>Discover Zagreb's cityscape, historic architecture and distinctive views across the Croatian capital.</p>
           <span>Explore Photos</span>
         </div>
       </a>
@@ -171,6 +184,7 @@
         <img src="assets/images/world/croatia/zagreb/maksimir-park/maksimir-park-cover.jpg" alt="Maksimir Park, Zagreb">
         <div class="card-content">
           <h2>Maksimir Park</h2>
+          <p>Explore one of Zagreb's most beloved green spaces, known for its wooded paths, lakes and peaceful natural surroundings.</p>
           <span>Explore Photos</span>
         </div>
       </a>
@@ -179,6 +193,7 @@
         <img src="assets/images/world/croatia/zagreb/trg-kralja-tomislava-city-park/trg-kralja-tomislava-city-park-cover.jpg" alt="Trg Kralja Tomislava City Park, Zagreb">
         <div class="card-content">
           <h2>Trg Kralja Tomislava City Park</h2>
+          <p>Enjoy the open green space and impressive surroundings of one of Zagreb's best-known squares, in the heart of the city.</p>
           <span>Explore Photos</span>
         </div>
       </a>
@@ -187,7 +202,7 @@
   </main>
 
   <footer>
-    © Çağdaş Duman
+    © 2026 Çağdaş Duman
   </footer>
 
 </body>
