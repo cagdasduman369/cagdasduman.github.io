@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Prishtinë, Kosovo | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories from Prishtinë, the capital of Kosovo.">
+
   <style>
     * {
       box-sizing: border-box;
@@ -34,6 +37,7 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
@@ -43,7 +47,8 @@
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -69,10 +74,14 @@
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -83,6 +92,11 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
         height: 250px;
       }
@@ -90,16 +104,22 @@
       h1 {
         font-size: 30px;
       }
+
+      .description {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <a href="world.html">← Around the World</a>
+    <a href="world.html">← Back to Around the World</a>
   </header>
 
   <main>
+
     <img
       class="cover"
       src="assets/images/world/kosovo/prishtine/prishtine-cover.jpg.jpg"
@@ -110,22 +130,14 @@
     <p class="location">Kosovo · Prishtinë</p>
 
     <div class="description">
-      <p>
-        Prishtinë, the capital of Kosovo, is a city where history, culture,
-        and contemporary urban life come together. Its streets reflect a
-        distinctive character shaped by different historical periods,
-        while cafés, cultural spaces, and everyday city life give it a
-        lively and welcoming atmosphere. From its architectural landmarks
-        to its vibrant public spaces, Prishtinë offers a glimpse into a
-        city that continues to define its own identity. These photographs
-        capture my personal impressions and memories of exploring the
-        capital of Kosovo.
-      </p>
+      Prishtinë, the capital of Kosovo, is a city where history, culture and contemporary urban life come together. Its streets reflect a distinctive character shaped by different historical periods, while cafés, cultural spaces and everyday city life give it a lively and welcoming atmosphere. From its architectural landmarks to its vibrant public spaces, Prishtinë offers a glimpse into a city that continues to define its own identity. The city is also an important centre of cultural activity, with galleries, museums and public spaces that reflect the experiences and aspirations of its people. Walking through its neighbourhoods reveals a mixture of traditional influences and modern development, creating an atmosphere that is both distinctive and constantly evolving. These photographs capture my personal impressions and memories of exploring the capital of Kosovo.
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photos from Prishtinë.</p>
+      <p>
+        Explore my personal travel photographs and memories from Prishtinë.
+      </p>
 
       <a
         href="https://photos.app.goo.gl/tS7SkgFLLoTZt6DE6"
@@ -135,11 +147,12 @@
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
-```
