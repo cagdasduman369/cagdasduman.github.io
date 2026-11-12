@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Central Park, New York City | Çağdaş Duman</title>
+
+  <title>Central Park | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from Central Park, New York City, by Çağdaş Duman.">
 
   <style>
@@ -15,81 +16,83 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #333;
-      background: #f7f7f7;
+      background: #fff;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
     }
 
-    .cover {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
       font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .cover {
+      display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      margin: 0 0 10px;
       font-size: 38px;
-      color: #222;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 25px;
     }
 
-    .intro {
-      max-width: 100%;
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 40px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding-top: 20px;
     }
 
     .gallery h2 {
       font-size: 25px;
-      margin-bottom: 12px;
-      color: #222;
+      margin: 0 0 10px;
     }
 
     .gallery p {
       color: #666;
-      font-size: 15px;
-      line-height: 1.7;
       margin-bottom: 25px;
     }
 
     .gallery-button {
       display: inline-block;
-      padding: 14px 28px;
-      background: #111;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
       font-size: 14px;
       transition: background 0.2s ease;
     }
@@ -98,17 +101,29 @@
       background: #444;
     }
 
-    @media (max-width: 650px) {
-      .container {
-        padding: 30px 18px;
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -116,9 +131,11 @@
 
 <body>
 
-  <main class="container">
+  <header>
+    <a href="new-york-city.html">← Back to New York City</a>
+  </header>
 
-    <a href="new-york-city.html" class="back-link">← Back to New York City</a>
+  <main>
 
     <img
       src="assets/images/world/united-states/new-york-city/central-park/central-park-cover.jpeg"
@@ -128,9 +145,9 @@
 
     <h1>Central Park</h1>
 
-    <div class="location">New York City · United States</div>
+    <p class="location">New York City · United States</p>
 
-    <p class="intro">
+    <p class="description">
       Central Park is one of the most famous urban parks in the world, located
       in the heart of Manhattan. Opened in 1858, it was designed by Frederick
       Law Olmsted and Calvert Vaux as a public green space where people from
@@ -153,6 +170,7 @@
     </p>
 
     <section class="gallery">
+
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -168,9 +186,14 @@
       >
         View All Photos ↗
       </a>
+
     </section>
 
   </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
