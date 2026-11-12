@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Batumi Botanical Garden, Georgia | Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of Batumi Botanical Garden in Georgia.">
 
@@ -36,16 +37,18 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
-      border-radius: 6px;
-      display: block;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin: 28px 0 5px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -55,13 +58,16 @@
 
     .description {
       font-size: 17px;
-      margin: 25px 0 40px;
+      margin: 24px 0;
       text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin: 45px 0;
     }
 
     .gallery h2 {
@@ -76,15 +82,16 @@
 
     .gallery a {
       display: inline-block;
-      padding: 12px 28px;
-      background: #222;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
     .gallery a:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
@@ -92,27 +99,37 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
-      border-top: 1px solid #eee;
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <a href="batumi.html">← Back to Batumi</a>
   </header>
 
   <main>
+
     <img
       class="cover"
       src="assets/images/world/georgia/batumi/botanical-garden/botanical-garden-cover.jpg"
@@ -120,21 +137,11 @@
     >
 
     <h1>Batumi Botanical Garden</h1>
+
     <p class="location">Batumi · Georgia</p>
 
     <div class="description">
-      <p>
-        Located near the Black Sea coast, Batumi Botanical Garden is
-        one of Georgia's most remarkable natural attractions. Established
-        in the late nineteenth century, the garden covers a vast area
-        overlooking the sea and features an impressive collection of
-        plants from different parts of the world. Its winding pathways,
-        lush greenery, and scenic viewpoints create a peaceful atmosphere
-        for exploring nature. Walking through the garden offers beautiful
-        views of the coastline and surrounding landscapes. These photographs
-        capture my personal memories of Batumi Botanical Garden and its
-        natural beauty.
-      </p>
+      Located near the Black Sea coast, Batumi Botanical Garden is one of Georgia's most remarkable natural attractions. Established in the late nineteenth century, the garden covers a vast area overlooking the sea and features an impressive collection of plants from different parts of the world. Its winding pathways, lush greenery, and scenic viewpoints create a peaceful atmosphere for exploring nature. Walking through the garden offers beautiful views of the coastline and surrounding landscapes. These photographs capture my personal memories of Batumi Botanical Garden and its natural beauty. The garden's diverse landscapes make every part of the visit a little different. It is also a wonderful place to enjoy the contrast between rich vegetation and the open sea.
     </div>
 
     <section class="gallery">
@@ -144,10 +151,12 @@
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
