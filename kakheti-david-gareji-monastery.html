@@ -20,15 +20,12 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
     .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
       color: #333;
       text-decoration: none;
       font-size: 14px;
@@ -38,39 +35,51 @@
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
       display: block;
-      border-radius: 5px;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      margin: 30px 0 5px;
-      font-size: 36px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
       font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 45px;
     }
 
     .gallery {
-      text-align: center;
       margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
     }
 
     .gallery h2 {
       font-size: 25px;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     .gallery p {
@@ -80,32 +89,42 @@
 
     .gallery-button {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
-      padding: 12px 25px;
       text-decoration: none;
       border-radius: 4px;
       font-size: 14px;
     }
 
     .gallery-button:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
       text-align: center;
-      color: #888;
-      font-size: 13px;
-      margin-top: 65px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
-        font-size: 29px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -113,9 +132,11 @@
 
 <body>
 
-  <main class="container">
-
+  <header>
     <a class="back-link" href="world.html">← Back to Around the World</a>
+  </header>
+
+  <main>
 
     <img
       class="cover"
@@ -127,17 +148,18 @@
 
     <div class="location">Kakheti · Georgia</div>
 
-    <p class="intro">
+    <div class="description">
       Located in the semi-arid landscapes of eastern Georgia, David
       Gareji Monastery is one of the country's most remarkable historical
       and religious sites. Founded in the sixth century, this extensive
       monastic complex is known for its rock-cut chapels, ancient cave
       dwellings, and distinctive landscape near the border with Azerbaijan.
       The surrounding hills create a striking setting that reflects
-      Georgia's rich cultural and spiritual heritage. These photographs
-      capture my personal travel memories of David Gareji Monastery
-      and the Kakheti region.
-    </p>
+      Georgia's rich cultural and spiritual heritage. The remote location
+      and unusual natural scenery make the monastery a particularly
+      memorable destination to explore. These photographs capture my
+      personal travel memories of David Gareji Monastery and the Kakheti region.
+    </div>
 
     <section class="gallery">
 
@@ -159,12 +181,11 @@
 
     </section>
 
-    <footer>
-      © 2026 Çağdaş Duman
-    </footer>
-
   </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
-```
