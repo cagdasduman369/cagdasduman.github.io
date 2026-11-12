@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Trade Center, New York City | Çağdaş Duman</title>
+
+  <title>World Trade Center | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from the World Trade Center in New York City, by Çağdaş Duman.">
 
   <style>
@@ -14,102 +15,127 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
+      color: #333;
+      background: #fff;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+    header {
+      padding: 22px 8%;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 22px;
+    header a {
       color: #333;
       text-decoration: none;
       font-size: 14px;
     }
 
-    .back-link:hover {
+    header a:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
-      width: 100%;
-      max-height: 520px;
-      object-fit: cover;
       display: block;
-      margin-bottom: 30px;
-      border-radius: 4px;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 36px;
-      margin: 0 0 10px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 25px;
     }
 
-    .intro {
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 45px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding-top: 15px;
     }
 
     .gallery h2 {
       font-size: 25px;
-      margin-bottom: 12px;
+      margin: 0 0 10px;
     }
 
     .gallery p {
       color: #666;
-      font-size: 15px;
       margin-bottom: 25px;
     }
 
     .gallery-button {
       display: inline-block;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 14px 28px;
       text-decoration: none;
+      border-radius: 4px;
       font-size: 14px;
-      border-radius: 3px;
-      transition: background 0.2s;
+      transition: background 0.2s ease;
     }
 
     .gallery-button:hover {
-      background: #333;
+      background: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
-      .container {
-        padding: 20px 16px 45px;
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
 
-    <a href="new-york-city.html" class="back-link">← Back to New York City</a>
+  <header>
+    <a href="new-york-city.html">← Back to New York City</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/new-york-city/world-trade-center/world-trade-center-cover.jpeg"
@@ -118,14 +144,17 @@
     >
 
     <h1>World Trade Center</h1>
-    <div class="location">New York City · United States</div>
 
-    <p class="intro">
+    <p class="location">New York City · United States</p>
+
+    <p class="description">
       The World Trade Center stands at the heart of Lower Manhattan, representing both New York City's ambition and its resilience. Best known for One World Trade Center, the tallest building in the Western Hemisphere, the area brings together striking contemporary architecture, financial history, and powerful sites of remembrance. The 9/11 Memorial, with its twin reflecting pools marking the footprints of the former towers, offers a deeply moving space for reflection. Nearby, the Oculus stands out as an architectural landmark, while the surrounding streets reveal the energy and transformation of Lower Manhattan. Visiting the World Trade Center is not simply an encounter with an iconic skyline; it is also an opportunity to reflect on the history, loss, and enduring spirit of a city.
     </p>
 
     <section class="gallery">
+
       <h2>My Photo Gallery</h2>
+
       <p>Personal photographs and memories from the World Trade Center, New York City.</p>
 
       <a
@@ -136,8 +165,14 @@
       >
         View All Photos ↗
       </a>
+
     </section>
 
   </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
