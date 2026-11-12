@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>City Views, Salzburg — Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and city views from Salzburg, Austria.">
 
@@ -38,26 +39,28 @@
     .cover {
       display: block;
       width: 100%;
-      height: auto;
-      max-height: 550px;
+      height: 430px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 6px;
+      margin: 0 0 28px;
     }
 
     h1 {
-      margin: 24px 0 8px;
+      margin: 0 0 8px;
       font-size: 38px;
       line-height: 1.25;
     }
 
     .location {
-      margin-top: 0;
+      margin: 0;
       color: #777;
     }
 
     .description {
       margin: 24px 0;
       font-size: 17px;
+      line-height: 1.7;
+      color: #333;
       text-align: justify;
     }
 
@@ -69,14 +72,22 @@
       text-align: center;
     }
 
+    .gallery h2 {
+      margin-top: 0;
+    }
+
     .gallery a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -87,12 +98,21 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin: 24px auto;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
       h1 {
         font-size: 30px;
       }
 
-      .cover {
-        max-height: 350px;
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -115,24 +135,16 @@
 
     <div class="description">
       <p>
-        Salzburg is a city whose beauty lies in the remarkable relationship
-        between its historic architecture, cultural heritage, and dramatic
-        natural surroundings. Set along the Salzach River and framed by the
-        Austrian Alps, the city offers a distinctive skyline where church
-        towers, elegant domes, historic rooftops, and the impressive
-        Hohensalzburg Fortress create an unforgettable urban landscape. Its
-        historic center, recognized as a UNESCO World Heritage Site, reveals
-        centuries of architectural and cultural history through its narrow
-        streets, beautiful squares, ornate facades, and carefully preserved
-        buildings. Beyond its most famous landmarks, Salzburg also has
-        countless quieter corners, riverside perspectives, and scenic
-        viewpoints that give the city its own character. The changing
-        atmosphere throughout its streets, the contrast between old
-        architecture and the surrounding mountains, and the everyday rhythm
-        of local life make exploring the city a memorable experience. This
-        collection brings together my personal travel photographs and
-        impressions of Salzburg, documenting the views, details, and
-        architectural beauty that made my visit special.
+        Salzburg is a city where historic architecture and natural beauty
+        come together. Set along the Salzach River and surrounded by the
+        Austrian Alps, its skyline features elegant church towers, historic
+        rooftops, and the impressive Hohensalzburg Fortress. The city's
+        UNESCO-listed historic center is filled with charming streets,
+        beautiful squares, and remarkable architectural details. Beyond its
+        famous landmarks, Salzburg offers scenic viewpoints and peaceful
+        riverside settings that reveal its unique character. This collection
+        brings together my personal photographs and impressions of the city's
+        architecture, landscapes, and everyday atmosphere.
       </p>
     </div>
 
