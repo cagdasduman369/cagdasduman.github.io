@@ -20,153 +20,143 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
-      font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      margin: 0 0 10px;
       font-size: 38px;
-      color: #222;
+      line-height: 1.25;
+      margin: 0 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 25px;
+      margin-top: 0;
     }
 
-    .intro {
-      max-width: 100%;
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
-    .places-grid {
+    .places {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: 22px;
       margin-top: 35px;
     }
 
     .place-card {
-      padding: 20px;
-      background: #f6f6f6;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
       text-align: center;
+      padding-bottom: 22px;
     }
 
     .place-card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 6px;
       display: block;
-      margin-bottom: 18px;
     }
 
     .place-card h2 {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 0 0 15px;
+      font-size: 20px;
+      margin: 18px 15px 8px;
     }
 
     .place-card p {
-      margin-bottom: 18px;
+      margin: 0 18px 18px;
+      font-size: 15px;
     }
 
     .place-card a {
       display: inline-block;
-      margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
     .place-card a:hover {
-      background: #555;
+      background: #333;
     }
 
     .place-card:last-child {
       grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
+    @media (max-width: 700px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .places-grid {
+      .description {
+        font-size: 16px;
+      }
+
+      .places {
         grid-template-columns: 1fr;
       }
 
       .place-card:last-child {
         grid-column: auto;
+        width: 100%;
+      }
+
+      .place-card img {
+        height: 240px;
       }
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-  <main class="container">
-    <a href="world.html" class="back-link">← Back to Around the World</a>
-
+  <main>
     <h1>Mrkonjić Grad, Bosnia and Herzegovina</h1>
 
-    <div class="location">Bosnia and Herzegovina · Republika Srpska · Western Bosnia</div>
+    <p class="location">Bosnia and Herzegovina · Republika Srpska · Western Bosnia</p>
 
-    <p class="intro">
-      Located in the mountainous landscapes of western Bosnia and
-      Herzegovina, Mrkonjić Grad is surrounded by forests, hills,
-      and clear rivers. The wider region offers beautiful natural
-      scenery and opportunities to experience the countryside.
-      Nearby Pecka is particularly known for its limestone
-      landscapes, outdoor activities, and community initiatives.
-      My visit offered an opportunity to discover places beyond
-      the usual travel routes. From the climbing area and community
-      workshops at Pecka Visitor Center to the natural beauty of
-      the Sana River springs, each location revealed a different
-      aspect of the region. This collection brings together my
-      personal photographs and memories of these experiences.
+    <div class="description">
+      Located in the mountainous landscapes of western Bosnia and Herzegovina, Mrkonjić Grad is surrounded by forests, hills, and clear rivers. The wider region offers beautiful natural scenery and opportunities to experience the countryside. Nearby Pecka is particularly known for its limestone landscapes, outdoor activities, and community initiatives. My visit offered an opportunity to discover places beyond the usual travel routes. From the climbing area and community workshops at Pecka Visitor Center to the natural beauty of the Sana River springs, each location revealed a different aspect of the region. This collection brings together my personal photographs and memories of these experiences.
 
-      The surrounding countryside also offers a closer look at
-      the region's natural environment and local community life.
-      The landscapes around Pecka, its outdoor recreation areas,
-      and the clear waters of the Sana River reveal the quieter
-      side of Bosnia and Herzegovina. Exploring these places
-      provided an opportunity to appreciate the area's scenery,
-      local initiatives, and distinctive atmosphere. These
-      photographs preserve my personal impressions and memories
-      of my time in the Mrkonjić Grad region.
-    </p>
+      The surrounding countryside also offers a closer look at the region's natural environment and local community life. The landscapes around Pecka, its outdoor recreation areas, and the clear waters of the Sana River reveal the quieter side of Bosnia and Herzegovina. Exploring these places provided an opportunity to appreciate the area's scenery, local initiatives, and distinctive atmosphere. These photographs preserve my personal impressions and memories of my time in the Mrkonjić Grad region.
+    </div>
 
-    <section class="places-grid">
+    <section class="places">
 
       <div class="place-card">
-        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-climbing-area-cover.jpg" alt="Pecka Climbing Area">
+        <img
+          src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-climbing-area-cover.jpg"
+          alt="Pecka Climbing Area"
+        >
         <h2>Pecka Climbing Area</h2>
         <p>
           A scenic outdoor destination known for its limestone
@@ -177,7 +167,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-visitor-center-mushroom-workshop/pecka-visitor-center-mushroom-workshop-cover.jpg" alt="Pecka Visitor Center Mushroom Workshop">
+        <img
+          src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-visitor-center-mushroom-workshop/pecka-visitor-center-mushroom-workshop-cover.jpg"
+          alt="Pecka Visitor Center Mushroom Workshop"
+        >
         <h2>Pecka Visitor Center – Mushroom Workshop</h2>
         <p>
           A community-based workshop offering an opportunity
@@ -188,7 +181,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/sana-river-cover.jpg" alt="Sana River Springs">
+        <img
+          src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/sana-river-cover.jpg"
+          alt="Sana River Springs"
+        >
         <h2>Sana River Springs</h2>
         <p>
           A beautiful natural setting featuring the clear
@@ -199,8 +195,6 @@
       </div>
 
     </section>
-
   </main>
-
 </body>
 </html>
