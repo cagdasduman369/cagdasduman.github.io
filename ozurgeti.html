@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ozurgeti, Georgia | Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of Ozurgeti and its surroundings in Georgia.">
 
@@ -37,7 +38,8 @@
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -53,7 +55,7 @@
 
     .places {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       width: 100%;
     }
@@ -73,15 +75,27 @@
       display: block;
     }
 
+    .place-content {
+      padding: 18px;
+      text-align: center;
+    }
+
     .place h2 {
       font-size: 20px;
       font-weight: 600;
-      margin: 15px 10px 12px;
+      margin: 0 0 12px;
+    }
+
+    .place-content p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 0 16px;
+      text-align: center;
     }
 
     .place a {
       display: inline-block;
-      margin-bottom: 18px;
+      margin-bottom: 4px;
       padding: 9px 18px;
       background: #111;
       color: white;
@@ -92,6 +106,12 @@
 
     .place a:hover {
       background: #444;
+    }
+
+    .place:last-child {
+      grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
     }
 
     footer {
@@ -110,6 +130,11 @@
         grid-template-columns: 1fr;
       }
 
+      .place:last-child {
+        grid-column: auto;
+        width: 100%;
+      }
+
       .place img {
         height: 240px;
       }
@@ -118,53 +143,57 @@
 </head>
 
 <body>
+
   <header>
     <a href="world.html">← Around the World</a>
   </header>
 
   <main>
+
     <h1>Ozurgeti, Georgia</h1>
+
     <p class="location">Guria · Western Georgia</p>
 
     <div class="description">
-      <p>
-        Located in the Guria region of western Georgia, Ozurgeti is
-        surrounded by beautiful landscapes, green mountains, and
-        traditional Georgian villages. The wider area offers a chance
-        to experience a quieter side of the country, away from its
-        busy tourist destinations. From the peaceful atmosphere of
-        rural guesthouses to the impressive views of Gomi Mountain,
-        this region offers memorable opportunities to explore nature
-        and local life. These photographs capture my personal travel
-        memories of Ozurgeti and its surroundings.
-      </p>
+      Located in the Guria region of western Georgia, Ozurgeti is surrounded by beautiful landscapes, green mountains, and traditional Georgian villages. The wider area offers a chance to experience a quieter side of the country, away from its busy tourist destinations. From the peaceful atmosphere of rural guesthouses to the impressive views of Gomi Mountain, this region offers memorable opportunities to explore nature and local life. These photographs capture my personal travel memories of Ozurgeti and its surroundings. The region is also known for its welcoming atmosphere and distinctive rural character. Its natural scenery offers a glimpse into everyday life in western Georgia.
     </div>
 
     <section class="places">
 
       <div class="place">
         <img src="assets/images/world/georgia/ozurgeti/dumbo-eco-camp/dumbo-eco-camp-cover.jpg" alt="Dumbo Eco Camp">
-        <h2>Dumbo Eco Camp</h2>
-        <a href="dumbo-eco-camp.html">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Dumbo Eco Camp</h2>
+          <p>Discover a peaceful eco-camp surrounded by the green landscapes and natural beauty of Guria.</p>
+          <a href="dumbo-eco-camp.html">Explore Photos ↗</a>
+        </div>
       </div>
 
       <div class="place">
         <img src="assets/images/world/georgia/ozurgeti/gomi-mountain/gomi-mountain-cover.jpg" alt="Gomi Mountain">
-        <h2>Gomi Mountain</h2>
-        <a href="gomi-mountain.html">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Gomi Mountain</h2>
+          <p>Enjoy impressive mountain scenery, fresh air, and panoramic views across the surrounding region.</p>
+          <a href="gomi-mountain.html">Explore Photos ↗</a>
+        </div>
       </div>
 
       <div class="place">
         <img src="assets/images/world/georgia/ozurgeti/tsitelmta-komli-guesthouse/tsitelmta-komli-guesthouse-cover.jpg" alt="Tsitelmta Komli Guesthouse">
-        <h2>Tsitelmta - Komli Guesthouse</h2>
-        <a href="tsitelmta-komli-guesthouse.html">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Tsitelmta - Komli Guesthouse</h2>
+          <p>Experience the charm of a traditional countryside guesthouse in the peaceful surroundings of Guria.</p>
+          <a href="tsitelmta-komli-guesthouse.html">Explore Photos ↗</a>
+        </div>
       </div>
 
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
