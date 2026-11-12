@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mrkonjić Grad, Bosnia and Herzegovina | Çağdaş Duman</title>
 
+  <title>Mrkonjić Grad, Bosnia and Herzegovina | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and impressions of Mrkonjić Grad, Bosnia and Herzegovina, including Pecka Visitor Center, its surrounding landscapes, and the Sana River springs.">
 
   <style>
@@ -20,104 +20,110 @@
       line-height: 1.7;
     }
 
-    header {
-      padding: 22px 8%;
-      border-bottom: 1px solid #eee;
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 45px 25px;
     }
 
-    header a {
-      color: #333;
+    .back-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #555;
       text-decoration: none;
+      font-size: 14px;
     }
 
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 24px;
+    .back-link:hover {
+      color: #000;
     }
 
     h1 {
+      margin: 0 0 10px;
       font-size: 38px;
-      margin-bottom: 8px;
+      color: #222;
     }
 
     .location {
       color: #777;
-      margin-top: 0;
+      font-size: 15px;
+      margin-bottom: 25px;
     }
 
-    .description {
-      font-size: 17px;
-      margin: 24px 0;
+    .intro {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 1.8;
       text-align: justify;
+      margin-bottom: 35px;
     }
 
-    .description p {
-      margin: 0;
-    }
-
-    .sections {
+    .places-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      width: 100%;
-      max-width: none;
-      margin: 35px 0 0;
-      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 35px;
     }
 
-    .card {
-      width: 100%;
-      min-width: 0;
-      background: #f7f7f7;
+    .place-card {
+      padding: 20px;
+      background: #f6f6f6;
       border-radius: 8px;
-      overflow: hidden;
       text-align: center;
     }
 
-    .card img {
+    .place-card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
+      border-radius: 6px;
       display: block;
+      margin-bottom: 18px;
     }
 
-    .card h2 {
-      margin: 18px 12px 12px;
+    .place-card h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 15px;
     }
 
-    .card a {
+    .place-card p {
+      margin-bottom: 18px;
+    }
+
+    .place-card a {
       display: inline-block;
-      margin: 0 0 22px;
+      margin-top: 10px;
       padding: 12px 24px;
-      background: #000;
-      color: white;
+      background: #333;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
     }
 
-    .card a:hover {
-      background: #333;
+    .place-card a:hover {
+      background: #555;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #777;
-      font-size: 14px;
+    .place-card:last-child {
+      grid-column: 1 / -1;
     }
 
-    @media (max-width: 700px) {
-      .sections {
-        grid-template-columns: 1fr;
-      }
-
-      .card img {
-        height: 240px;
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 18px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .places-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .place-card:last-child {
+        grid-column: auto;
       }
     }
   </style>
@@ -125,62 +131,76 @@
 
 <body>
 
-  <header>
-    <a href="world.html">← Around the World</a>
-  </header>
-
-  <main>
+  <main class="container">
+    <a href="world.html" class="back-link">← Back to Around the World</a>
 
     <h1>Mrkonjić Grad, Bosnia and Herzegovina</h1>
 
-    <p class="location">
-      Bosnia and Herzegovina · Republika Srpska · Western Bosnia
+    <div class="location">Bosnia and Herzegovina · Republika Srpska · Western Bosnia</div>
+
+    <p class="intro">
+      Located in the mountainous landscapes of western Bosnia and
+      Herzegovina, Mrkonjić Grad is surrounded by forests, hills,
+      and clear rivers. The wider region offers beautiful natural
+      scenery and opportunities to experience the countryside.
+      Nearby Pecka is particularly known for its limestone
+      landscapes, outdoor activities, and community initiatives.
+      My visit offered an opportunity to discover places beyond
+      the usual travel routes. From the climbing area and community
+      workshops at Pecka Visitor Center to the natural beauty of
+      the Sana River springs, each location revealed a different
+      aspect of the region. This collection brings together my
+      personal photographs and memories of these experiences.
+
+      The surrounding countryside also offers a closer look at
+      the region's natural environment and local community life.
+      The landscapes around Pecka, its outdoor recreation areas,
+      and the clear waters of the Sana River reveal the quieter
+      side of Bosnia and Herzegovina. Exploring these places
+      provided an opportunity to appreciate the area's scenery,
+      local initiatives, and distinctive atmosphere. These
+      photographs preserve my personal impressions and memories
+      of my time in the Mrkonjić Grad region.
     </p>
 
-    <div class="description">
-      <p>
-        Located in the mountainous landscapes of western Bosnia and
-        Herzegovina, Mrkonjić Grad is surrounded by forests, hills,
-        and clear rivers. The wider region offers beautiful natural
-        scenery and opportunities to experience the countryside.
-        Nearby Pecka is particularly known for its limestone
-        landscapes, outdoor activities, and community initiatives.
-        My visit offered an opportunity to discover places beyond
-        the usual travel routes. From the climbing area and community
-        workshops at Pecka Visitor Center to the natural beauty of
-        the Sana River springs, each location revealed a different
-        aspect of the region. This collection brings together my
-        personal photographs and memories of these experiences.
-      </p>
-    </div>
+    <section class="places-grid">
 
-    <section class="sections">
-
-      <div class="card">
+      <div class="place-card">
         <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-climbing-area-cover.jpg" alt="Pecka Climbing Area">
         <h2>Pecka Climbing Area</h2>
+        <p>
+          A scenic outdoor destination known for its limestone
+          rock formations, climbing routes, and beautiful
+          natural surroundings near Pecka.
+        </p>
         <a href="pecka-climbing-area.html">Explore Photos ↗</a>
       </div>
 
-      <div class="card">
+      <div class="place-card">
         <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/pecka-visitor-center-mushroom-workshop/pecka-visitor-center-mushroom-workshop-cover.jpg" alt="Pecka Visitor Center Mushroom Workshop">
         <h2>Pecka Visitor Center – Mushroom Workshop</h2>
+        <p>
+          A community-based workshop offering an opportunity
+          to learn about mushrooms, local knowledge, and
+          the natural resources of the surrounding area.
+        </p>
         <a href="pecka-visitor-center-mushroom-workshop.html">Explore Photos ↗</a>
       </div>
 
-      <div class="card">
+      <div class="place-card">
         <img src="assets/images/world/bosnia-herzegovina/mrkonjic-grad/sana-river-cover.jpg" alt="Sana River Springs">
         <h2>Sana River Springs</h2>
+        <p>
+          A beautiful natural setting featuring the clear
+          waters of the Sana River springs and the peaceful
+          landscapes of the surrounding countryside.
+        </p>
         <a href="/sana-river.html">Explore Photos ↗</a>
       </div>
 
     </section>
 
   </main>
-
-  <footer>
-    © Çağdaş Duman · Around the World
-  </footer>
 
 </body>
 </html>
