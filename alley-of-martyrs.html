@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Alley of Martyrs, Baku | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from the Alley of Martyrs in Baku, Azerbaijan, by Çağdaş Duman.">
 
@@ -13,135 +14,161 @@
 
     body {
       margin: 0;
-      padding: 40px 20px;
       font-family: Arial, sans-serif;
-      color: #222;
       background: #fff;
+      color: #333;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 15px;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
-      width: 100%;
-      height: 460px;
-      object-fit: cover;
       display: block;
-      margin-bottom: 30px;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 36px;
-      margin: 0 0 10px;
-      text-align: left;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 16px;
-      margin-bottom: 25px;
-      text-align: left;
+      margin-top: 0;
     }
 
-    .intro {
+    .description {
       font-size: 17px;
-      line-height: 1.8;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 45px;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding: 30px 0;
     }
 
     .gallery h2 {
-      font-size: 27px;
-      margin-bottom: 12px;
+      margin-top: 0;
     }
 
     .gallery p {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 25px;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 14px 28px;
       text-decoration: none;
-      font-size: 15px;
-      border-radius: 3px;
+      border-radius: 4px;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
     @media (max-width: 600px) {
-      body {
-        padding: 25px 15px;
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        height: 280px;
+        height: 250px;
       }
 
       h1 {
-        font-size: 29px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <a href="baku.html" class="back-link">← Back to Baku</a>
+  <header>
+    <a href="baku.html">← Back to Baku</a>
+  </header>
+
+  <main>
 
     <img
+      class="cover"
       src="assets/images/world/azerbaijan/baku/alley-of-martyrs/alley-of-martyrs-cover.jpg"
       alt="Alley of Martyrs in Baku"
-      class="cover"
     >
 
     <h1>Alley of Martyrs</h1>
-    <div class="location">Baku · Azerbaijan</div>
 
-    <div class="intro">
-      The Alley of Martyrs is one of the most significant memorial sites in Baku, overlooking the Caspian Sea and offering a striking view of the city. It is the resting place of those who lost their lives during the Black January events of 1990 and the First Nagorno-Karabakh War. Walking through the memorial grounds, visitors encounter rows of graves, monuments and eternal flames that reflect the country's painful past and collective memory. Beyond its historical significance, the site is also a place of quiet reflection, where the atmosphere of remembrance blends with the beautiful views of Baku and the Caspian coastline. Visiting the Alley of Martyrs offers a deeper perspective on Azerbaijan's modern history and the events that have shaped its national identity.
+    <p class="location">Baku · Azerbaijan</p>
+
+    <div class="description">
+      <p>
+        The Alley of Martyrs is one of the most significant memorial sites in Baku, overlooking the Caspian Sea and offering a striking view of the city. It is the resting place of those who lost their lives during the Black January events of 1990 and the First Nagorno-Karabakh War. Walking through the memorial grounds, visitors encounter rows of graves, monuments and eternal flames that reflect the country's painful past and collective memory. Beyond its historical significance, the site is also a place of quiet reflection, where the atmosphere of remembrance blends with the beautiful views of Baku and the Caspian coastline. Visiting the Alley of Martyrs offers a deeper perspective on Azerbaijan's modern history and the events that have shaped its national identity.
+      </p>
     </div>
 
-    <section class="gallery">
+    <div class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Personal photographs and memories from the Alley of Martyrs, Baku.</p>
+
+      <p>
+        Personal photographs and memories from the Alley of Martyrs, Baku.
+      </p>
 
       <a
         href="https://photos.app.goo.gl/ZcLBUQ5GpKetDP8y8"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </section>
+    </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
