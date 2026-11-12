@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>National Park, Maribor | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories of the natural surroundings of Maribor, Slovenia.">
 
   <style>
     * {
@@ -26,6 +28,11 @@
     header a {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -35,20 +42,25 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
+      font-size: 15px;
     }
 
     .description {
@@ -58,25 +70,36 @@
     }
 
     .gallery {
-      margin-top: 40px;
-      padding: 30px;
+      margin-top: 35px;
+      padding: 25px;
       background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
     .gallery h2 {
-      margin-top: 0;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
     }
 
     .gallery a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 28px;
-      background: #333;
-      color: white;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -85,34 +108,48 @@
       color: #777;
       font-size: 14px;
     }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <header>
-    <a href="maribor.html">← Maribor</a>
+    <a href="maribor.html">← Back to Maribor</a>
   </header>
 
   <main>
-    <img src="assets/images/world/slovenia/maribor/national-park/national-park-cover.jpg" class="cover">
+
+    <img
+      src="assets/images/world/slovenia/maribor/national-park/national-park-cover.jpg"
+      class="cover"
+      alt="Natural surroundings of Maribor"
+    >
 
     <h1>National Park, Maribor</h1>
+
     <p class="location">Slovenia · Maribor</p>
 
     <div class="description">
-      <p>
-        The natural landscapes around Maribor offer a refreshing escape
-        from the city and a chance to enjoy Slovenia's beautiful green
-        surroundings. Forested areas, peaceful paths and scenic views
-        create a wonderful setting for spending time outdoors and
-        appreciating the region's natural character.
-      </p>
-
-      <p>
-        During my visit, I enjoyed exploring the natural scenery and
-        capturing some of its peaceful atmosphere through my photographs.
-        These images preserve my personal memories of this part of Slovenia.
-      </p>
+      The natural landscapes around Maribor offer a refreshing escape from the city and a chance to enjoy Slovenia's beautiful green surroundings. Forested areas, peaceful paths and scenic views create a wonderful setting for spending time outdoors and appreciating the region's natural character. The changing scenery and quiet atmosphere make this area especially appealing to visitors looking to experience the natural side of the region. It offers a pleasant contrast to Maribor's historic streets and lively urban centre. During my visit, I enjoyed exploring the natural scenery and capturing some of its peaceful atmosphere through my photographs. These images preserve my personal memories of this part of Slovenia and its beautiful outdoor surroundings.
     </div>
 
     <section class="gallery">
@@ -124,10 +161,12 @@
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
