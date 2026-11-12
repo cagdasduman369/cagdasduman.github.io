@@ -28,6 +28,11 @@
     header a {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -37,48 +42,60 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 28px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
       line-height: 1.25;
-      margin: 0 0 8px;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
+      font-size: 15px;
     }
 
-    .intro {
+    .description {
       font-size: 17px;
-      margin: 24px 0 35px;
+      margin: 24px 0;
       text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin: 45px 0;
     }
 
     .gallery h2 {
       font-size: 25px;
-      margin-bottom: 18px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
     }
 
     .gallery a {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
-      padding: 13px 25px;
-      border-radius: 4px;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 4px;
+      font-size: 14px;
     }
 
     .gallery a:hover {
@@ -92,21 +109,21 @@
       font-size: 14px;
     }
 
-    @media(max-width:600px) {
+    @media (max-width: 600px) {
       main {
         margin-top: 24px;
         padding: 0 18px;
       }
 
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .intro {
+      .description {
         font-size: 16px;
       }
     }
@@ -130,29 +147,33 @@
     <h1>City View</h1>
     <p class="location">Philadelphia · Pennsylvania · United States</p>
 
-    <div class="intro">
-      <p>
-        Philadelphia is a city where America's past and present meet
-        in a remarkable urban landscape. As one of the nation's oldest
-        major cities, it combines historic buildings, elegant architectural
-        landmarks, distinctive neighborhoods, and a modern skyline.
-        From the streets of Center City to panoramic views across the
-        urban landscape, Philadelphia reveals a character shaped by
-        centuries of history and continuous transformation.
-      </p>
-
-      <p>
-        These photographs capture my impressions of Philadelphia's
-        cityscape, its architectural contrasts, and the atmosphere
-        of a city that has played an important role in American history.
-        Each view offers a different perspective on its streets,
-        buildings, and distinctive urban identity.
-      </p>
+    <div class="description">
+      Philadelphia is a city where America's past and present meet
+      in a remarkable urban landscape. As one of the nation's oldest
+      major cities, it combines historic buildings, elegant architectural
+      landmarks, distinctive neighborhoods, and a modern skyline.
+      From the streets of Center City to panoramic views across the
+      urban landscape, Philadelphia reveals a character shaped by
+      centuries of history and continuous transformation. These
+      photographs capture my impressions of Philadelphia's cityscape,
+      its architectural contrasts, and the atmosphere of a city that
+      has played an important role in American history. Each view offers
+      a different perspective on its streets, buildings, and distinctive
+      urban identity.
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <a href="https://photos.app.goo.gl/USEnaHDtRkbRfkd17" target="_blank" rel="noopener">
+      <p>
+        Explore my personal travel photographs and memories from
+        Philadelphia City View.
+      </p>
+
+      <a
+        href="https://photos.app.goo.gl/USEnaHDtRkbRfkd17"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View All Photos ↗
       </a>
     </section>
@@ -160,9 +181,8 @@
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
 
 </body>
 </html>
-```
