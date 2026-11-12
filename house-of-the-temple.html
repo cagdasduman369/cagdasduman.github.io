@@ -15,23 +15,19 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
     header {
       padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
     }
 
     main {
@@ -53,20 +49,21 @@
       font-size: 38px;
       line-height: 1.25;
       margin: 25px 0 8px;
-      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
-      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
-      line-height: 1.7;
       margin: 24px 0;
       text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
@@ -78,28 +75,24 @@
     }
 
     .gallery h2 {
-      font-size: 25px;
-      margin: 0 0 10px;
+      margin-top: 0;
     }
 
     .gallery p {
-      color: #666;
-      margin-bottom: 25px;
-      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 14px;
-      transition: background 0.3s ease;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
@@ -134,7 +127,7 @@
 <body>
 
   <header>
-    <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+    <a href="washington-dc.html">← Back to Washington, DC</a>
   </header>
 
   <main>
@@ -149,28 +142,36 @@
 
     <p class="location">Washington, DC · United States</p>
 
-    <p class="description">
-      The House of the Temple is one of the most distinctive architectural landmarks in Washington, DC, and serves as the headquarters of the Scottish Rite of Freemasonry, Southern Jurisdiction. Completed in 1915, the building was designed by architect John Russell Pope and inspired by the ancient Mausoleum at Halicarnassus, one of the Seven Wonders of the Ancient World. Its monumental structure, impressive columns, and carefully balanced proportions give it a remarkable presence among the city's historic buildings. The interior also features grand spaces, decorative details, and a library containing an extensive collection of books and historical materials. Beyond its architectural significance, the building reflects the history and traditions of Freemasonry in the United States. Its unusual design makes it a fascinating stop for visitors interested in architecture, history, and cultural heritage. These photographs capture the exterior and surroundings of this remarkable building during my visit to the American capital.
-    </p>
+    <div class="description">
+      <p>
+        The House of the Temple is one of the most distinctive architectural landmarks in Washington, DC, and serves as the headquarters of the Scottish Rite of Freemasonry, Southern Jurisdiction. Completed in 1915, the building was designed by architect John Russell Pope and inspired by the ancient Mausoleum at Halicarnassus, one of the Seven Wonders of the Ancient World. Its monumental structure, impressive columns, and carefully balanced proportions give it a remarkable presence among the city's historic buildings.
+      </p>
 
-    <div class="gallery">
+      <p>
+        The interior also features grand spaces, decorative details, and a library containing an extensive collection of books and historical materials. Beyond its architectural significance, the building reflects the history and traditions of Freemasonry in the United States. Its unusual design makes it a fascinating stop for visitors interested in architecture, history, and cultural heritage. These photographs capture the exterior and surroundings of this remarkable building during my visit to the American capital.
+      </p>
+    </div>
+
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photographs and memories from the House of the Temple and its distinctive architecture in Washington, DC.</p>
+
+      <p>
+        Explore my personal travel photographs and memories from the House of the Temple and its distinctive architecture in Washington, DC.
+      </p>
 
       <a
         href="https://photos.app.goo.gl/soTbebMy6DAUXmMK9"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
+    </section>
 
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman · Around the World
+    © Çağdaş Duman · Around the World
   </footer>
 
 </body>
