@@ -16,127 +16,125 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #333;
-      background: #f7f7f7;
+      background: #fff;
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
-      font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      margin: 0 0 10px;
       font-size: 38px;
-      color: #222;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 25px;
+      margin-top: 0;
     }
 
-    .intro {
-      max-width: 100%;
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0 35px;
       text-align: justify;
-      margin: 0 0 35px;
     }
 
     .places {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       width: 100%;
     }
 
-    .place-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .place {
       min-width: 0;
-      background: #fff;
-      border: 1px solid #e5e5e5;
+      background: #f7f7f7;
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
-      color: #333;
-      transition: 0.2s ease;
     }
 
-    .place-card:hover {
-      border-color: #ccc;
-      transform: translateY(-2px);
-    }
-
-    .place-card img {
-      display: block;
+    .place img {
       width: 100%;
-      height: 180px;
+      height: 220px;
       object-fit: cover;
+      display: block;
     }
 
-    .place-card h2 {
-      font-size: 17px;
+    .place-content {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .place h2 {
+      font-size: 20px;
       font-weight: 600;
-      margin: 18px 12px 10px;
+      margin: 0 0 12px;
     }
 
-    .place-card p {
-      color: #666;
+    .place-content p {
       font-size: 14px;
-      margin: 0 18px 18px;
+      line-height: 1.6;
+      margin: 0 0 16px;
+      text-align: center;
     }
 
-    .explore-button {
+    .place a {
       display: inline-block;
-      margin: auto 0 20px;
-      padding: 11px 23px;
-      background: #000;
-      color: #fff;
-      border-radius: 5px;
-      font-size: 14px;
+      margin-bottom: 4px;
+      padding: 9px 18px;
+      background: #111;
+      color: white;
       text-decoration: none;
+      border-radius: 4px;
+      font-size: 13px;
     }
 
-    .place-card:hover .explore-button {
-      background: #333;
+    .place a:hover {
+      background: #444;
     }
 
     footer {
       text-align: center;
-      padding: 22px;
+      padding: 25px;
       color: #777;
       font-size: 14px;
-      border-top: 1px solid #ddd;
     }
 
     @media (max-width: 700px) {
-      .container {
-        padding: 30px 18px;
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
 
       .places {
         grid-template-columns: 1fr;
       }
 
-      h1 {
-        font-size: 30px;
+      .place img {
+        height: 240px;
       }
     }
   </style>
@@ -144,66 +142,56 @@
 
 <body>
 
-  <main class="container">
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-    <a href="world.html" class="back-link">← Back to Around the World</a>
+  <main>
 
     <h1>Tbilisi</h1>
 
-    <div class="location">Georgia · Caucasus</div>
+    <p class="location">Georgia · Caucasus</p>
 
-    <p class="intro">
-      Tbilisi, the capital of Georgia, is a city where history, architecture,
-      and modern urban life come together. Located along the Kura River, the
-      city is known for its historic streets, distinctive buildings, hillside
-      views, and lively cultural spaces. Its charming old town, colorful
-      balconies and historic churches give the city a distinctive character.
-      Tbilisi is also known for its welcoming atmosphere and rich cultural
-      traditions. From its panoramic viewpoints to peaceful green parks and
-      creative meeting places, Tbilisi offers many different experiences.
-      These photographs capture my personal travel memories of the city.
-    </p>
+    <div class="description">
+      Tbilisi, the capital of Georgia, is a city where history, architecture, and modern urban life come together. Located along the Kura River, the city is known for its historic streets, distinctive buildings, hillside views, and lively cultural spaces. Its charming old town, colorful balconies and historic churches give the city a distinctive character. Tbilisi is also known for its welcoming atmosphere and rich cultural traditions. From its panoramic viewpoints to peaceful green parks and creative meeting places, Tbilisi offers many different experiences. The city's diverse architectural styles reflect the many cultures and influences that have shaped its history over the centuries. Walking through Tbilisi offers a fascinating contrast between its historic character and its evolving modern identity. These photographs capture my personal travel memories of the city.
+    </div>
 
     <section class="places">
 
-      <div class="place-card">
+      <div class="place">
         <img src="assets/images/world/georgia/tbilisi/tbilisi/city-view/city-view-cover.jpg" alt="Tbilisi City View">
-        <h2>City View</h2>
-        <p>
-          Panoramic views of Tbilisi, its rooftops, historic architecture,
-          and surrounding hills.
-        </p>
-        <a href="tbilisi-city-view.html" class="explore-button">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>City View</h2>
+          <p>Enjoy panoramic views of Tbilisi, its rooftops, historic architecture, and surrounding hills.</p>
+          <a href="tbilisi-city-view.html">Explore Photos ↗</a>
+        </div>
       </div>
 
-      <div class="place-card">
+      <div class="place">
         <img src="assets/images/world/georgia/tbilisi/fabrika-tbilisi/fabrika-tbilisi-cover.jpg" alt="Fabrika Tbilisi">
-        <h2>Fabrika Tbilisi</h2>
-        <p>
-          A creative urban space known for its artistic atmosphere,
-          cafés, and cultural activities.
-        </p>
-        <a href="fabrika-tbilisi.html" class="explore-button">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Fabrika Tbilisi</h2>
+          <p>Discover a creative urban space known for its artistic atmosphere, cafés, and cultural activities.</p>
+          <a href="fabrika-tbilisi.html">Explore Photos ↗</a>
+        </div>
       </div>
 
-      <div class="place-card">
+      <div class="place">
         <img src="assets/images/world/georgia/tbilisi/mtatsminda-park/mtatsminda-park-cover.jpg" alt="Mtatsminda Park">
-        <h2>Mtatsminda Park</h2>
-        <p>
-          A popular hilltop park offering beautiful views over Tbilisi
-          and a variety of attractions.
-        </p>
-        <a href="mtatsminda-park.html" class="explore-button">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Mtatsminda Park</h2>
+          <p>Explore a popular hilltop park offering beautiful views over Tbilisi and a variety of attractions.</p>
+          <a href="mtatsminda-park.html">Explore Photos ↗</a>
+        </div>
       </div>
 
-      <div class="place-card">
+      <div class="place">
         <img src="assets/images/world/georgia/tbilisi/mziuri-park/mziuri-park-cover.jpg" alt="Mziuri Park">
-        <h2>Mziuri Park</h2>
-        <p>
-          A green urban park providing peaceful walking paths and
-          relaxing outdoor spaces.
-        </p>
-        <a href="mziuri-park.html" class="explore-button">Explore Photos ↗</a>
+        <div class="place-content">
+          <h2>Mziuri Park</h2>
+          <p>Discover a green urban park with peaceful walking paths and relaxing outdoor spaces.</p>
+          <a href="mziuri-park.html">Explore Photos ↗</a>
+        </div>
       </div>
 
     </section>
@@ -211,7 +199,7 @@
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman
+    © 2026 Çağdaş Duman · Around the World
   </footer>
 
 </body>
