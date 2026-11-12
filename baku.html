@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Baku, Azerbaijan | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from Baku, Azerbaijan, by Çağdaş Duman.">
 
@@ -15,130 +16,115 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #333;
-      background: #f7f7f7;
+      background: #fff;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
-      font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      margin: 0 0 10px;
       font-size: 38px;
-      color: #222;
+      line-height: 1.25;
+      margin: 0 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 25px;
+      margin-top: 0;
     }
 
-    .intro {
-      max-width: 900px;
-      font-size: 16px;
-      line-height: 1.8;
-      text-align: justify;
-      margin: 0 0 35px;
-    }
-
-    .places-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .place-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 0;
-      background: #fff;
-      border: 1px solid #e5e5e5;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-      transition: 0.2s ease;
-    }
-
-    .place-card:hover {
-      border-color: #ccc;
-      transform: translateY(-2px);
-    }
-
-    .place-card img {
-      display: block;
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .place-card h2 {
+    .description {
       font-size: 17px;
-      font-weight: 600;
-      margin: 18px 12px 14px;
+      margin: 24px 0;
+      text-align: justify;
     }
 
-    .explore-button {
+    .description p {
+      margin-bottom: 18px;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .card {
+      padding: 20px;
+      background: #f6f6f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 18px;
+    }
+
+    .card a {
       display: inline-block;
-      margin: auto 0 20px;
-      padding: 11px 23px;
-      background: #000;
-      color: #fff;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
       border-radius: 5px;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
       font-size: 14px;
     }
 
-    .place-card:hover .explore-button {
-      background: #333;
-    }
-
-    .place-card:last-child {
-      grid-column: 1 / -1;
-    }
-
-    .place-card:last-child img {
-      height: 220px;
-    }
-
-    @media (max-width: 700px) {
-      .container {
-        padding: 30px 18px;
+    @media(max-width:600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .places-grid {
+      .description {
+        font-size: 16px;
+      }
+
+      .sections {
         grid-template-columns: 1fr;
-      }
-
-      .place-card:last-child {
-        grid-column: auto;
-      }
-
-      .place-card img,
-      .place-card:last-child img {
-        height: 240px;
       }
     }
   </style>
@@ -146,72 +132,132 @@
 
 <body>
 
-  <main class="container">
-    <a href="world.html" class="back-link">← Back to Around the World</a>
+  <header>
+    <a href="world.html">← Back to Around the World</a>
+  </header>
+
+  <main>
 
     <h1>Baku</h1>
+    <p class="location">Azerbaijan · Caspian Sea</p>
 
-    <div class="location">Azerbaijan · Caspian Sea</div>
+    <div class="description">
+      <p>
+        Baku, the capital of Azerbaijan, is a fascinating city where history,
+        architecture, culture, and modern urban life meet along the shores
+        of the Caspian Sea. Its distinctive character reflects centuries of
+        cultural exchange, combining Eastern traditions with European
+        influences. The city's historic center, known as the Old City,
+        preserves narrow streets, ancient walls, traditional architecture,
+        and important historical landmarks.
+      </p>
 
-    <p class="intro">
-      Baku, the capital of Azerbaijan, is a fascinating city where historic
-      architecture, modern landmarks and the shores of the Caspian Sea come
-      together. Its character reflects a unique blend of Eastern traditions
-      and European influences. Along the waterfront, visitors can enjoy
-      beautiful sea views and discover the city's lively atmosphere. From the
-      narrow streets of the Old City to its contemporary skyline, museums,
-      gardens and memorial sites, Baku offers a rich variety of places to
-      explore. This collection brings together my personal photographs and
-      memories from different corners of the city.
-    </p>
+      <p>
+        Beyond its historic quarters, Baku is known for its striking modern
+        skyline, elegant waterfront promenades, landscaped parks, and
+        impressive cultural institutions. The contrast between historic
+        buildings and contemporary architecture gives the city a unique
+        visual identity. Museums, gardens, railway heritage, and memorial
+        sites also offer different perspectives on Azerbaijan's history
+        and cultural life.
+      </p>
 
-    <section class="places-grid">
+      <p>
+        From the panoramic views of the city and the Caspian coastline to
+        its historic streets and distinctive landmarks, Baku offers many
+        interesting places to discover. This collection brings together
+        my personal photographs and memories from different corners of
+        the city, capturing its architecture, landscapes, cultural sites,
+        and distinctive atmosphere.
+      </p>
+    </div>
 
-      <a href="cityscape-and-views.html" class="place-card">
+    <section class="sections">
+
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/cityscape-and-views/cityscape-and-views-cover.jpg" alt="Baku Cityscape and Views">
         <h2>Cityscape &amp; Views</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          Panoramic views of Baku, its distinctive skyline,
+          Caspian Sea waterfront, and the contrast between
+          historic architecture and modern landmarks.
+        </p>
+        <a href="cityscape-and-views.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="central-botanical-garden.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/central-botanical-garden/central-botanical-garden-cover.jpg" alt="Central Botanical Garden, Baku">
         <h2>Central Botanical Garden</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          A peaceful green space featuring diverse plant life,
+          landscaped areas, and quiet paths away from
+          the busy streets of the city.
+        </p>
+        <a href="central-botanical-garden.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="icheri-sheher.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/icheri-sheher/icheri-sheher-cover.jpg" alt="Old City, Baku">
         <h2>Old City</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          The historic heart of Baku, known for its ancient
+          walls, narrow streets, traditional buildings,
+          and remarkable architectural heritage.
+        </p>
+        <a href="icheri-sheher.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="military-trophies-park.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/military-trophies-park/military-trophies-park-cover.jpg" alt="Military Trophies Park, Baku">
         <h2>Military Trophies Park</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          A park presenting military exhibits and displays,
+          offering a particular perspective on Azerbaijan's
+          recent history and national commemorations.
+        </p>
+        <a href="military-trophies-park.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="national-flag-museum.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/national-flag-museum/national-flag-museum-cover.jpg" alt="National Flag Museum, Baku">
         <h2>National Flag Museum</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          A cultural institution dedicated to the history
+          and symbolism of Azerbaijan's national flag
+          and state identity.
+        </p>
+        <a href="national-flag-museum.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="railway-museum.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/railway-museum/railway-museum-cover.jpg" alt="Railway Museum, Baku">
         <h2>Railway Museum</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          A place to explore railway heritage, historic
+          transport displays, and the development
+          of railway connections in Azerbaijan.
+        </p>
+        <a href="railway-museum.html">Explore Photos ↗</a>
+      </div>
 
-      <a href="alley-of-martyrs.html" class="place-card">
+      <div class="card">
         <img src="assets/images/world/azerbaijan/baku/alley-of-martyrs/alley-of-martyrs-cover.jpg" alt="Alley of Martyrs, Baku">
         <h2>Alley of Martyrs</h2>
-        <span class="explore-button">Explore Photos ↗</span>
-      </a>
+        <p>
+          A significant memorial site overlooking the Caspian Sea,
+          commemorating those who lost their lives in
+          important events in Azerbaijan's history.
+        </p>
+        <a href="alley-of-martyrs.html">Explore Photos ↗</a>
+      </div>
 
     </section>
 
   </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
