@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>6 May Park, Batumi | Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of 6 May Park in Batumi, Georgia.">
 
@@ -36,16 +37,18 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
-      border-radius: 6px;
-      display: block;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin: 28px 0 5px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -55,13 +58,16 @@
 
     .description {
       font-size: 17px;
-      margin: 25px 0 40px;
+      margin: 24px 0;
       text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin: 45px 0;
     }
 
     .gallery h2 {
@@ -76,15 +82,16 @@
 
     .gallery a {
       display: inline-block;
-      padding: 12px 28px;
-      background: #222;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
     .gallery a:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
@@ -92,27 +99,37 @@
       padding: 25px;
       color: #777;
       font-size: 14px;
-      border-top: 1px solid #eee;
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <a href="batumi.html">← Back to Batumi</a>
   </header>
 
   <main>
+
     <img
       class="cover"
       src="assets/images/world/georgia/batumi/6-may-park/6-may-park-cover.jpg"
@@ -120,18 +137,11 @@
     >
 
     <h1>6 May Park</h1>
+
     <p class="location">Batumi · Georgia</p>
 
     <div class="description">
-      <p>
-        Located in the heart of Batumi, 6 May Park is one of the city's
-        oldest and most beloved green spaces. With its peaceful pathways,
-        beautiful trees, and relaxing atmosphere, the park offers a pleasant
-        escape from the busy streets of the city. It is a popular place for
-        walking, spending time outdoors, and enjoying nature in the middle
-        of Batumi. These photographs capture my personal memories of
-        6 May Park and its pleasant atmosphere.
-      </p>
+      Located in the heart of Batumi, 6 May Park is one of the city's oldest and most beloved green spaces. With its peaceful pathways, beautiful trees, and relaxing atmosphere, the park offers a pleasant escape from the busy streets of the city. It is a popular place for walking, spending time outdoors, and enjoying nature in the middle of Batumi. These photographs capture my personal memories of 6 May Park and its pleasant atmosphere. The park's green surroundings provide a refreshing contrast to the city's lively urban landscape. It is also a lovely place to slow down and experience a quieter side of Batumi.
     </div>
 
     <section class="gallery">
@@ -141,10 +151,12 @@
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
