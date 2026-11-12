@@ -19,69 +19,83 @@
       color: #333;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 25px;
       color: #333;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .back-link:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
+      display: block;
       width: 100%;
-      max-height: 420px;
+      height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
-      font-size: 16px;
+    .description {
+      font-size: 17px;
       line-height: 1.7;
-      margin-bottom: 35px;
+      margin: 24px 0;
+      text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     .gallery-button {
       display: inline-block;
       background: #000;
       color: #fff;
-      padding: 15px 28px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
+      font-size: 14px;
       transition: background 0.3s ease;
     }
 
@@ -89,26 +103,41 @@
       background: #333;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
-      }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
 
-      h1 {
-        font-size: 26px;
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        max-height: 300px;
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
+  <header>
     <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/washington-dc/smithsonian-american-art-portraiture/smithsonian-american-art-portraiture-cover.jpeg"
@@ -118,14 +147,15 @@
 
     <h1>Smithsonian American Art Museum and National Portrait Gallery</h1>
 
-    <div class="location">Washington, DC · United States</div>
+    <p class="location">Washington, DC · United States</p>
 
-    <p class="intro">
-      Located in the heart of Washington, DC, the Smithsonian American Art Museum and the National Portrait Gallery share a historic building that brings together American art and portraits of influential figures. The collections offer a fascinating look at the country's artistic heritage, history, and cultural identity. These photographs capture moments from my visit to this remarkable museum complex.
+    <p class="description">
+      Located in the heart of Washington, DC, the Smithsonian American Art Museum and the National Portrait Gallery share the historic Old Patent Office Building, bringing together two important collections under one roof. The American Art Museum presents works that reflect the country's artistic development, from early colonial times to contemporary creations. The National Portrait Gallery, meanwhile, features portraits of presidents, political leaders, artists, activists, and other influential figures who have shaped American history and culture. Together, the collections offer visitors an opportunity to explore the nation's identity through art, history, and personal stories. The building itself is also remarkable, with impressive architecture and beautifully designed interior spaces. Walking through its galleries provides a different perspective on the people, events, and ideas that have influenced the United States. These photographs capture my visit to this fascinating museum complex in the cultural heart of the capital.
     </p>
 
     <div class="gallery">
       <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photographs and memories from the Smithsonian American Art Museum and National Portrait Gallery in Washington, DC.</p>
 
       <a
         href="https://photos.app.goo.gl/AW46pWmDoTXYKHLL7"
@@ -137,6 +167,11 @@
       </a>
     </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
