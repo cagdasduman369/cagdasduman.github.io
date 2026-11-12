@@ -16,8 +16,7 @@
     .tekke-cover {
       display: block;
       width: 100%;
-      height: auto;
-      max-height: 560px;
+      height: 520px;
       object-fit: cover;
       border-radius: 6px;
       margin-bottom: 28px;
@@ -25,6 +24,7 @@
 
     .tekke-description {
       margin-top: 24px;
+      font-size: 17px;
       line-height: 1.8;
       text-align: justify;
     }
@@ -66,6 +66,12 @@
 
     .photo-gallery .photos-link:hover {
       background: #333;
+    }
+
+    @media (max-width: 600px) {
+      .tekke-cover {
+        height: 400px;
+      }
     }
   </style>
 </head>
