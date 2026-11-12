@@ -31,6 +31,10 @@
       font-size: 14px;
     }
 
+    header a:hover {
+      text-decoration: underline;
+    }
+
     main {
       max-width: 1000px;
       margin: 40px auto;
@@ -44,91 +48,85 @@
       font-weight: 600;
     }
 
-    .subtitle {
+    .location {
       color: #777;
-      font-size: 16px;
-      margin-bottom: 24px;
+      margin-top: 0;
+      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
-      line-height: 1.8;
+      margin: 24px 0;
       text-align: justify;
-      margin: 24px 0 35px;
     }
 
-    .grid {
+    .places {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-top: 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 35px;
     }
 
-    .card {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      border: 1px solid #e8e8e8;
+    .place-card {
+      background: #f7f7f7;
       border-radius: 8px;
       overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      background: #fff;
+      text-align: center;
+      min-width: 0;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    .place-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
     }
 
-    .card img {
+    .place-card img {
+      display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
-      display: block;
-      background: #e8edf0;
     }
 
-    .card-content {
-      padding: 18px;
-      text-align: center;
-    }
-
-    .card h2 {
-      font-size: 20px;
-      margin: 0 0 8px;
+    .place-card h2 {
+      font-size: 19px;
       font-weight: 600;
+      margin: 15px 10px 8px;
     }
 
-    .card p {
-      font-size: 15px;
-      line-height: 1.6;
+    .place-card p {
       color: #666;
-      margin: 0 0 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 18px 16px;
     }
 
-    .card span {
+    .explore {
       display: inline-block;
-      background: #111;
+      margin: 0 0 18px;
+      padding: 9px 18px;
+      background: #000;
       color: #fff;
-      padding: 10px 18px;
+      text-decoration: none;
       border-radius: 4px;
       font-size: 13px;
+      font-weight: 500;
     }
 
-    .card:last-child:nth-child(odd) {
-      grid-column: 1 / -1;
+    .explore:hover {
+      background: #333;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      color: #888;
-      font-size: 13px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       main {
-        margin: 24px auto;
+        margin-top: 24px;
         padding: 0 18px;
       }
 
@@ -140,16 +138,17 @@
         font-size: 16px;
       }
 
-      .grid {
+      .places {
         grid-template-columns: 1fr;
       }
 
-      .card:last-child:nth-child(odd) {
+      .place-card:last-child:nth-child(odd) {
         grid-column: auto;
+        width: 100%;
       }
 
-      .card img {
-        height: 220px;
+      .place-card img {
+        height: 240px;
       }
     }
   </style>
@@ -158,52 +157,54 @@
 <body>
 
   <header>
-    <a href="world.html">← Back to Around the World</a>
+    <a href="world.html">← Around the World</a>
   </header>
 
   <main>
+
     <h1>Zagreb</h1>
 
-    <div class="subtitle">Croatia · Central Europe</div>
+    <p class="location">Croatia · Central Europe</p>
 
     <div class="description">
       Zagreb, the capital of Croatia, is a city where historic architecture, lively public squares and peaceful green spaces come together. Its streets reflect a rich Central European heritage, with elegant Austro-Hungarian buildings, charming neighborhoods and distinctive architectural details. Beyond its historic center, the city offers beautiful parks and open spaces that provide a quieter side of urban life. Maksimir Park, with its wooded paths and natural scenery, offers a welcome escape from the busy city, while Trg Kralja Tomislava is one of Zagreb's most recognizable public spaces, surrounded by impressive architecture. Together, these places reveal different aspects of the Croatian capital, from its urban character to its green landscapes. This page brings together my personal photographs and memories from three locations across Zagreb.
     </div>
 
-    <section class="grid">
+    <section class="places">
 
-      <a class="card" href="zagreb-city-view.html">
+      <div class="place-card">
         <img src="assets/images/world/croatia/zagreb/city-view/zagreb-city-view-cover.jpg" alt="City View, Zagreb">
-        <div class="card-content">
-          <h2>City View</h2>
-          <p>Discover Zagreb's cityscape, historic architecture and distinctive views across the Croatian capital.</p>
-          <span>Explore Photos</span>
-        </div>
-      </a>
+        <h2>City View</h2>
+        <p>Discover Zagreb's cityscape, historic architecture and distinctive views across the Croatian capital.</p>
+        <a class="explore" href="zagreb-city-view.html">
+          Explore Photos ↗
+        </a>
+      </div>
 
-      <a class="card" href="zagreb-maksimir-park.html">
+      <div class="place-card">
         <img src="assets/images/world/croatia/zagreb/maksimir-park/maksimir-park-cover.jpg" alt="Maksimir Park, Zagreb">
-        <div class="card-content">
-          <h2>Maksimir Park</h2>
-          <p>Explore one of Zagreb's most beloved green spaces, known for its wooded paths, lakes and peaceful natural surroundings.</p>
-          <span>Explore Photos</span>
-        </div>
-      </a>
+        <h2>Maksimir Park</h2>
+        <p>Explore one of Zagreb's most beloved green spaces, known for its wooded paths, lakes and peaceful natural surroundings.</p>
+        <a class="explore" href="zagreb-maksimir-park.html">
+          Explore Photos ↗
+        </a>
+      </div>
 
-      <a class="card" href="zagreb-trg-kralja-tomislava-city-park.html">
+      <div class="place-card">
         <img src="assets/images/world/croatia/zagreb/trg-kralja-tomislava-city-park/trg-kralja-tomislava-city-park-cover.jpg" alt="Trg Kralja Tomislava City Park, Zagreb">
-        <div class="card-content">
-          <h2>Trg Kralja Tomislava City Park</h2>
-          <p>Enjoy the open green space and impressive surroundings of one of Zagreb's best-known squares, in the heart of the city.</p>
-          <span>Explore Photos</span>
-        </div>
-      </a>
+        <h2>Trg Kralja Tomislava City Park</h2>
+        <p>Enjoy the open green space and impressive surroundings of one of Zagreb's best-known squares, in the heart of the city.</p>
+        <a class="explore" href="zagreb-trg-kralja-tomislava-city-park.html">
+          Explore Photos ↗
+        </a>
+      </div>
 
     </section>
+
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman
+    © 2026 Çağdaş Duman · Around the World
   </footer>
 
 </body>
