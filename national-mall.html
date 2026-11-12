@@ -15,110 +15,109 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 15px;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 22px;
+      margin-top: 0;
     }
 
-    .intro {
+    .description {
       font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 35px;
+      margin: 24px 0;
       text-align: justify;
     }
 
+    .description p {
+      margin-bottom: 18px;
+    }
+
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
+      margin-top: 0;
     }
 
     .gallery p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: 25px;
-      color: #555;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 15px 28px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
-      transition: background 0.3s ease;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
     footer {
       text-align: center;
-      color: #888;
+      padding: 25px;
+      color: #777;
       font-size: 14px;
-      margin-top: 60px;
-      padding-bottom: 20px;
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
-      }
-
-      h1 {
-        font-size: 28px;
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        height: 300px;
+        height: 250px;
       }
 
-      .intro {
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
         font-size: 16px;
       }
     }
@@ -126,9 +125,12 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+  <header>
+    <a href="washington-dc.html">← Back to Washington, DC</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/washington-dc/national-mall/national-mall-cover.jpg"
@@ -138,13 +140,19 @@
 
     <h1>National Mall</h1>
 
-    <div class="location">Washington, DC · United States</div>
+    <p class="location">Washington, DC · United States</p>
 
-    <p class="intro">
-      The National Mall is the historic and symbolic heart of Washington, DC, extending from the United States Capitol to the Lincoln Memorial. Often described as America's front yard, this expansive public space is surrounded by some of the country's most significant monuments, memorials, museums, and government landmarks. It provides a setting where American history, national identity, and public life come together. Along its landscaped grounds, visitors can explore important sites dedicated to presidents, military history, civil rights, and the nation's founding ideals. The National Mall is also home to many Smithsonian museums, making it one of the most important cultural destinations in the United States. Throughout the year, it hosts public gatherings, national celebrations, ceremonies, and events that bring together people from across the country and around the world. Its broad pathways, green spaces, and monumental architecture create a unique atmosphere in the center of the capital. These photographs capture my visit to this remarkable area and some of its most recognizable surroundings.
-    </p>
+    <div class="description">
+      <p>
+        The National Mall is the historic and symbolic heart of Washington, DC, extending from the United States Capitol to the Lincoln Memorial. Often described as America's front yard, this expansive public space is surrounded by some of the country's most significant monuments, memorials, museums, and government landmarks. It provides a setting where American history, national identity, and public life come together. Along its landscaped grounds, visitors can explore important sites dedicated to presidents, military history, civil rights, and the nation's founding ideals.
+      </p>
 
-    <div class="gallery">
+      <p>
+        The National Mall is also home to many Smithsonian museums, making it one of the most important cultural destinations in the United States. Throughout the year, it hosts public gatherings, national celebrations, ceremonies, and events that bring together people from across the country and around the world. Its broad pathways, green spaces, and monumental architecture create a unique atmosphere in the center of the capital. These photographs capture my visit to this remarkable area and some of its most recognizable surroundings.
+      </p>
+    </div>
+
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -155,16 +163,16 @@
         href="https://photos.app.goo.gl/JLsd3kwAKeoRgRDZ9"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
+    </section>
 
-    <footer>
-      © 2026 Çağdaş Duman · Around the World
-    </footer>
+  </main>
 
-  </div>
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
