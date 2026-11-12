@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Pentagon Memorial, Virginia | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories of the Pentagon Memorial in Arlington, Virginia, by Çağdaş Duman.">
 
@@ -14,15 +15,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #222;
+      color: #333;
       background: #fff;
       line-height: 1.7;
     }
 
     header {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 25px 20px;
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
     header a {
@@ -37,77 +37,98 @@
 
     main {
       max-width: 1000px;
-      margin: 0 auto;
-      padding: 10px 20px 50px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 34px;
-      margin-bottom: 5px;
-      line-height: 1.3;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 25px;
     }
 
-    .intro {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 35px;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
+      text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding: 25px 0 35px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 18px;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
     }
 
     .gallery a {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      padding: 13px 25px;
       border-radius: 4px;
       font-size: 14px;
-      transition: background 0.2s ease;
     }
 
     .gallery a:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
       text-align: center;
-      color: #888;
-      font-size: 13px;
-      padding: 25px 20px;
-      border-top: 1px solid #eee;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 260px;
+        height: 250px;
       }
 
       h1 {
-        font-size: 27px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -120,6 +141,7 @@
   </header>
 
   <main>
+
     <img
       class="cover"
       src="assets/images/world/united-states/virginia/pentagon/pentagon-cover.jpeg"
@@ -128,15 +150,17 @@
 
     <h1>The Pentagon Memorial</h1>
 
-    <div class="location">Arlington · Virginia · United States</div>
+    <p class="location">Arlington · Virginia · United States</p>
 
-    <div class="intro">
+    <div class="description">
       <p>
         The Pentagon, located in Arlington, Virginia, is the headquarters of
         the United States Department of Defense. Completed in 1943 during
         World War II, this enormous five-sided building is one of the most
         recognizable government buildings in the world and a major symbol
-        of the United States military establishment.
+        of the United States military establishment. Its distinctive
+        architectural design and enormous scale reflect its important role
+        in the country's national defense and public institutions.
       </p>
 
       <p>
@@ -144,22 +168,33 @@
         Pentagon is also a place of remembrance. The Pentagon Memorial,
         located nearby, honors the victims of the September 11, 2001 attacks.
         The site offers visitors an opportunity to reflect on an important
-        and deeply significant chapter in American history.
+        and deeply significant chapter in American history. Its thoughtful
+        design creates a peaceful space for remembrance, reflection, and
+        respect for the lives lost that day.
       </p>
     </div>
 
     <section class="gallery">
       <h2>My Photo Gallery</h2>
-      <a href="https://photos.app.goo.gl/nNUCHjEcuZWMwNg7A" target="_blank" rel="noopener">
+      <p>
+        Explore my personal travel photographs and memories from
+        the Pentagon Memorial in Arlington.
+      </p>
+
+      <a
+        href="https://photos.app.goo.gl/nNUCHjEcuZWMwNg7A"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Personal Travel Photography
+    © 2026 Çağdaş Duman · Around the World
   </footer>
 
 </body>
 </html>
-```
