@@ -15,23 +15,19 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
     header {
       padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
     }
 
     main {
@@ -53,20 +49,21 @@
       font-size: 38px;
       line-height: 1.25;
       margin: 25px 0 8px;
-      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
-      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
-      line-height: 1.7;
       margin: 24px 0;
       text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
@@ -78,28 +75,24 @@
     }
 
     .gallery h2 {
-      font-size: 25px;
-      margin: 0 0 10px;
+      margin-top: 0;
     }
 
     .gallery p {
-      color: #666;
-      margin-bottom: 25px;
-      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 14px;
-      transition: background 0.3s ease;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
@@ -134,7 +127,7 @@
 <body>
 
   <header>
-    <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+    <a href="washington-dc.html">← Back to Washington, DC</a>
   </header>
 
   <main>
@@ -149,11 +142,17 @@
 
     <p class="location">Washington, DC · United States</p>
 
-    <p class="description">
-      Larz Anderson House is an impressive historic mansion located in Washington, DC, built between 1902 and 1905 for American diplomat Larz Anderson and his wife, Isabel Weld Perkins. Designed by architect Arthur Little, the residence was inspired by the grand palaces of Europe and reflects the couple's interest in art, architecture, and international culture. Its elegant exterior and richly decorated interiors feature fine craftsmanship, historic furnishings, and an extensive collection of decorative arts. The house also contains objects and artworks gathered during the Andersons' travels around the world, offering a glimpse into the tastes and lifestyle of an influential American couple in the early twentieth century. Today, the building serves as the headquarters of the Society of the Cincinnati, an organization dedicated to preserving the history of the American Revolution. Its rooms and collections provide a fascinating connection between American diplomatic history and European artistic traditions. These photographs capture my visit to this remarkable historic residence in the heart of the capital.
-    </p>
+    <div class="description">
+      <p>
+        Larz Anderson House is an impressive historic mansion located in Washington, DC, built between 1902 and 1905 for American diplomat Larz Anderson and his wife, Isabel Weld Perkins. Designed by architect Arthur Little, the residence was inspired by the grand palaces of Europe and reflects the couple's interest in art, architecture, and international culture. Its elegant exterior and richly decorated interiors feature fine craftsmanship, historic furnishings, and an extensive collection of decorative arts.
+      </p>
 
-    <div class="gallery">
+      <p>
+        The house also contains objects and artworks gathered during the Andersons' travels around the world, offering a glimpse into the tastes and lifestyle of an influential American couple in the early twentieth century. Today, the building serves as the headquarters of the Society of the Cincinnati, an organization dedicated to preserving the history of the American Revolution. Its rooms and collections provide a fascinating connection between American diplomatic history and European artistic traditions. These photographs capture my visit to this remarkable historic residence in the heart of the capital.
+      </p>
+    </div>
+
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
       <p>Explore my personal travel photographs and memories from Larz Anderson House, its historic architecture, and its remarkable collections in Washington, DC.</p>
 
@@ -161,16 +160,15 @@
         href="https://photos.app.goo.gl/Z2LVkwvzFbUCGmw3A"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
+    </section>
 
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman · Around the World
+    © Çağdaş Duman · Around the World
   </footer>
 
 </body>
