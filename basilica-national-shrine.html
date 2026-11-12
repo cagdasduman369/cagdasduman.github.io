@@ -19,69 +19,83 @@
       color: #333;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 25px;
       color: #333;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .back-link:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
+      display: block;
       width: 100%;
-      max-height: 420px;
+      height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
-      font-size: 16px;
+    .description {
+      font-size: 17px;
       line-height: 1.7;
-      margin-bottom: 35px;
+      margin: 24px 0;
+      text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     .gallery-button {
       display: inline-block;
       background: #000;
       color: #fff;
-      padding: 15px 28px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
+      font-size: 14px;
       transition: background 0.3s ease;
     }
 
@@ -89,26 +103,41 @@
       background: #333;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
-      }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
 
-      h1 {
-        font-size: 26px;
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        max-height: 300px;
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
+  <header>
     <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/washington-dc/basilica-national-shrine/basilica-national-shrine-cover.jpeg"
@@ -118,14 +147,15 @@
 
     <h1>Basilica of the National Shrine of the Immaculate Conception</h1>
 
-    <div class="location">Washington, DC · United States</div>
+    <p class="location">Washington, DC · United States</p>
 
-    <p class="intro">
-      Located in Washington, DC, the Basilica of the National Shrine of the Immaculate Conception is one of the largest Catholic churches in North America. Its impressive architecture, detailed mosaics, chapels, and peaceful interior make it one of the city's most remarkable landmarks. These photographs capture my visit to this extraordinary place.
+    <p class="description">
+      Located in Washington, DC, the Basilica of the National Shrine of the Immaculate Conception is one of the largest Catholic churches in North America and one of the city's most impressive architectural landmarks. Construction began in 1920, and the basilica is distinguished by its monumental scale, Byzantine and Romanesque architectural influences, and remarkable artistic details. Its interior features elaborate mosaics, colorful decorations, and numerous chapels dedicated to different cultural and religious traditions. The peaceful atmosphere offers visitors an opportunity to appreciate both the building's artistic beauty and its spiritual significance. During my visit, I was particularly struck by the richness of its interior and the craftsmanship visible throughout the building. These photographs capture some of the details and impressions from my visit to this remarkable landmark in the American capital.
     </p>
 
     <div class="gallery">
       <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photographs and memories from the Basilica of the National Shrine of the Immaculate Conception in Washington, DC.</p>
 
       <a
         href="https://photos.app.goo.gl/PkWQJfug5U5EVYv37"
@@ -137,6 +167,11 @@
       </a>
     </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
