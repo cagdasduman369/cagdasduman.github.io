@@ -20,145 +20,141 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
-      color: #555;
+    header a {
+      color: #333;
       text-decoration: none;
-      font-size: 14px;
     }
 
-    .back-link:hover {
-      color: #000;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      margin: 0 0 10px;
       font-size: 38px;
-      color: #222;
+      line-height: 1.25;
+      margin: 0 0 8px;
     }
 
     .location {
       color: #777;
-      font-size: 15px;
-      margin-bottom: 25px;
+      margin-top: 0;
     }
 
-    .intro {
-      max-width: 100%;
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
-    .places-grid {
+    .places {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: 22px;
       margin-top: 35px;
     }
 
     .place-card {
-      padding: 20px;
-      background: #f6f6f6;
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
       text-align: center;
+      padding-bottom: 22px;
     }
 
     .place-card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 6px;
       display: block;
-      margin-bottom: 18px;
     }
 
     .place-card h2 {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 0 0 15px;
+      font-size: 20px;
+      margin: 18px 15px 8px;
     }
 
     .place-card p {
-      margin-bottom: 18px;
+      margin: 0 18px 18px;
+      font-size: 15px;
     }
 
     .place-card a {
       display: inline-block;
-      margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
     .place-card a:hover {
-      background: #555;
+      background: #333;
     }
 
     .place-card:last-child {
       grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
+    @media (max-width: 700px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .places-grid {
+      .description {
+        font-size: 16px;
+      }
+
+      .places {
         grid-template-columns: 1fr;
       }
 
       .place-card:last-child {
         grid-column: auto;
+        width: 100%;
+      }
+
+      .place-card img {
+        height: 240px;
       }
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-  <main class="container">
-    <a href="world.html" class="back-link">← Back to Around the World</a>
-
+  <main>
     <h1>Baku</h1>
 
-    <div class="location">Azerbaijan · Caspian Sea</div>
+    <p class="location">Azerbaijan · Caspian Sea</p>
 
-    <p class="intro">
-      Baku, the capital of Azerbaijan, is a fascinating city where historic
-      architecture, modern landmarks, and the shores of the Caspian Sea
-      come together. Its character reflects a unique blend of Eastern
-      traditions and European influences. The historic Old City, with its
-      narrow streets, ancient walls, and traditional buildings, offers
-      a glimpse into the city's rich past.
+    <div class="description">
+      Baku, the capital of Azerbaijan, is a fascinating city where historic architecture, modern landmarks, and the shores of the Caspian Sea come together. Its character reflects a unique blend of Eastern traditions and European influences. The historic Old City, with its narrow streets, ancient walls, and traditional buildings, offers a glimpse into the city's rich past. Beyond its historic center, Baku is known for its impressive skyline, waterfront promenade, museums, gardens, and cultural landmarks. The contrast between its historic architecture and modern developments gives the city a distinctive atmosphere. This collection brings together my personal photographs and memories from different corners of Baku, capturing its architecture, landscapes, and cultural character.
+    </div>
 
-      Beyond its historic center, Baku is known for its impressive skyline,
-      waterfront promenade, museums, gardens, and cultural landmarks.
-      The contrast between its historic architecture and modern
-      developments gives the city a distinctive atmosphere. This collection
-      brings together my personal photographs and memories from different
-      corners of Baku, capturing its architecture, landscapes, and
-      cultural character.
-    </p>
-
-    <section class="places-grid">
+    <section class="places">
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/cityscape-and-views/cityscape-and-views-cover.jpg" alt="Baku Cityscape and Views">
+        <img
+          src="assets/images/world/azerbaijan/baku/cityscape-and-views/cityscape-and-views-cover.jpg"
+          alt="Baku Cityscape and Views"
+        >
         <h2>Cityscape &amp; Views</h2>
         <p>
           Panoramic views of Baku, its distinctive skyline,
@@ -169,7 +165,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/central-botanical-garden/central-botanical-garden-cover.jpg" alt="Central Botanical Garden, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/central-botanical-garden/central-botanical-garden-cover.jpg"
+          alt="Central Botanical Garden, Baku"
+        >
         <h2>Central Botanical Garden</h2>
         <p>
           A peaceful green space featuring diverse plant life,
@@ -180,7 +179,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/icheri-sheher/icheri-sheher-cover.jpg" alt="Old City, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/icheri-sheher/icheri-sheher-cover.jpg"
+          alt="Old City, Baku"
+        >
         <h2>Old City</h2>
         <p>
           The historic heart of Baku, known for its ancient
@@ -191,7 +193,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/military-trophies-park/military-trophies-park-cover.jpg" alt="Military Trophies Park, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/military-trophies-park/military-trophies-park-cover.jpg"
+          alt="Military Trophies Park, Baku"
+        >
         <h2>Military Trophies Park</h2>
         <p>
           A park presenting military exhibits and displays,
@@ -202,7 +207,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/national-flag-museum/national-flag-museum-cover.jpg" alt="National Flag Museum, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/national-flag-museum/national-flag-museum-cover.jpg"
+          alt="National Flag Museum, Baku"
+        >
         <h2>National Flag Museum</h2>
         <p>
           A cultural institution dedicated to the history
@@ -213,7 +221,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/railway-museum/railway-museum-cover.jpg" alt="Railway Museum, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/railway-museum/railway-museum-cover.jpg"
+          alt="Railway Museum, Baku"
+        >
         <h2>Railway Museum</h2>
         <p>
           A place to explore railway heritage, historic
@@ -224,7 +235,10 @@
       </div>
 
       <div class="place-card">
-        <img src="assets/images/world/azerbaijan/baku/alley-of-martyrs/alley-of-martyrs-cover.jpg" alt="Alley of Martyrs, Baku">
+        <img
+          src="assets/images/world/azerbaijan/baku/alley-of-martyrs/alley-of-martyrs-cover.jpg"
+          alt="Alley of Martyrs, Baku"
+        >
         <h2>Alley of Martyrs</h2>
         <p>
           A significant memorial site overlooking the Caspian Sea,
@@ -235,8 +249,6 @@
       </div>
 
     </section>
-
   </main>
-
 </body>
 </html>
