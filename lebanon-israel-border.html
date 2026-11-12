@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Lebanon–Israel Border | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and impressions of the Lebanon–Israel border area in southern Lebanon.">
 
@@ -19,87 +20,99 @@
       line-height: 1.7;
     }
 
-    .container {
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
+    }
+
+    .back-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
       max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 20px 50px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
-      display: block;
-      border-radius: 4px;
+      border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      margin: 28px 0 5px;
-      font-size: 34px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
       font-weight: 600;
-      color: #222;
     }
 
     .location {
       color: #777;
-      font-size: 16px;
-      margin-bottom: 22px;
+      margin-top: 0;
+      font-size: 15px;
     }
 
-    .intro {
-      font-size: 16px;
-      line-height: 1.8;
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
-      padding: 30px 15px;
-      background: #f7f7f7;
-      border-radius: 5px;
     }
 
     .gallery h2 {
       font-size: 25px;
-      margin: 0 0 12px;
-      color: #222;
+      margin: 0 0 10px;
     }
 
     .gallery p {
-      font-size: 15px;
       color: #666;
-      margin: 0 auto 22px;
-      max-width: 650px;
+      margin-bottom: 25px;
     }
 
     .gallery-button {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      padding: 12px 27px;
-      border-radius: 3px;
+      border-radius: 4px;
       font-size: 14px;
-      font-weight: 600;
-      transition: background 0.2s ease;
     }
 
     .gallery-button:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
       text-align: center;
-      color: #888;
-      font-size: 13px;
-      margin-top: 45px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 15px 15px 35px;
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
@@ -107,11 +120,11 @@
       }
 
       h1 {
-        font-size: 27px;
+        font-size: 30px;
       }
 
-      .intro {
-        font-size: 15px;
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -119,7 +132,11 @@
 
 <body>
 
-  <main class="container">
+  <header>
+    <a class="back-link" href="world.html">← Back to Around the World</a>
+  </header>
+
+  <main>
 
     <img
       class="cover"
@@ -131,24 +148,12 @@
 
     <div class="location">Lebanon · Southern Lebanon</div>
 
-    <section class="intro">
-      <p>
-        Located in southern Lebanon, the area along the Lebanon–Israel border
-        offers a distinctive landscape of hills, open views, and rural
-        surroundings. Its geographical setting provides a different
-        perspective on this part of the country and its natural environment.
-      </p>
-
-      <p>
-        During my visit, I had the opportunity to explore the area, take in
-        the surrounding scenery, and experience the atmosphere of this
-        distinctive part of Lebanon. These photographs capture my personal
-        impressions of the Lebanon–Israel border area as part of my travels
-        through Lebanon.
-      </p>
-    </section>
+    <div class="description">
+      Located in southern Lebanon, the area along the Lebanon–Israel border offers a distinctive landscape of hills, open views, and rural surroundings. Its geographical setting provides a different perspective on this part of the country and its natural environment. During my visit, I had the opportunity to explore the area, take in the surrounding scenery, and experience the atmosphere of this distinctive part of Lebanon. The wide landscapes and changing views offer a memorable impression of the region's geography and character. These photographs capture my personal impressions of the Lebanon–Israel border area as part of my travels through Lebanon.
+    </div>
 
     <section class="gallery">
+
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -164,13 +169,14 @@
       >
         View All Photos ↗
       </a>
+
     </section>
 
-    <footer>
-      © Çağdaş Duman · Around the World
-    </footer>
-
   </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
