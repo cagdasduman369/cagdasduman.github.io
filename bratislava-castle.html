@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bratislava Castle | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories of Bratislava Castle in Slovakia, by Çağdaş Duman.">
 
   <style>
     * {
@@ -26,6 +28,11 @@
     header a {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -35,20 +42,25 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
       border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
+      font-size: 15px;
     }
 
     .description {
@@ -58,25 +70,36 @@
     }
 
     .gallery {
-      margin-top: 40px;
-      padding: 30px;
+      margin-top: 35px;
+      padding: 25px;
       background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
     .gallery h2 {
-      margin-top: 0;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
     }
 
     .gallery a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 28px;
-      background: #333;
-      color: white;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -85,36 +108,48 @@
       color: #777;
       font-size: 14px;
     }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .cover {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <header>
-    <a href="bratislava.html">← Bratislava</a>
+    <a href="bratislava.html">← Back to Bratislava</a>
   </header>
 
   <main>
-    <img src="assets/images/world/slovakia/bratislava/bratislava-castle/bratislava-castle-cover.jpg" class="cover">
+
+    <img
+      src="assets/images/world/slovakia/bratislava/bratislava-castle/bratislava-castle-cover.jpg"
+      class="cover"
+      alt="Bratislava Castle overlooking the Danube River"
+    >
 
     <h1>Bratislava Castle</h1>
+
     <p class="location">Slovakia · Bratislava</p>
 
     <div class="description">
-      <p>
-        Standing on a hill overlooking the Danube River, Bratislava
-        Castle is one of the most recognizable landmarks of Slovakia's
-        capital. Its distinctive silhouette, white walls and four
-        corner towers make it an important part of the city's skyline.
-        With a history stretching back many centuries, the castle
-        reflects Bratislava's rich cultural and historical heritage.
-      </p>
-
-      <p>
-        Walking around the castle offers beautiful views of Bratislava,
-        the Danube and the surrounding landscape. During my visit,
-        I enjoyed exploring this historic landmark and capturing
-        its architecture and impressive surroundings.
-      </p>
+      Standing on a hill overlooking the Danube River, Bratislava Castle is one of the most recognizable landmarks of Slovakia's capital. Its distinctive silhouette, white walls and four corner towers make it an important part of the city's skyline. With a history stretching back many centuries, the castle reflects Bratislava's rich cultural and historical heritage. Over the years, it has served different purposes and witnessed important periods in the history of the region. Walking around the castle offers beautiful views of Bratislava, the Danube and the surrounding landscape, with the city spreading out below its elevated grounds. The castle's gardens and open spaces provide a pleasant setting for exploring, relaxing and taking photographs. During my visit, I enjoyed discovering this historic landmark, observing its architecture and capturing the impressive views from the hill. Its combination of historical character, architectural presence and panoramic scenery makes Bratislava Castle one of the most memorable places to visit in the Slovak capital. These photographs preserve my personal memories and impressions of this visit.
     </div>
 
     <section class="gallery">
@@ -126,10 +161,12 @@
         View All Photos ↗
       </a>
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
