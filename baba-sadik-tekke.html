@@ -8,18 +8,19 @@
 
   <style>
     .tekke-page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .tekke-cover {
       display: block;
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
+      width: 100% !important;
+      height: 430px !important;
+      max-height: none !important;
+      object-fit: cover !important;
       border-radius: 6px;
-      margin-bottom: 28px;
+      margin: 0 0 28px;
     }
 
     .tekke-description {
@@ -71,8 +72,13 @@
     }
 
     @media (max-width: 600px) {
+      .tekke-page {
+        margin: 24px auto;
+        padding: 0 18px;
+      }
+
       .tekke-cover {
-        height: 400px;
+        height: 250px !important;
       }
 
       .tekke-description {
