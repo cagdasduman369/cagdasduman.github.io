@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Belgrade, Serbia | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and impressions of Belgrade, Serbia.">
 
   <style>
     * {
@@ -11,115 +13,138 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
+      font-family: Arial, sans-serif;
       color: #333;
+      background: #fff;
       line-height: 1.7;
     }
 
     header {
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
     header a {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
     }
 
     main {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 24px;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
-      margin-bottom: 25px;
+      margin-top: 0;
+      font-size: 15px;
     }
 
     .description {
-      line-height: 1.7;
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
-    .gallery-grid {
+    .places {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: 22px;
+      margin-top: 35px;
     }
 
-    .gallery-card {
-      padding: 20px;
-      background: #f6f6f6;
+    .card {
+      background: #f7f7f7;
       border-radius: 8px;
+      overflow: hidden;
       text-align: center;
+      padding-bottom: 25px;
     }
 
-    .gallery-card:last-child {
+    .card:last-child {
       grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
     }
 
-    .gallery-card img {
+    .card img {
       display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 18px;
     }
 
-    .gallery-card h2 {
-      font-size: 20px;
-      margin: 0 12px 12px;
+    .card h2 {
+      font-size: 22px;
+      margin: 18px 15px 8px;
+      font-weight: 600;
     }
 
-    .gallery-card p {
-      margin: 0 0 18px;
+    .card p {
+      color: #666;
+      margin: 0 20px 20px;
     }
 
-    .gallery-card a {
+    .card a {
       display: inline-block;
-      background: #111;
+      padding: 10px 22px;
+      background: #000;
       color: #fff;
-      padding: 10px 20px;
-      border-radius: 4px;
       text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
+      border-radius: 4px;
+      font-size: 14px;
     }
 
-    .gallery-card a:hover {
-      background: #444;
+    .card a:hover {
+      background: #333;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px;
       color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 50px;
+      font-size: 14px;
     }
 
     @media (max-width: 700px) {
-      .gallery-grid {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
+      .places {
         grid-template-columns: 1fr;
       }
 
-      .gallery-card:last-child {
+      .card:last-child {
         grid-column: auto;
+        width: 100%;
       }
 
       h1 {
-        font-size: 29px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .card img {
+        height: 240px;
       }
     }
   </style>
@@ -128,21 +153,22 @@
 <body>
 
   <header>
-    <a href="world.html">← Around the World</a>
+    <a href="world.html">← Back to Around the World</a>
   </header>
 
   <main>
+
     <h1>Belgrade, Serbia</h1>
 
-    <div class="location">Serbia</div>
+    <p class="location">Serbia</p>
 
-    <p class="description">
+    <div class="description">
       Set at the confluence of the Sava and Danube rivers, Belgrade is a city shaped by centuries of shifting empires, cultural encounters, and dramatic historical change. Its character emerges through the contrast between the historic streets of the old city, the imposing Belgrade Fortress overlooking the rivers, and the broad boulevards and modern districts of the capital. Museums and independent art spaces reveal different sides of Serbia’s cultural life, while cafés, lively public squares, and riverside promenades give the city its distinctive urban energy. Belgrade’s past and present exist side by side, making it a compelling place to explore the connections between history, society, and contemporary creativity. These photographs capture my personal impressions of the Serbian capital and the places that made my visit memorable.
-    </p>
+    </div>
 
-    <div class="gallery-grid">
+    <section class="places">
 
-      <div class="gallery-card">
+      <div class="card">
         <img src="assets/images/world/serbia/belgrade/image-to-image-art-space/image-to-image-art-space-cover.jpg.jpg" alt="Image to Image Art Space, Belgrade">
         <h2>Image to Image Art Space</h2>
         <p>
@@ -152,7 +178,7 @@
         <a href="belgrade-image-to-image-art-space.html">Explore Photos ↗</a>
       </div>
 
-      <div class="gallery-card">
+      <div class="card">
         <img src="assets/images/world/serbia/nikola-tesla-museum/nikola-tesla-museum-cover.jpg" alt="Nikola Tesla Museum, Belgrade">
         <h2>Nikola Tesla Museum</h2>
         <p>
@@ -162,7 +188,7 @@
         <a href="belgrade-nikola-tesla-museum.html">Explore Photos ↗</a>
       </div>
 
-      <div class="gallery-card">
+      <div class="card">
         <img src="assets/images/world/serbia/city-views/belgrade-city-views-cover.jpg.jpg" alt="Belgrade City Views">
         <h2>City Views</h2>
         <p>
@@ -172,11 +198,12 @@
         <a href="belgrade-city-views.html">Explore Photos ↗</a>
       </div>
 
-    </div>
+    </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman
+    © 2026 Çağdaş Duman · Around the World
   </footer>
 
 </body>
