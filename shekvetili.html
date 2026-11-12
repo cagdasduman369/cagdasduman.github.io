@@ -20,108 +20,135 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
+    header a {
       color: #333;
       text-decoration: none;
       font-size: 14px;
     }
 
-    .back-link:hover {
+    header a:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     h1 {
-      margin: 10px 0 5px;
-      font-size: 36px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 0 0 8px;
       font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      margin-bottom: 35px;
     }
 
-    .sections {
+    .places {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      margin-top: 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 35px;
     }
 
-    .section-card {
-      background: #fff;
-      border: 1px solid #e5e5e5;
-      border-radius: 5px;
+    .place-card {
+      background: #f7f7f7;
+      border-radius: 8px;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
       text-align: center;
-      padding-bottom: 22px;
+      min-width: 0;
     }
 
-    .section-card img {
+    .place-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      width: calc(50% - 11px);
+      justify-self: center;
+    }
+
+    .place-card img {
+      display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
-      display: block;
     }
 
-    .section-card h2 {
-      font-size: 20px;
+    .place-card h2 {
+      font-size: 19px;
       font-weight: 600;
-      margin: 18px 15px 10px;
+      margin: 15px 10px 8px;
     }
 
-    .section-card p {
+    .place-card p {
       color: #666;
       font-size: 14px;
-      margin: 0 18px 20px;
-      flex-grow: 1;
+      line-height: 1.6;
+      margin: 0 18px 16px;
     }
 
-    .explore-link {
+    .explore {
       display: inline-block;
-      align-self: center;
-      background: #111;
+      margin: 0 0 18px;
+      padding: 9px 18px;
+      background: #000;
       color: #fff;
-      padding: 10px 18px;
       text-decoration: none;
       border-radius: 4px;
       font-size: 13px;
+      font-weight: 500;
     }
 
-    .explore-link:hover {
-      background: #444;
+    .explore:hover {
+      background: #333;
     }
 
     footer {
       text-align: center;
-      color: #888;
-      font-size: 13px;
-      margin-top: 65px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
 
-    @media (max-width: 750px) {
-      .sections {
-        grid-template-columns: 1fr;
+    @media (max-width: 700px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       h1 {
         font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .places {
+        grid-template-columns: 1fr;
+      }
+
+      .place-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
+      }
+
+      .place-card img {
+        height: 240px;
       }
     }
   </style>
@@ -129,68 +156,65 @@
 
 <body>
 
-  <main class="container">
+  <header>
+    <a href="world.html">← Around the World</a>
+  </header>
 
-    <a class="back-link" href="world.html">← Back to Around the World</a>
+  <main>
 
     <h1>Shekvetili</h1>
 
-    <div class="location">Guria · Georgia</div>
+    <p class="location">Guria · Georgia</p>
 
-    <p class="intro">
-      Located on Georgia's Black Sea coast, Shekvetili is a seaside
-      destination known for its relaxed atmosphere, natural surroundings,
-      and distinctive attractions. Beyond its coastline, the area offers
-      interesting places to explore, including Miniature Park, Musicians
-      Park, and Shekvetili Dendrological Park. These pages bring together
-      my personal photographs and travel memories from the area.
-    </p>
+    <div class="description">
+      Located on Georgia's Black Sea coast, Shekvetili is a seaside destination known for its relaxed atmosphere, natural surroundings, and distinctive attractions. Beyond its coastline, the area offers interesting places to explore, including Miniature Park, Musicians Park, and Shekvetili Dendrological Park. Miniature Park provides an opportunity to discover some of Georgia's most recognizable landmarks in one place, while Musicians Park combines outdoor scenery with artistic sculptures dedicated to famous musicians. The Dendrological Park, with its impressive collection of trees and landscaped green spaces, offers a different experience for visitors who enjoy nature and peaceful surroundings. Together, these attractions reveal the variety of experiences that make Shekvetili an interesting destination along the Black Sea. Its combination of coastal scenery, cultural attractions, and natural beauty gives the area a distinctive character. These pages bring together my personal photographs and travel memories from Shekvetili, capturing different aspects of this special part of Georgia.
+    </div>
 
-    <section class="sections">
+    <section class="places">
 
-      <div class="section-card">
+      <div class="place-card">
         <img src="assets/images/world/georgia/shekvetili/miniature-park/miniature-park-cover.jpg" alt="Miniature Park, Shekvetili">
         <h2>Miniature Park</h2>
         <p>
           Discover miniature models of Georgia's famous landmarks
           and architectural attractions.
         </p>
-        <a class="explore-link" href="miniature-park.html">
+        <a class="explore" href="miniature-park.html">
           Explore Photos ↗
         </a>
       </div>
 
-      <div class="section-card">
+      <div class="place-card">
         <img src="assets/images/world/georgia/shekvetili/musicians-park/musicians-park-cover.jpg" alt="Musicians Park, Shekvetili">
         <h2>Musicians Park</h2>
         <p>
           Explore the outdoor park featuring sculptures
           dedicated to famous musicians.
         </p>
-        <a class="explore-link" href="musicians-park.html">
+        <a class="explore" href="musicians-park.html">
           Explore Photos ↗
         </a>
       </div>
 
-      <div class="section-card">
+      <div class="place-card">
         <img src="assets/images/world/georgia/shekvetili/shekvetili-dendrological-park/shekvetili-dendrological-park-cover.jpg" alt="Shekvetili Dendrological Park">
         <h2>Shekvetili Dendrological Park</h2>
         <p>
           Discover the botanical landscapes, impressive trees,
           and natural beauty of the dendrological park.
         </p>
-        <a class="explore-link" href="shekvetili-dendrological-park.html">
+        <a class="explore" href="shekvetili-dendrological-park.html">
           Explore Photos ↗
         </a>
       </div>
 
     </section>
 
-    <footer>
-      © 2026 Çağdaş Duman
-    </footer>
-
   </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
 
 </body>
 </html>
