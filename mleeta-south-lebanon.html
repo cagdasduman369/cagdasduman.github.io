@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mleeta, South Lebanon | Çağdaş Duman</title>
 
+  <title>Mleeta, South Lebanon | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and impressions of Mleeta in South Lebanon, capturing its historical setting and surrounding landscape.">
 
   <style>
@@ -25,9 +25,14 @@
       border-bottom: 1px solid #eee;
     }
 
-    header a {
+    .back-link {
       color: #333;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -49,21 +54,19 @@
       font-size: 38px;
       line-height: 1.25;
       margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
+      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
       margin: 24px 0;
       text-align: justify;
-    }
-
-    .description p {
-      margin-bottom: 18px;
     }
 
     .gallery {
@@ -75,14 +78,16 @@
     }
 
     .gallery h2 {
-      margin-top: 0;
+      font-size: 25px;
+      margin: 0 0 10px;
     }
 
     .gallery p {
-      margin-bottom: 18px;
+      color: #666;
+      margin-bottom: 25px;
     }
 
-    .gallery a {
+    .gallery-button {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
@@ -90,9 +95,10 @@
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
+      font-size: 14px;
     }
 
-    .gallery a:hover {
+    .gallery-button:hover {
       background: #333;
     }
 
@@ -125,11 +131,13 @@
 </head>
 
 <body>
+
   <header>
-    <a href="world.html">← Around the World</a>
+    <a class="back-link" href="world.html">← Back to Around the World</a>
   </header>
 
   <main>
+
     <img
       class="cover"
       src="assets/images/world/lebanon/mleeta-south-lebanon/mleeta-south-lebanon-cover.jpg"
@@ -138,29 +146,14 @@
 
     <h1>Mleeta, South Lebanon</h1>
 
-    <p class="location">Lebanon · South Lebanon</p>
+    <div class="location">Lebanon · South Lebanon</div>
 
     <div class="description">
-      <p>
-        Located in the hills of South Lebanon, Mleeta is a
-        distinctive historical site surrounded by a scenic
-        natural landscape. Its outdoor displays, preserved
-        structures, exhibition spaces, and panoramic views
-        offer visitors an opportunity to explore a place
-        where local history and the surrounding environment
-        come together.
-      </p>
-
-      <p>
-        During my visit, I had the opportunity to walk around
-        the site, discover its different sections, and
-        appreciate the atmosphere of this unique location.
-        These photographs capture my personal impressions
-        of Mleeta as part of my travels through Lebanon.
-      </p>
+      Located in the hills of South Lebanon, Mleeta is a distinctive historical site surrounded by a scenic natural landscape. Its outdoor displays, preserved structures, exhibition spaces, and panoramic views offer visitors an opportunity to explore a place where local history and the surrounding environment come together. During my visit, I had the opportunity to walk around the site, discover its different sections, and appreciate the atmosphere of this unique location. The combination of open-air spaces and the surrounding hills makes the visit particularly memorable. These photographs capture my personal impressions of Mleeta as part of my travels through Lebanon.
     </div>
 
     <section class="gallery">
+
       <h2>My Photo Gallery</h2>
 
       <p>
@@ -170,17 +163,21 @@
       </p>
 
       <a
+        class="gallery-button"
         href="https://photos.app.goo.gl/gNcGm6DwZSCmYwJY9"
         target="_blank"
         rel="noopener noreferrer"
       >
         View All Photos ↗
       </a>
+
     </section>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
