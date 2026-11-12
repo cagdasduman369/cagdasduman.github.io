@@ -19,69 +19,83 @@
       color: #333;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 45px 25px;
+    header {
+      padding: 22px 8%;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 25px;
       color: #333;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .back-link:hover {
       text-decoration: underline;
     }
 
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
     .cover {
+      display: block;
       width: 100%;
-      max-height: 420px;
+      height: 430px;
       object-fit: cover;
       border-radius: 8px;
-      display: block;
-      margin-bottom: 30px;
+      background: #e8edf0;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
+      font-weight: 600;
     }
 
     .location {
       color: #777;
+      margin-top: 0;
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .intro {
-      font-size: 16px;
+    .description {
+      font-size: 17px;
       line-height: 1.7;
-      margin-bottom: 35px;
+      margin: 24px 0;
+      text-align: justify;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      margin-top: 45px;
     }
 
     .gallery h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .gallery p {
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     .gallery-button {
       display: inline-block;
       background: #000;
       color: #fff;
-      padding: 15px 28px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
+      font-size: 14px;
       transition: background 0.3s ease;
     }
 
@@ -89,26 +103,41 @@
       background: #333;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 18px;
-      }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
 
-      h1 {
-        font-size: 26px;
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
       }
 
       .cover {
-        max-height: 300px;
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
+  <header>
     <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+  </header>
+
+  <main>
 
     <img
       src="assets/images/world/united-states/washington-dc/library-of-congress/library-of-congress-cover.jpeg"
@@ -118,14 +147,15 @@
 
     <h1>Library of Congress</h1>
 
-    <div class="location">Washington, DC · United States</div>
+    <p class="location">Washington, DC · United States</p>
 
-    <p class="intro">
-      The Library of Congress is the largest library in the world and one of Washington, DC's most remarkable cultural landmarks. Its historic Thomas Jefferson Building is especially admired for its grand architecture, ornate interiors, beautiful murals, and decorative details. Beyond its impressive appearance, the institution preserves an extraordinary collection of books, manuscripts, photographs, maps, and other historical materials.
+    <p class="description">
+      The Library of Congress is the largest library in the world and one of the most important cultural and research institutions in the United States. Established in 1800, it preserves an extraordinary collection of books, manuscripts, maps, photographs, recordings, and historical documents from around the globe. Its most famous building, the Thomas Jefferson Building, is especially admired for its impressive Beaux-Arts architecture, grand staircases, colorful mosaics, detailed murals, and richly decorated interiors. Opened to the public in 1897, the building reflects the ambition to create a national institution that celebrates knowledge, learning, and artistic achievement. Visitors can explore its magnificent public spaces while discovering exhibitions that present different aspects of American and world history. The library's collections make it an invaluable resource for researchers and an important guardian of cultural heritage. These photographs capture my visit to this remarkable landmark and its beautiful architectural details in the heart of Washington, DC.
     </p>
 
     <div class="gallery">
       <h2>My Photo Gallery</h2>
+      <p>Explore my personal travel photographs and memories from the Library of Congress, including the magnificent Thomas Jefferson Building in Washington, DC.</p>
 
       <a
         href="https://photos.app.goo.gl/je5ZLkoKXugm3HbGA"
@@ -137,6 +167,11 @@
       </a>
     </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © 2026 Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
