@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Stari Grad, Croatia | Çağdaş Duman</title>
   <meta name="description" content="Personal travel memories and photographs of Stari Grad on the island of Hvar, Croatia.">
 
@@ -20,15 +21,27 @@
     }
 
     .container {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 35px 22px 70px;
+      padding: 45px 25px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
 
     h1 {
-      font-size: 38px;
-      margin: 0 0 4px;
-      color: #222;
+      margin: 10px 0 5px;
+      font-size: 36px;
+      font-weight: 600;
     }
 
     .location {
@@ -38,22 +51,30 @@
     }
 
     .intro {
-      font-size: 16px;
       text-align: justify;
       margin-bottom: 35px;
     }
 
-    .places {
+    .places-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      width: 100%;
+      margin: 35px 0 0;
+      padding: 0;
     }
 
     .place-card {
+      width: 100%;
+      min-width: 0;
       background: #f7f7f7;
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
+    }
+
+    .place-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
     }
 
     .place-card img {
@@ -65,44 +86,51 @@
 
     .place-card h2 {
       font-size: 19px;
-      margin: 17px 12px 12px;
-      color: #222;
+      font-weight: 600;
+      margin: 15px 10px 8px;
     }
 
-    .place-card a {
+    .place-card p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 18px 16px;
+    }
+
+    .explore {
       display: inline-block;
+      margin: 0 0 18px;
+      padding: 9px 18px;
       background: #111;
       color: #fff;
-      padding: 11px 23px;
-      margin: 0 0 20px;
       text-decoration: none;
       border-radius: 4px;
       font-size: 13px;
-      font-weight: bold;
-      transition: background 0.2s ease;
+      font-weight: 500;
     }
 
-    .place-card a:hover {
+    .explore:hover {
       background: #444;
     }
 
-    @media (max-width: 750px) {
-      .places {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+      margin-top: 65px;
     }
 
-    @media (max-width: 500px) {
-      .container {
-        padding: 22px 15px 45px;
-      }
-
+    @media (max-width: 700px) {
       h1 {
-        font-size: 30px;
+        font-size: 29px;
       }
 
-      .places {
+      .places-grid {
         grid-template-columns: 1fr;
+      }
+
+      .place-card:last-child:nth-child(odd) {
+        grid-column: auto;
       }
 
       .place-card img {
@@ -113,31 +141,20 @@
 </head>
 
 <body>
+
   <main class="container">
+
+    <a class="back-link" href="world.html">← Back to Around the World</a>
 
     <h1>Stari Grad</h1>
 
     <div class="location">Croatia · Island of Hvar · Adriatic Coast</div>
 
-    <div class="intro">
-      Stari Grad, located on the northern coast of Hvar Island, is one
-      of the oldest towns in Croatia and a place where history and
-      Mediterranean life come together. Founded by ancient Greek
-      settlers in the 4th century BC, the town has preserved much of
-      its historic character through its narrow stone streets,
-      traditional architecture, and peaceful harbour.
+    <p class="intro">
+      Stari Grad, located on the northern coast of Hvar Island, is one of the oldest towns in Croatia and a place where history and Mediterranean life come together. Founded by ancient Greek settlers in the 4th century BC, the town has preserved much of its historic character through its narrow stone streets, traditional architecture, and peaceful harbour. Beyond its historic centre, Stari Grad offers a rich cultural atmosphere and beautiful coastal scenery. From the Church of St. Stephen to local celebrations and everyday views of the town, every corner reveals a different aspect of its identity. Its waterfront, historic buildings, and relaxed pace of life make it a distinctive destination along the Adriatic coast. These photographs capture my personal travel memories and impressions of Stari Grad, preserving moments from this historic and charming Adriatic destination.
+    </p>
 
-      Beyond its historic centre, Stari Grad offers a rich cultural
-      atmosphere and beautiful coastal scenery. From the Church of
-      St. Stephen to local celebrations and everyday views of the town,
-      every corner reveals a different aspect of its identity.
-
-      These photographs capture my personal travel memories and
-      impressions of Stari Grad, preserving moments from this
-      historic and charming Adriatic destination.
-    </div>
-
-    <section class="places">
+    <section class="places-grid">
 
       <div class="place-card">
         <img
@@ -145,8 +162,9 @@
           alt="Church of St. Stephen, Stari Grad"
         >
         <h2>Church of St. Stephen</h2>
-        <a href="stari-grad-church-of-st-stephen.html">
-          Explore Photos
+        <p>Discover the historic church at the heart of Stari Grad and its important place in the town's religious and cultural heritage.</p>
+        <a class="explore" href="stari-grad-church-of-st-stephen.html">
+          Explore Photos ↗
         </a>
       </div>
 
@@ -156,8 +174,9 @@
           alt="Days in the Bay Festival, Stari Grad"
         >
         <h2>Days in the Bay Festival</h2>
-        <a href="stari-grad-days-in-the-bay-festival.html">
-          Explore Photos
+        <p>Experience the atmosphere of a local celebration bringing together music, community, and the coastal spirit of Stari Grad.</p>
+        <a class="explore" href="stari-grad-days-in-the-bay-festival.html">
+          Explore Photos ↗
         </a>
       </div>
 
@@ -167,14 +186,19 @@
           alt="City Views, Stari Grad"
         >
         <h2>City Views</h2>
-        <a href="stari-grad-city-views.html">
-          Explore Photos
+        <p>Enjoy views of Stari Grad's historic rooftops, charming streets, harbour, and beautiful Adriatic surroundings.</p>
+        <a class="explore" href="stari-grad-city-views.html">
+          Explore Photos ↗
         </a>
       </div>
 
     </section>
 
+    <footer>
+      © 2026 Çağdaş Duman
+    </footer>
+
   </main>
+
 </body>
 </html>
-```
