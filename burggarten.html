@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Burggarten, Vienna — Çağdaş Duman</title>
-
   <meta name="description" content="Personal travel memories and photographs of Burggarten in Vienna, Austria.">
 
   <style>
@@ -14,96 +13,111 @@
     }
 
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 24px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #333;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 30px;
+      margin: 22px 8% 30px;
       color: #333;
       text-decoration: none;
     }
 
     .cover {
-      width: 100%;
       display: block;
-      margin-bottom: 28px;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
       border-radius: 6px;
+      margin: 0 0 28px;
     }
 
     h1 {
+      margin: 0 0 8px;
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
     }
 
     .location {
+      margin: 0;
       color: #777;
-      margin-top: 0;
     }
 
     .description {
-      margin: 24px 0 35px;
+      margin: 24px 0;
       font-size: 17px;
+      line-height: 1.7;
+      color: #333;
       text-align: justify;
     }
 
     .gallery {
-      margin-top: 40px;
-      padding: 35px 24px;
-      background: #f5f5f5;
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
       border-radius: 8px;
       text-align: center;
     }
 
     .gallery h2 {
-      margin: 0 0 12px;
-      font-size: 26px;
+      margin-top: 0;
     }
 
     .gallery p {
-      margin: 0 auto 24px;
-      max-width: 650px;
       text-align: center;
     }
 
     .gallery-button {
       display: inline-block;
+      margin-top: 10px;
       padding: 12px 24px;
-      background: #222;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 5px;
     }
 
     .gallery-button:hover {
-      background: #444;
+      background: #333;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 25px 0;
-      text-align: center;
+      padding: 25px;
       color: #777;
       font-size: 14px;
+      text-align: center;
     }
 
-    @media (max-width: 650px) {
-      body {
-        margin-top: 24px;
-        padding: 0 16px;
+    @media (max-width: 600px) {
+      main {
+        margin: 24px auto;
+        padding: 0 18px;
+      }
+
+      .back-link {
+        margin: 20px 18px 24px;
+      }
+
+      .cover {
+        height: 250px;
       }
 
       h1 {
         font-size: 30px;
       }
 
-      .gallery {
-        padding: 28px 18px;
+      .description {
+        font-size: 16px;
       }
     }
   </style>
@@ -125,7 +139,19 @@
 
     <div class="description">
       <p>
-        Burggarten is one of Vienna's most charming historic gardens, located in the heart of the city near the Hofburg Imperial Palace. Originally created as a private garden for the Habsburg imperial family, it later became a public green space where visitors can enjoy a peaceful atmosphere surrounded by history and elegant architecture. Its carefully maintained lawns, mature trees, flower beds, and winding paths offer a pleasant contrast to the busy streets of central Vienna. The garden is also home to the famous Mozart Monument, one of its most recognizable landmarks, as well as the beautiful Palmenhaus, a striking glass structure that adds to its distinctive character. Today, Burggarten remains a popular place for both locals and visitors to relax and appreciate a quieter side of the Austrian capital. This collection brings together my personal travel photographs and memories, capturing the garden's natural beauty, historic details, and peaceful atmosphere.
+        Burggarten is one of Vienna's most charming historic gardens,
+        located near the Hofburg Imperial Palace. Originally created
+        as a private garden for the Habsburg imperial family, it later
+        became a public green space offering a peaceful escape in the
+        heart of the city. Its lawns, mature trees, flower beds, and
+        winding paths create a pleasant contrast to Vienna's busy
+        streets. The garden is also home to the famous Mozart Monument
+        and the beautiful Palmenhaus, a striking glass structure that
+        adds to its distinctive character. Today, Burggarten remains
+        a lovely place to relax and appreciate a quieter side of the
+        Austrian capital. This collection brings together my personal
+        photographs and memories of the garden's natural beauty and
+        historic atmosphere.
       </p>
     </div>
 
@@ -152,4 +178,3 @@
   </footer>
 </body>
 </html>
-```
