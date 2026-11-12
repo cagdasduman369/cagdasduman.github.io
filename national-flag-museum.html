@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>National Flag Museum, Baku | Çağdaş Duman</title>
   <meta name="description" content="Personal travel photographs and memories from the National Flag Museum in Baku, Azerbaijan.">
 
@@ -14,133 +15,161 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #fff;
       color: #333;
-      background: #f7f7f7;
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 25px;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 15px;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
 
     .cover {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
       display: block;
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
       border-radius: 8px;
+      background: #e8edf0;
     }
 
     h1 {
-      margin: 30px 0 5px;
-      font-size: 34px;
-      text-align: left;
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
-      text-align: left;
       color: #777;
-      margin-bottom: 30px;
-      font-size: 16px;
+      margin-top: 0;
     }
 
-    .intro {
+    .description {
+      font-size: 17px;
+      margin: 24px 0;
       text-align: justify;
-      font-size: 16px;
-      margin-bottom: 45px;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f6f6f6;
+      border-radius: 8px;
       text-align: center;
-      padding-top: 20px;
     }
 
     .gallery h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
+      margin-top: 0;
     }
 
     .gallery p {
-      color: #666;
-      margin-bottom: 25px;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
-      background: #111;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #000;
       color: #fff;
-      padding: 13px 28px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 15px;
     }
 
-    .gallery-button:hover {
-      background: #444;
+    .gallery a:hover {
+      background: #333;
     }
 
-    @media (max-width: 700px) {
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
-        height: 300px;
+        height: 250px;
       }
 
       h1 {
-        font-size: 27px;
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <a href="baku.html" class="back-link">← Back to Baku</a>
+  <header>
+    <a href="baku.html">← Back to Baku</a>
+  </header>
+
+  <main>
 
     <img
+      class="cover"
       src="assets/images/world/azerbaijan/baku/national-flag-museum/national-flag-museum-cover.jpg"
       alt="National Flag Museum in Baku, Azerbaijan"
-      class="cover"
     >
 
     <h1>National Flag Museum</h1>
 
-    <div class="location">Baku · Azerbaijan</div>
+    <p class="location">Baku · Azerbaijan</p>
 
-    <p class="intro">
-      Located along Baku's Caspian Sea waterfront, the National Flag
-      Museum is part of the National Flag Square complex, one of the
-      city's most recognisable landmarks. The museum celebrates
-      Azerbaijan's national symbols and presents the history,
-      meaning and development of the country's flag.
+    <div class="description">
+      <p>
+        Located along Baku's Caspian Sea waterfront, the National Flag
+        Museum is part of the National Flag Square complex, one of the
+        city's most recognisable landmarks. The museum celebrates
+        Azerbaijan's national symbols and presents the history,
+        meaning and development of the country's flag.
+      </p>
 
-      Inside, visitors can discover historical flags, official
-      documents, photographs and other exhibits that illustrate
-      different periods of Azerbaijani history. The collection
-      offers an insight into the country's national identity
-      and the symbolism associated with its flag.
+      <p>
+        Inside, visitors can discover historical flags, official
+        documents, photographs and other exhibits that illustrate
+        different periods of Azerbaijani history. The collection
+        offers an insight into the country's national identity
+        and the symbolism associated with its flag.
+      </p>
 
-      During my visit, I explored the museum and photographed
-      some of its displays and architectural details. This
-      collection brings together my personal photographs and
-      memories from the National Flag Museum in Baku.
-    </p>
+      <p>
+        During my visit, I explored the museum and photographed
+        some of its displays and architectural details. This
+        collection brings together my personal photographs and
+        memories from the National Flag Museum in Baku.
+      </p>
+    </div>
 
-    <section class="gallery">
+    <div class="gallery">
       <h2>My Photo Gallery</h2>
+
       <p>
         Explore my personal photographs and memories from
         the National Flag Museum, Baku.
@@ -150,12 +179,16 @@
         href="https://photos.app.goo.gl/GMmHKSojAKZu9A9a7"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </section>
+    </div>
 
-  </div>
+  </main>
+
+  <footer>
+    © Çağdaş Duman · Around the World
+  </footer>
+
 </body>
 </html>
