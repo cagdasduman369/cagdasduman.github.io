@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Budva, Montenegro | Çağdaş Duman</title>
+  <meta name="description" content="Personal travel photographs and memories from Budva, Montenegro, by Çağdaş Duman.">
+
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      color: #333;
-      background: #fff;
       line-height: 1.7;
+      margin: 0;
+      background: #fff;
+      color: #333;
     }
 
     header {
@@ -34,6 +37,7 @@
     }
 
     .cover {
+      display: block;
       width: 100%;
       height: 430px;
       object-fit: cover;
@@ -43,7 +47,8 @@
 
     h1 {
       font-size: 38px;
-      margin-bottom: 8px;
+      line-height: 1.25;
+      margin: 25px 0 8px;
     }
 
     .location {
@@ -69,10 +74,14 @@
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #333;
-      color: white;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
+    }
+
+    .gallery a:hover {
+      background: #333;
     }
 
     footer {
@@ -83,6 +92,11 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        margin-top: 24px;
+        padding: 0 18px;
+      }
+
       .cover {
         height: 250px;
       }
@@ -90,55 +104,51 @@
       h1 {
         font-size: 30px;
       }
+
+      .description {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <a href="world.html">← Around the World</a>
+    <a href="world.html">← Back to Around the World</a>
   </header>
 
   <main>
+
     <img
-      class="cover"
       src="assets/images/world/montenegro/budva/budva-cover.jpg.jpg"
       alt="Budva, Montenegro"
+      class="cover"
     >
 
     <h1>Budva, Montenegro</h1>
+
     <p class="location">Montenegro · Adriatic Coast</p>
 
     <div class="description">
-      <p>
-        Set along Montenegro’s sun-drenched Adriatic coast, Budva brings
-        together centuries of history and the relaxed rhythm of Mediterranean
-        life. Its walled Old Town, with narrow stone lanes, historic squares,
-        and terracotta rooftops, reflects the town’s Venetian heritage, while
-        the surrounding coastline opens onto turquoise waters, sandy beaches,
-        and dramatic sea views. Wandering through its historic streets and
-        along the waterfront reveals a destination where cultural character
-        and coastal beauty meet. These photographs capture my personal
-        memories of Budva and its distinctive atmosphere on the Adriatic.
-      </p>
+      Set along Montenegro’s sun-drenched Adriatic coast, Budva brings together centuries of history and the relaxed rhythm of Mediterranean life. Its walled Old Town, with narrow stone lanes, historic squares, and terracotta rooftops, reflects the town’s Venetian heritage, while the surrounding coastline opens onto turquoise waters, sandy beaches, and dramatic sea views. Wandering through its historic streets and along the waterfront reveals a destination where cultural character and coastal beauty meet.
+
+      Beyond its historic centre, Budva is known for its lively seaside atmosphere, beautiful coastal scenery, and picturesque waterfront. The town's beaches and nearby coastal viewpoints offer visitors opportunities to enjoy the Adriatic landscape from different perspectives. Its historic walls, traditional architecture, and lively streets create an interesting contrast with the modern resorts and cafés along the coast. Budva is also a popular starting point for discovering the surrounding Montenegrin Riviera, with its small beaches, rocky coves, and charming coastal settlements. These photographs capture my personal impressions and memories of Budva, reflecting both its historical character and the natural beauty of the Adriatic coast.
     </div>
 
-    <section class="gallery">
+    <div class="gallery">
       <h2>My Photo Gallery</h2>
-      <p>Explore my personal travel photos from Budva.</p>
-
-      <a
-        href="https://photos.app.goo.gl/Ff5wUex8ZKabWKT66"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <p>Explore my personal travel photographs and memories from Budva.</p>
+      <a href="https://photos.app.goo.gl/Ff5wUex8ZKabWKT66" target="_blank" rel="noopener">
         View All Photos ↗
       </a>
-    </section>
+    </div>
+
   </main>
 
   <footer>
-    © Çağdaş Duman · Around the World
+    © 2026 Çağdaş Duman · Around the World
   </footer>
+
 </body>
 </html>
