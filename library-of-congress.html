@@ -15,23 +15,19 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       color: #333;
+      background: #fff;
+      line-height: 1.7;
     }
 
     header {
       padding: 22px 8%;
+      border-bottom: 1px solid #eee;
     }
 
-    .back-link {
-      display: inline-block;
+    header a {
       color: #333;
       text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
     }
 
     main {
@@ -53,20 +49,21 @@
       font-size: 38px;
       line-height: 1.25;
       margin: 25px 0 8px;
-      font-weight: 600;
     }
 
     .location {
       color: #777;
       margin-top: 0;
-      font-size: 15px;
     }
 
     .description {
       font-size: 17px;
-      line-height: 1.7;
       margin: 24px 0;
       text-align: justify;
+    }
+
+    .description p {
+      margin-bottom: 18px;
     }
 
     .gallery {
@@ -78,28 +75,24 @@
     }
 
     .gallery h2 {
-      font-size: 25px;
-      margin: 0 0 10px;
+      margin-top: 0;
     }
 
     .gallery p {
-      color: #666;
-      margin-bottom: 25px;
-      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
-    .gallery-button {
+    .gallery a {
       display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
       background: #000;
       color: #fff;
-      padding: 12px 24px;
       text-decoration: none;
       border-radius: 4px;
-      font-size: 14px;
-      transition: background 0.3s ease;
     }
 
-    .gallery-button:hover {
+    .gallery a:hover {
       background: #333;
     }
 
@@ -134,7 +127,7 @@
 <body>
 
   <header>
-    <a href="washington-dc.html" class="back-link">← Back to Washington, DC</a>
+    <a href="washington-dc.html">← Back to Washington, DC</a>
   </header>
 
   <main>
@@ -149,11 +142,17 @@
 
     <p class="location">Washington, DC · United States</p>
 
-    <p class="description">
-      The Library of Congress is the largest library in the world and one of the most important cultural and research institutions in the United States. Established in 1800, it preserves an extraordinary collection of books, manuscripts, maps, photographs, recordings, and historical documents from around the globe. Its most famous building, the Thomas Jefferson Building, is especially admired for its impressive Beaux-Arts architecture, grand staircases, colorful mosaics, detailed murals, and richly decorated interiors. Opened to the public in 1897, the building reflects the ambition to create a national institution that celebrates knowledge, learning, and artistic achievement. Visitors can explore its magnificent public spaces while discovering exhibitions that present different aspects of American and world history. The library's collections make it an invaluable resource for researchers and an important guardian of cultural heritage. These photographs capture my visit to this remarkable landmark and its beautiful architectural details in the heart of Washington, DC.
-    </p>
+    <div class="description">
+      <p>
+        The Library of Congress is the largest library in the world and one of the most important cultural and research institutions in the United States. Established in 1800, it preserves an extraordinary collection of books, manuscripts, maps, photographs, recordings, and historical documents from around the globe. Its most famous building, the Thomas Jefferson Building, is especially admired for its impressive Beaux-Arts architecture, grand staircases, colorful mosaics, detailed murals, and richly decorated interiors.
+      </p>
 
-    <div class="gallery">
+      <p>
+        Opened to the public in 1897, the building reflects the ambition to create a national institution that celebrates knowledge, learning, and artistic achievement. Visitors can explore its magnificent public spaces while discovering exhibitions that present different aspects of American and world history. The library's collections make it an invaluable resource for researchers and an important guardian of cultural heritage. These photographs capture my visit to this remarkable landmark and its beautiful architectural details in the heart of Washington, DC.
+      </p>
+    </div>
+
+    <section class="gallery">
       <h2>My Photo Gallery</h2>
       <p>Explore my personal travel photographs and memories from the Library of Congress, including the magnificent Thomas Jefferson Building in Washington, DC.</p>
 
@@ -161,16 +160,15 @@
         href="https://photos.app.goo.gl/je5ZLkoKXugm3HbGA"
         target="_blank"
         rel="noopener noreferrer"
-        class="gallery-button"
       >
         View All Photos ↗
       </a>
-    </div>
+    </section>
 
   </main>
 
   <footer>
-    © 2026 Çağdaş Duman · Around the World
+    © Çağdaş Duman · Around the World
   </footer>
 
 </body>
