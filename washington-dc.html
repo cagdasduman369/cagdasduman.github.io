@@ -115,6 +115,13 @@
       background: #555;
     }
 
+    /* Center the final card */
+    .card-last {
+      grid-column: 1 / -1;
+      width: calc((100% - 24px) / 2);
+      justify-self: center;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
@@ -138,6 +145,11 @@
 
       .sections {
         grid-template-columns: 1fr;
+      }
+
+      .card-last {
+        grid-column: auto;
+        width: 100%;
       }
     }
   </style>
@@ -439,8 +451,8 @@
         <a href="washington-national-cathedral.html">Explore Photos ↗</a>
       </div>
 
-      <div class="card">
-        <img src="assets/images/world/united-states/dc/national-geographic-museum-cover.jpeg" alt="National Geographic Museum of Exploration">
+      <div class="card card-last">
+        <img src="assets/images/world/united-states/washington-dc/national-geographic-museum/museum-of-exploration-cover.jpeg" alt="National Geographic Museum of Exploration">
         <h2>National Geographic Museum of Exploration</h2>
         <p>
           A museum celebrating exploration, science, nature,
